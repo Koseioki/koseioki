@@ -1,19 +1,29 @@
 import Header from "./Header"
 import HaloSection from "./HaloSection"
+import Works from "./Works"
 import AboutMe from "./AboutMe"
 import Contact from "./Contact"
+import Footer from "./Footer"
+import GridCard from "./GridCard"
 
 
 function Home() {
 
   return (
     <>
-    <Header />
+      <Header />
       <main id="main-content">
         <HaloSection />
+        <div className="grey-background">
+          <Works />
+        </div>
         <AboutMe />
-        <Contact />
+        <div className="grey-background">
+          <Contact />
+        </div>
       </main>
+      <Footer />
+    
     </>
   )
 }
