@@ -1,9 +1,11 @@
+import Accordion from "./Accordion";
 import EatingABanana from "./assets/eating-a-banana.svg"
 function HaloSection (){
 
     return(
         // <!-- Halo! -->
     <section className="page-width section-margin-padding flex-layout-container">
+      <Accordion summary="Halo!" content="I’m an inclusive multimedia designer, intersectionalist, percussionist."/>
       <div>
         <h1 aria-label="Halloh, my name is Có-say">Halo, my name is Kosei</h1>
         <p>I’m an inclusive multimedia designer, intersectionalist, percussionist.</p>

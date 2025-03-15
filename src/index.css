@@ -234,88 +234,8 @@ header {
   gap: 2rem;
 }
 
-.grid-card {
-  background-color: var(--background);
-  padding: 2rem;
-  border-radius: 1rem;
-  border: 0.125rem var(--text) solid;
-  cursor: pointer;
-}
-
-.grid-card:hover,
-.grid-card:focus {
-  padding: 2rem;
-  /* border: 0.25rem var(--text) solid; */
-  outline: 0.25rem var(--yellow) solid;
-  cursor: pointer;
-}
 
 
-.grid-card:hover .link-text,
-.grid-card:focus .link-text {
-  text-decoration: none;
-}
-
-.work-images {
-  width: 100%;
-  border-radius: 0.5rem;
-  /* margin-top: 1rem; */
-}
-
-.grid-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-}
-
-.arrows {
-  width: 100%;
-  max-width: 1.5rem;
-  /* position: relative;
-  top: 0; */
-}
-
-/* ---------- About me section ----------*/
-#about-me {
-
-}
-
-
-/* ---------- Contact ---------- */
-
-#contact {
-  /* display: flex;
-  justify-content: space-between;
-  gap: 2rem 2rem; */
-}
-
-/* contact information is set as a list */
-#contact-list {
-  list-style: none;
-}
-
-#contact-list li {
-  margin: 0.8rem 0;
-}
-
-.contact-link {
-  color: var(--link);
-  font-weight: bold;
-  margin-left: 0.5rem;
-
-}
-
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--link-onmouse);
-  border-bottom: var(--link-onmouse) solid 0.25rem;
-  background-color: var(--yellow);
-}
-
-.icon {
-  height: 1.25rem;
-}
 
 footer {
   text-align: center;

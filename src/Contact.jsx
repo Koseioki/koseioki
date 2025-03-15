@@ -1,4 +1,4 @@
-
+import './Contact.css'
 import Mail from './assets/mail.svg'
 import Phone from './assets/phone.svg'
 import LinkedIn from './assets/linkedin.png'

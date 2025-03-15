@@ -4,8 +4,7 @@ import Works from "./Works"
 import AboutMe from "./AboutMe"
 import Contact from "./Contact"
 import Footer from "./Footer"
-import GridCard from "./GridCard"
-
+import './index.css'
 
 function Home() {
 

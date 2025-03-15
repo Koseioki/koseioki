@@ -1,7 +1,7 @@
 
 
 import ChasingAButterfly from './assets/chasing-a-butterfly.svg';
-import MeOnTheRide from './assets/me-on-the-ride.webp';
+// import MeOnTheRide from './assets/me-on-the-ride.webp';
 
 function AboutMe (){
     return (
@@ -23,7 +23,7 @@ function AboutMe (){
         </div>
         <div>
           {/* <!-- Switch --> */}
-          <div role="switch" aria-checked="false" tabIndex="0">
+          {/* <div role="switch" aria-checked="false" tabIndex="0">
             <span className="label">Switch images</span>
             <div>
             <span className="switch">
@@ -32,14 +32,14 @@ function AboutMe (){
             <span className="on" aria-hidden="true">Picture</span>
             <span className="off" aria-hidden="true">Drawing</span>
           </div>
-          </div>
+          </div> */}
   
           {/* <!-- Image placeholders to toggle --> */}
-          <div className="image-container">
+          {/* <div className="image-container"> */}
             <img src={ChasingAButterfly} alt="a drawing of myself, chasing a white butterfly in the meadow"
               className="toggle-image img1 side-image"/>
-            <img src={MeOnTheRide} alt="Smiling selfie of myself riding an orange bike while wearing a helmet" className="toggle-image img2 side-image" />   
-          </div>
+            {/* <img src={MeOnTheRide} alt="Smiling selfie of myself riding an orange bike while wearing a helmet" className="toggle-image img2 side-image" />    */}
+          {/* </div> */}
   
         </div>
       </section>
