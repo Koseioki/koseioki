@@ -6,7 +6,8 @@ function DialogPaaTvaers(){
         <>
         <Header />
 
-      <main id="main-content">
+
+        <main id="main-content" className="page-width section-margin-padding" >
        
             <h1>DialogPaaTvaers</h1>
             <Accordion 

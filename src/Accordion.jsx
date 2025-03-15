@@ -4,7 +4,7 @@ function Accordion ({ summary, content }) {
 
   return (
     <details>
-        <summary>{summary}</summary>
+        <summary><h2>{summary} </h2></summary>
         <div className="content">{content}</div>
     </details>
   );
