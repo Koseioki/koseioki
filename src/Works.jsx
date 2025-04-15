@@ -34,7 +34,7 @@ function Works() {
                 <div className="grid">
 
                     <GridCard
-                        title="Dialog på Tværs"
+                        title="Dialog på Tværs (ongoing project)"
                         description="Working to adhere to WCAG 2.2 guidelines while maintaining visual aesthetics and the
                 overall theme."
                         image={Dialogpaatvaers}

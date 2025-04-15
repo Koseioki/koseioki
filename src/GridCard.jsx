@@ -1,17 +1,18 @@
 import './GridCard.css';
-
+import {Link} from 'react-router-dom';
 
 function GridCard({ title, description, image, link }) {
-    const handleClick = () => {
-        window.open(link)
-    }
+    // const handleClick = () => {
+    //     window.open(link)
+    // }
 
     return (
-        <article className="grid-card transition" onClick={handleClick}>
+        <article className="grid-card transition">
             <div className="grid-title">
-                <a href={link} >
+ 
+                <Link to={link}>
                     <h4>{title}</h4>
-                </a>
+                </Link>
                 <span className="arrows" aria-hidden="true">→</span>
             </div>
             <img className="work-images" src={image} alt="" />

@@ -1,0 +1,12 @@
+.project-header-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+img{
+    width: 100%;
+    max-width: 25rem;
+    border-radius: 1rem;
+}

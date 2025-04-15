@@ -1,5 +1,5 @@
 /* import font Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
 * {
   --background: #ffffff;
@@ -20,13 +20,19 @@
 
 
 body {
-  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: normal;
   /* font-size: 1.25rem; */
   font-size: 1.1rem;
 
   line-height: 1.5;
   color: var(--text);
+}
+
+a:focus, button:focus, summary:focus{
+  box-shadow: 0 0 0 0.25rem #F6F6F6, 0 0 0 0.5rem darkblue;
+  background-color: var(--yellow);
+
 }
 
 /* apply page width to all sections */

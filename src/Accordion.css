@@ -15,10 +15,10 @@ summary{
 }
 
 summary::-webkit-details-marker {
-    display: none
+    /* display: none */
 }
 
-summary:before {
+/* summary:before {
     background: #da291c;
     border-color: #da291c;
     border-radius: 15px;
@@ -31,11 +31,11 @@ summary:before {
     padding: 1px 0 3px 0;
     text-align: center;
     width: 30px;
-}
-
+} */
+/* 
 details[open] summary:before {
     content: "-";
-}
+} */
 
 
 

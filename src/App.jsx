@@ -1,15 +1,23 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 import Home from './Home'
 import DialogPaaTvaers from './DialogPaaTvaers'
 
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
+    // <Router>
+    <>
+    <ScrollToTop />
+      <Routes>
+              
+
+        <Route path="/" element={<Home />} />
         <Route path="/dialog-paa-tvaers" element={<DialogPaaTvaers />} />
-    </Routes>
+      </Routes>
+
+    </>
   )
 }
 
