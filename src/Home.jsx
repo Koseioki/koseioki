@@ -1,27 +1,20 @@
-import Header from "./Header"
-import HaloSection from "./HaloSection"
-import Works from "./Works"
-import AboutMe from "./AboutMe"
-import Contact from "./Contact"
-import Footer from "./Footer"
 import './index.css'
+import './Home.css'
+import Header from './components/Header'
+import Profile from './components/Profile'
+import Works from './components/Works'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function Home() {
 
   return (
     <>
-      <Header />
-      <main id="main-content">
-        <HaloSection />
-        <div className="grey-background">
-          <Works />
-        </div>
-        <AboutMe />
-        <div className="grey-background">
-          <Contact />
-        </div>
-      </main>
-      <Footer />
+      <Header/>
+      <Profile/>
+      <Works />
+      <Contact />
+<Footer />
     
     </>
   )
