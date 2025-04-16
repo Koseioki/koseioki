@@ -5,7 +5,6 @@
     background-color: var(--white);
     box-shadow: 0 0 1rem rgba(26, 26, 26, 0.2);
     /* transition: all 0.1s ease-in-out; */
-
 }
 
 .card-wrapper:hover{
@@ -31,3 +30,9 @@ a.card-title:focus{
     text-decoration: underline;
 }
 
+
+.card-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
