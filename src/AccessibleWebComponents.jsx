@@ -9,8 +9,9 @@ function AccessibleWebComponents() {
   return (
     <>
     <Header/>
-    <main id="main-content">
     <BreadCrumbs/>
+
+    <main id="main-content">
     
       <h1>Accessible Web Components</h1>
       <p>description.</p>

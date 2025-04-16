@@ -1,10 +1,12 @@
 import './WarningSection.css';
-function WarningSection() {
+function WarningSection({ children }) {
   return (
-    <section className="warning-section">
-      <h2>Info</h2>
-      <p>this page includes non-accessible elements
-      specification document is 100% image</p>
+    <section className="warning-section" aria-labelledby="info">
+      <h2 id="info">Info</h2>
+      <p>this page includes non-accessible elements listed below:</p>
+      <ul>
+      {children}
+      </ul>
     </section>
   );
 }

@@ -16,7 +16,11 @@ function ComponentDetail() {
       <Header />
       <BreadCrumbs />
       <main id="main-content">
-        <WarningSection />
+        <WarningSection>
+          
+            <li>Images without text alternatives</li>
+          
+          </WarningSection>
         <div className="component-detail-header">
           <div>
           <h1>{component.title}</h1>

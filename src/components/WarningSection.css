@@ -6,3 +6,9 @@
     padding: 1rem;
     color: var(--warning-dark);
 }
+
+.warning-section ul{
+    list-style:inside;
+    padding-left: 1rem;
+    list-style-position: outside;
+}
