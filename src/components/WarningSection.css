@@ -1,0 +1,8 @@
+
+.warning-section{
+    background-color: var(--warning);
+    border: var(--warning-dark) 0.0625rem solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--warning-dark);
+}

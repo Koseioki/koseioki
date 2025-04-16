@@ -1,23 +1,30 @@
+import './AccessibleWebComponents.css';
 import Header from "./components/Header";
 import BreadCrumbs from "./components/BreadCrumbs";
 import Footer from "./components/Footer";
 import ComponentCard from "./components/ComponentCard";
+import {components} from "./data/components";
 
 function AccessibleWebComponents() {
   return (
     <>
     <Header/>
+    <main id="main-content">
     <BreadCrumbs/>
-    <div>
+    
       <h1>Accessible Web Components</h1>
-      <p>This is a simple example of a web component that is accessible.</p>
-      <ul>
-        
-        <li><ComponentCard/></li>
-        <li><ComponentCard/></li>
-        <li><ComponentCard/></li>
+      <p>description.</p>
+      <ul className="component-list">
+        {components.map((component) => (
+          <li key={component.slug}>
+            <ComponentCard name={component.title} slug={component.slug} />
+          </li>
+        ))}
+      
+
       </ul>
-    </div>
+    
+    </main>
     <Footer/>
     </>
   );

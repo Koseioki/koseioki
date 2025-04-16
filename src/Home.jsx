@@ -11,9 +11,12 @@ function Home() {
   return (
     <>
       <Header/>
+      <main id="main-content">
       <Profile/>
       <Works />
       <Contact />
+      </main>
+     
 <Footer />
     
     </>

@@ -1,3 +1,15 @@
+.skip-to-content{
+    position: absolute;
+    top: -10rem;
+    border: 1px solid var(--text);
+    text-align: center;
+
+}
+.skip-to-content:has(a:focus){
+    position: relative;
+    top: 0;
+}
+
 header{
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +25,11 @@ header{
     font-weight: bold;
     color: var(--text);
     text-decoration: none;
+}
+.site-title:hover, .nav-item a:hover{
+    /* text-decoration: underline;
+     */
+     border-bottom: 0.125rem solid var(--text);
 }
 
 nav ul{
