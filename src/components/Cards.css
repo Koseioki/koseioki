@@ -3,12 +3,16 @@
     border-radius: 1rem;
     padding: 1rem;
     background-color: var(--white);
-    box-shadow: 0 0 1rem rgba(26, 26, 26, 0.2);
+    box-shadow: var(--drop-shadow);
     /* transition: all 0.1s ease-in-out; */
 }
 
+
 .card-wrapper:hover{
     background-color: var(--background);
+    cursor: 
+    
+    pointer;
 }
 
 a.card-title{
@@ -23,7 +27,7 @@ a.card-title:focus{
 }
 
 .card-wrapper:has(a.card-title:focus){
-    box-shadow: 0 0 0 0.25rem var(--white), 0 0 0 0.5rem var(--primary);
+    box-shadow: var(--focus-indicator);
 }
 
 .card-wrapper:hover a.card-title{
@@ -35,4 +39,20 @@ a.card-title:focus{
     width: 100%;
     height: auto;
     border-radius: 1rem;
+
+}
+
+/* ----- component card ----- */
+.component-card {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    gap: 1rem;
+}
+.component-card img{
+    /* max-height: 10rem; */
+    /* width: auto; */
+    width: 100%;
+    max-width: 10rem;
+
 }

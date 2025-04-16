@@ -14,11 +14,11 @@
     box-shadow: 0 0 1rem rgba(26, 26, 26, 0.2);
 }
 
-#profile li a{
+/* #profile li a{
     text-decoration: underline;
     color: var(--text);
 }
 
 #profile li a:hover{
     text-decoration: none;
-}
+} */

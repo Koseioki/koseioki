@@ -11,8 +11,8 @@ function Profile() {
         <p>I’m an inclusive digital product designer, intersectionalist, percussionist.</p>
           <p>I also like fruits.</p>
         <ul>
-          <li><a href="https://www.instagram.com/koseioki1225/">Instagram</a></li>
-          <li><a href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkedIn</a></li>
+          <li><a className="plain-link" href="https://www.instagram.com/koseioki1225/">Instagram</a></li>
+          <li><a className="plain-link" href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkedIn</a></li>
         </ul>
       </div>
     </section>

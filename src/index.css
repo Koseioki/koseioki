@@ -7,6 +7,7 @@
   --warning:#FFE8E8;
   --warning-dark: #B20000;
   --focus-indicator: 0 0 0 0.25rem var(--white), 0 0 0 0.5rem var(--primary);
+  --drop-shadow:0 0 1rem rgba(26, 26, 26, 0.2);
 }
 
 html, body{
@@ -43,6 +44,15 @@ ul{
 }
 
 p{
+}
+
+a.plain-link{
+  color: var(--text);
+  text-decoration: underline;
+}
+
+a.plain-link:hover{
+  text-decoration: none;
 }
 
 a:focus{
