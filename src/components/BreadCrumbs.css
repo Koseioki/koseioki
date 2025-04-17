@@ -1,0 +1,14 @@
+.breadcrumbs ol{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.breadcrumbs-separator{
+    margin: 0 0.5rem;
+}
+
+.breadcrumbs-last{
+    font-weight: bold;
+}
