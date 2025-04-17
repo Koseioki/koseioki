@@ -1,0 +1,37 @@
+.detail-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+    gap: 2rem;
+}
+
+.detail-header dt{
+    float: left;
+    font-weight: bold;
+    
+}
+
+.detail-header dt::after {
+    content: ":";
+    margin-right: 0.5rem;
+  }
+
+.detail-thumbnail-container{
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.detail-thumbnail {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.detail-score-thumbnail{
+    width: 100%;
+    max-width: 15rem;
+display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+

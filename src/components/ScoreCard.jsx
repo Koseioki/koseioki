@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './Cards.css'
 
 
-function ScoreCard({ title, composer, image, slug, year, pdf }) {
+function ScoreCard({ title, composer, image, slug, grade}) {
   const path = `/concert-band-scores/${slug}`;
   const navigate = useNavigate();
   const handleClick = () => {
@@ -31,8 +31,7 @@ function ScoreCard({ title, composer, image, slug, year, pdf }) {
         <h2>{title}</h2>
         </NavLink>
         <p>{composer}</p>
-        <p>{year}</p>
-        <a href={pdf} target="_blank" rel="noopener noreferrer">Download PDF</a>
+        <p>Grade: {grade}</p>
       </div>
     </li>
   );

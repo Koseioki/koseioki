@@ -3,14 +3,16 @@ import Footer from "./components/Footer";
 import {scores} from './data/scores'
 import ScoreCard from "./components/ScoreCard";
 import './ConcertBandScores.css';
+import BreadCrumbs from "./components/BreadCrumbs";
 function ConcertBandScores() {
   return (
     <div>
 
 <Header/>
+<BreadCrumbs />
 <main id="main-content">
     <h1>Concert Band Scores</h1>
-    <p>description.</p>  
+    <p>I created concert band arrangements of various musical pieces, with full scores and individual sheet music available for each part.</p>  
     <ul className="score-list">
         {scores.map((score) => (
 
@@ -19,11 +21,12 @@ function ConcertBandScores() {
             <ScoreCard 
             key={score.slug}
             title={score.title} 
-            image={score.composer} 
+            image={score.image} 
             slug={score.slug} 
             year={score.year}
             composer={score.composer}
-            pdf={score.pdf}/>
+            grade={score.grade}
+            />
           // </li>
         ))}
       

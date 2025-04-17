@@ -12,13 +12,13 @@ function Works() {
             link="/accessible-web-components"
             title="Accessible Web Components"
             image={AccessibleComponents}
-            description="I made accessible web components for local banks, at Bankdata" />
+            description="At Bankdata, I developed accessible web components for local banks to use on their websites." />
       
           <WorkCard 
           link="/concert-band-scores"
           title="Concert Band Scores"
           image={ConcertBandScores}
-          description="I arranged some music" />
+          description="I arranged music for concert band." />
         
       </ul>
 

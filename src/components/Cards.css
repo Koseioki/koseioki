@@ -1,5 +1,5 @@
 .card-wrapper{
-    border: var(--text) 0.0625rem solid;
+    /* border: var(--text) 0.0625rem solid; */
     border-radius: 1rem;
     padding: 2rem;
     background-color: var(--white);

@@ -1,5 +1,6 @@
 *{
   --text: #1C1C1C;
+  --text-light: #525252;
   --background: #f5f5f5;
   --white: #ffffff;
   --primary: #3D2FFC;
@@ -60,6 +61,16 @@ ul{
 
 }
 
+hr{
+  border: none;
+  border-top: 0.0625rem solid var(--text-light);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+section{
+  margin: 2rem 0;
+}
 
 a.plain-link{
   color: var(--text);
