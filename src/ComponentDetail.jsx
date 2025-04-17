@@ -33,6 +33,7 @@ function ComponentDetail() {
         <hr aria-hidden="true" />
 
         <h2>Details</h2>
+        <p>Coming soon</p>
       </main>
       <Footer />
     </>

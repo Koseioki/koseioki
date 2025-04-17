@@ -37,6 +37,10 @@ function ScoreDetail() {
             <img src={score.image} alt="" className="detail-score-thumbnail" />
           </div>
         </div>
+        <hr aria-hidden="true" />
+
+        <h2>Demo</h2>
+        <p>Coming soon</p>
       </main>
 
       <Footer />
