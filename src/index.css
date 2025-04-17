@@ -23,28 +23,43 @@ html, body{
 
 }
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 h1{
   font-size: 2rem;
   font-weight: bold;
+
   
 }
 
 h2{
   font-size: 1.5rem;
-  font-weight: bold;}
+  font-weight: bold;
+
+}
 
 h3{
   font-size: 1.25rem;
   font-weight: bold;
+
 }
 
 ul{
   list-style: none;
   padding: 0;
+  margin: 0;
+
 }
 
-p{
-}
 
 a.plain-link{
   color: var(--text);

@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import {scores} from './data/scores'
+import ScoreCard from "./components/ScoreCard";
+import './ConcertBandScores.css';
 function ConcertBandScores() {
   return (
     <div>
@@ -11,12 +13,18 @@ function ConcertBandScores() {
     <p>description.</p>  
     <ul className="score-list">
         {scores.map((score) => (
-          <li key={score.slug}>
-            <p>{score.title}</p>
-            <p>{score.composer}</p>
-            <p>{score.year}</p>
-            <a href={score.pdf}>Score</a>
-          </li>
+
+          
+          // <li key={score.slug}>
+            <ScoreCard 
+            key={score.slug}
+            title={score.title} 
+            image={score.composer} 
+            slug={score.slug} 
+            year={score.year}
+            composer={score.composer}
+            pdf={score.pdf}/>
+          // </li>
         ))}
       
 

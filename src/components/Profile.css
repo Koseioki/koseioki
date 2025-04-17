@@ -11,9 +11,8 @@
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 0.25rem solid var(--white);
-    box-shadow: 0 0 1rem rgba(26, 26, 26, 0.2);
+    box-shadow: var(--drop-shadow);
 }
-
 /* #profile li a{
     text-decoration: underline;
     color: var(--text);

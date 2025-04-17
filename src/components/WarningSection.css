@@ -3,10 +3,13 @@
     background-color: var(--warning);
     border: var(--warning-dark) 0.0625rem solid;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 1rem 0;
     color: var(--warning-dark);
 }
-
+.warning-section p{
+    margin-top: 0;
+}
 .warning-section ul{
     list-style:inside;
     padding-left: 1rem;

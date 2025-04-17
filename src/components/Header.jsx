@@ -3,13 +3,15 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <>
-    <div className="skip-to-content"><a href="#main-content" >Skip to content</a></div>
+    <div className="skip-to-content">
+      <a href="#main-content" >Skip to content</a>
+      </div>
 
     <header>
       <div>
         <NavLink to="/" className="site-title">Kosei Oki</NavLink>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li className="nav-item">
             <a href="/#works">Works</a>

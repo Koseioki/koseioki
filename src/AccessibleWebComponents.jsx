@@ -17,9 +17,14 @@ function AccessibleWebComponents() {
       <p>description.</p>
       <ul className="component-list">
         {components.map((component) => (
-          <li key={component.slug}>
-            <ComponentCard title={component.title} image={component.image} slug={component.slug} />
-          </li>
+          // <li >
+            <ComponentCard
+            key={component.slug}
+            title={component.title}
+            image={component.image}
+            slug={component.slug}
+            description={component.description}/>
+          // </li>
         ))}
       
 

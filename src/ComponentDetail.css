@@ -1,14 +1,13 @@
 .component-detail-header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    /* align-items: center; */
     gap: 2rem;
 }
 .component-detail-thumbnail {
     width: 100%;
     height: auto;
-    /* border-radius: 1rem;
-    padding: 1rem;
-    border: solid 0.0625rem var(--text);
-    box-shadow: var(--drop-shadow); */
+    background-color: var(--white);
+    padding: 2rem;
+
 }

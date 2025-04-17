@@ -7,12 +7,19 @@ function Works() {
     <section id="works">
       <h2>Works</h2>
       <ul className="work-card-list">
-        <li>
-            <WorkCard link="/accessible-web-components" title="Accessible Web Components" image={AccessibleComponents} description="I made accessible web components for local banks, at Bankdata"/>
-        </li>
-        <li>
-        <WorkCard title="Concert Band Scores" image={ConcertBandScores}description="I arranged some music"/>
-        </li>
+     
+          <WorkCard
+            link="/accessible-web-components"
+            title="Accessible Web Components"
+            image={AccessibleComponents}
+            description="I made accessible web components for local banks, at Bankdata" />
+      
+          <WorkCard 
+          link="/concert-band-scores"
+          title="Concert Band Scores"
+          image={ConcertBandScores}
+          description="I arranged some music" />
+        
       </ul>
 
     </section>

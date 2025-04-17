@@ -18,11 +18,11 @@ const navigate = useNavigate();
 
 
   return (
-    <article className="card-wrapper" onClick={handleClick}>
+    <li className="card-wrapper" onClick={handleClick}>
       <img src={image} alt=""/>
       <h3 ><NavLink to={link} className="card-title"> {title}</NavLink></h3>
       <p>{description}</p>
-    </article>
+    </li>
   );
 }
 export default WorkCard;

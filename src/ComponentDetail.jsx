@@ -12,14 +12,12 @@ function ComponentDetail() {
   const component = components.find(p => p.slug === slug);
 
   return (
-    <div>
+    <>
       <Header />
       <BreadCrumbs />
       <main id="main-content">
         <WarningSection>
-          
             <li>Images without text alternatives</li>
-          
           </WarningSection>
         <div className="component-detail-header">
           <div>
@@ -33,7 +31,7 @@ function ComponentDetail() {
         </div>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 export default ComponentDetail;
