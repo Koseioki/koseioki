@@ -23,9 +23,10 @@ function ScoreCard({ title, composer, image, slug, grade}) {
 
   return (
     <li className="card-wrapper score-card"  onClick={handleClick}>
-        <img src={image} alt="" />
+        <img src={image} alt="" aria-hidden="true"/>
       <div className="card-text">
-      <h2><NavLink to={`/concert-band-scores/${slug}`} className="card-title">
+      <h2>
+        <NavLink to={`/concert-band-scores/${slug}`} className="card-title">
         {title}
         </NavLink></h2>
         <p>{composer}</p>

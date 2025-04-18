@@ -21,7 +21,7 @@ function ComponentCard({ title, image, slug, description }) {
   return (
     <li className="card-wrapper component-card" onClick={handleClick}>
       {/* <div> */}
-      <img src={image} alt=""/>
+      <img src={image} alt="" aria-hidden="true"/>
       {/* </div> */}
       <div className="card-text">
       <h2>

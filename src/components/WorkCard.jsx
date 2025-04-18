@@ -19,7 +19,7 @@ const navigate = useNavigate();
 
   return (
     <li className="card-wrapper" onClick={handleClick}>
-      <img src={image} alt=""/>
+      <img src={image} alt="" aria-hidden="true"/>
 <div className="card-text">
       <h3 >
         <NavLink to={link} className="card-title"> 

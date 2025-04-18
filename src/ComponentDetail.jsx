@@ -7,12 +7,22 @@ import Footer from "./components/Footer";
 import WarningSection from "./components/WarningSection";
 import './DetailPages.css';
 import { Helmet } from 'react-helmet';
+import { useEffect, useRef } from "react";
 
 function ComponentDetail() {
   const { slug } = useParams();
   const component = components.find(p => p.slug === slug);
 
+    const headingRef = useRef(null);
+  
+    useEffect(() => {
+      if (headingRef.current) {
+        headingRef.current.focus();
+      }
+    }, []);
+
   return (
+    
     <>
       <Helmet>
         <title>{component.title} - Kosei Oki</title>
@@ -21,17 +31,22 @@ function ComponentDetail() {
       <Header />
       <BreadCrumbs />
       <main id="main-content">
-        <WarningSection>
+      <h1 ref={headingRef} tabIndex="-1" className="headings">{component.title}</h1>
+
+      <WarningSection>
           <li>Images without text alternatives</li>
         </WarningSection>
         <div className="detail-header">
           <div>
-            <h1 className="headings">{component.title}</h1>
+  
             <p className="paragraph">{component.description}</p>
-            <a href={component.demo} className="primary-button">Open demo</a>
+            <div className="button-container">
+              <a href={component.demo} className="primary-button">View Demo</a>
+              <a href={component.github} className="secondary-button">View Github</a>
+            </div>
           </div>
           <div className="detail-thumbnail-container">
-            <img src={component.image} className="detail-thumbnail" alt="" />
+            <img src={component.image} className="detail-thumbnail" alt="" aria-hidden="true" />
           </div>
         </div>
 

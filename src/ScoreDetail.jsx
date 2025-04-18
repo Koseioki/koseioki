@@ -6,10 +6,19 @@ import Footer from "./components/Footer";
 import WarningSection from './components/WarningSection.jsx';
 import './DetailPages.css'
 import { Helmet } from 'react-helmet';
+import { useEffect, useRef } from "react";
 
 function ScoreDetail() {
   const { slug } = useParams();
   const score = scores.find(p => p.slug === slug);
+
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    if (headingRef.current) {
+      headingRef.current.focus();
+    }
+  }, []);
   return (
     <>
       <Helmet>
@@ -19,13 +28,15 @@ function ScoreDetail() {
       <BreadCrumbs />
 
       <main id="main-content">
-      <WarningSection>
-        <li>Audio without text alternatives</li>
-        <li>PDF without text alternatives</li>
-      </WarningSection>
+        <h1 ref={headingRef} tabIndex="-1" className="headings">{score.title}</h1>
+        <WarningSection>
+              <li>Audio content without text alternatives</li>
+              <li>PDF documents without text alternatives</li>
+            </WarningSection>
+
         <div className="detail-header">
           <div>
-            <h1 className="headings">{score.title}</h1>
+          
             <dl className="paragraph">
               <dt>Composer</dt>
               <dd>{score.composer}</dd>
@@ -36,15 +47,18 @@ function ScoreDetail() {
               <dt>Grade</dt>
               <dd>{score.grade}</dd>
             </dl>
-            <a href={score.pdf} className="primary-button">Download PDF (Full score and parts)</a>
+            <div className="button-container">
+              <a href={score.pdf} className="primary-button">View Score & Parts</a>
+              <a href={score.audio} className="secondary-button">Listen to Demo</a>
+            </div>
           </div>
           <div>
-            <img src={score.image} alt="" className="detail-score-thumbnail" />
+            <img src={score.image} alt="" className="detail-score-thumbnail" aria-hidden="true" />
           </div>
         </div>
         <hr aria-hidden="true" />
 
-        <h2 className="headings">Demo</h2>
+        <h2 className="headings">Description</h2>
         <p className="paragraph">Coming soon</p>
       </main>
 

@@ -1,6 +1,6 @@
 .detail-header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     /* align-items: center; */
     gap: 2rem;
 }
@@ -35,6 +35,13 @@ display: flex;
     margin: 0 auto;
 }
 
+.button-container{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 1rem;
+}
 
 @media (max-width: 568px) {
     .detail-header{

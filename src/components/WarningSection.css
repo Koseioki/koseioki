@@ -3,7 +3,7 @@
     background-color: var(--warning);
     border: var(--warning-dark) 0.0625rem solid;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     margin: 1rem 0;
     color: var(--warning-dark);
 }
@@ -11,7 +11,8 @@
     margin-top: 0;
 }
 .warning-section ul{
+    margin-top: 0.5rem;
     list-style:inside;
-    padding-left: 1rem;
-    list-style-position: outside;
+    /* padding-left: 1rem; */
+    /* list-style-position: inside; */
 }
