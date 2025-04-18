@@ -14,10 +14,10 @@ function Header() {
       <nav aria-label="Main navigation">
         <ul>
           <li className="nav-item">
-            <a href="/#works">Works</a>
+            <NavLink to="/#works">Works</NavLink>
           </li>
           <li className="nav-item">
-            <a href="/#contact">Contact</a>
+            <NavLink to="/#contact">Contact</NavLink>
           </li>
         </ul>
       </nav>

@@ -5,19 +5,24 @@ import BreadCrumbs from "./components/BreadCrumbs";
 import Footer from "./components/Footer";
 import WarningSection from './components/WarningSection.jsx';
 import './DetailPages.css'
+import { Helmet } from 'react-helmet';
 
 function ScoreDetail() {
   const { slug } = useParams();
   const score = scores.find(p => p.slug === slug);
   return (
     <>
+      <Helmet>
+        <title>{score.title} - Kosei Oki</title>
+      </Helmet>
       <Header />
       <BreadCrumbs />
+
+      <main id="main-content">
       <WarningSection>
         <li>Audio without text alternatives</li>
         <li>PDF without text alternatives</li>
       </WarningSection>
-      <main id="main-content">
         <div className="detail-header">
           <div>
             <h1>{score.title}</h1>

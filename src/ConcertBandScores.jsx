@@ -4,9 +4,15 @@ import {scores} from './data/scores'
 import ScoreCard from "./components/ScoreCard";
 import './ConcertBandScores.css';
 import BreadCrumbs from "./components/BreadCrumbs";
+import { Helmet } from 'react-helmet';
+
 function ConcertBandScores() {
   return (
     <div>
+
+    <Helmet>
+      <title>Concert Band Scores - Kosei Oki</title>
+      </Helmet>
 
 <Header/>
 <BreadCrumbs />

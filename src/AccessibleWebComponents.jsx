@@ -4,10 +4,16 @@ import BreadCrumbs from "./components/BreadCrumbs";
 import Footer from "./components/Footer";
 import ComponentCard from "./components/ComponentCard";
 import {components} from "./data/components";
+import { Helmet } from 'react-helmet';  
 
 function AccessibleWebComponents() {
   return (
     <>
+
+    <Helmet>
+      <title>Accessible Web Components - Kosei Oki</title>
+      </Helmet>
+
     <Header/>
     <BreadCrumbs/>
 

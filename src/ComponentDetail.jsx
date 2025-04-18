@@ -6,6 +6,7 @@ import BreadCrumbs from "./components/BreadCrumbs";
 import Footer from "./components/Footer";
 import WarningSection from "./components/WarningSection";
 import './DetailPages.css';
+import { Helmet } from 'react-helmet';
 
 function ComponentDetail() {
   const { slug } = useParams();
@@ -13,6 +14,10 @@ function ComponentDetail() {
 
   return (
     <>
+      <Helmet>
+        <title>{component.title} - Kosei Oki</title>
+      </Helmet>
+
       <Header />
       <BreadCrumbs />
       <main id="main-content">
@@ -23,7 +28,7 @@ function ComponentDetail() {
           <div>
             <h1>{component.title}</h1>
             <p>{component.description}</p>
-            <a href={component.demo} className="primary-button">See the Demo</a>
+            <a href={component.demo} className="primary-button">Open demo</a>
           </div>
           <div className="detail-thumbnail-container">
             <img src={component.image} className="detail-thumbnail" alt="" />
@@ -32,7 +37,7 @@ function ComponentDetail() {
 
         <hr aria-hidden="true" />
 
-        <h2>Details</h2>
+        <h2>Specifications</h2>
         <p>Coming soon</p>
       </main>
       <Footer />
