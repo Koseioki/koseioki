@@ -20,10 +20,10 @@ function ComponentCard({ title, image, slug, description }) {
 
   return (
     <li className="card-wrapper component-card" onClick={handleClick}>
-      <div>
+      {/* <div> */}
       <img src={image} alt=""/>
-      </div>
-      <div>
+      {/* </div> */}
+      <div className="card-text">
       <h2>
         <NavLink to={path} className="card-title">{title}</NavLink>
         </h2>

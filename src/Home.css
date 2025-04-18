@@ -7,3 +7,11 @@
     list-style-type: none;
     align-items: stretch;
 }
+
+/* mobile devices */
+@media (max-width: 568px) {
+    .work-card-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

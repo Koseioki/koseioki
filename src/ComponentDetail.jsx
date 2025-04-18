@@ -26,8 +26,8 @@ function ComponentDetail() {
         </WarningSection>
         <div className="detail-header">
           <div>
-            <h1>{component.title}</h1>
-            <p>{component.description}</p>
+            <h1 className="headings">{component.title}</h1>
+            <p className="paragraph">{component.description}</p>
             <a href={component.demo} className="primary-button">Open demo</a>
           </div>
           <div className="detail-thumbnail-container">
@@ -37,8 +37,8 @@ function ComponentDetail() {
 
         <hr aria-hidden="true" />
 
-        <h2>Specifications</h2>
-        <p>Coming soon</p>
+        <h2 className="headings">Specifications</h2>
+        <p className="paragraph">Coming soon</p>
       </main>
       <Footer />
     </>

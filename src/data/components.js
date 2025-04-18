@@ -10,35 +10,35 @@ export const components = [
         title: "Responsive Table",
         image: ResnponsiveTable,
         demo:"https://koseioki.github.io/responsive-table/",
-        description: "A responsive table component that adjusts its layout based on the screen size."
+        description: "A product comparison table designed to be responsive and accessible to screen readers"
     },
     {
         slug: "news-feed",
         title: "News Feed",
         image: NewsFeed,
         demo:"https://koseioki.github.io/Nyhedsfeed/",
-        description: "A news feed component that displays the latest articles and updates."
+        description: "A clickable news feed card"
     },
     {
         slug: "teaser-block",
         title: "Teaser Block",
         image: TeaserBlock,
         demo:"https://koseioki.github.io/Teaserblok/",
-        description: "A teaser block component that highlights important content."
+        description: "A clickable element with a background image and text overlay"
     },
     {
         slug: "form-validation",
         title: "Form Validation",
         image: FormValidation,
         demo: "https://koseioki.github.io/form-validation/",
-        description: "A form validation component that ensures user input is correct."
+        description: "Normal and error states for different native form elements"
     },
     {
         slug: "contact-card",
         title: "Contact Card",
         image: ContactCard,
         demo: "https://koseioki.github.io/FMI/",
-        description: "A contact card component that displays user information."
+        description: "A clickable card containing links"
     }
 
 ];

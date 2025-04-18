@@ -1,7 +1,7 @@
 .card-wrapper{
     /* border: var(--text) 0.0625rem solid; */
     border-radius: 1rem;
-    padding: 2rem;
+    /* padding: 2rem; */
     background-color: var(--white);
     box-shadow: var(--drop-shadow);
     /* transition: all 0.1s ease-in-out; */
@@ -10,14 +10,29 @@
 .card-wrapper:hover{
     background-color: var(--background);
     cursor: 
-    
     pointer;
 }
 
+.card-text{
+    margin: 1.5rem;
+
+}
+
 a.card-title{
-    font-weight: bold;
     text-decoration: none;
     color: var(--text);
+}
+.card-title{
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    /* margin: 1rem; */
+}
+.card-wrapper p{
+    /* margin: 1rem; */
+
 }
 
 a.card-title:focus{
@@ -37,7 +52,9 @@ a.card-title:focus{
 .card-wrapper img {
     width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    /* gradation overlay */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
 
 }
 
@@ -45,16 +62,53 @@ a.card-title:focus{
 .component-card {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    gap: 2rem;
+    align-items: center;
+    /* gap: 1rem; */
 }
 .component-card img{
-    max-width: 7rem;
+    max-width: 10rem;
     width: 100%;
     aspect-ratio: 1/1;
+    border-radius: 1rem 0 0 1rem;
 
     object-fit:cover;
     object-position: left;
-
-
 }
+
+
+/* ----- score card (grid) ----- */
+.score-card img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: top;
+}
+.score-card h2,
+.score-card a{
+    font-size:1.25rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 568px) {
+    .card-text{
+        margin: 1rem;
+    }
+    .card-wrapper img{
+        aspect-ratio: 2/1;
+        object-fit: cover;
+        object-position: top;
+    }
+    .component-card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .component-card img{
+        max-width: 100%;
+        width: 100%;
+        /* aspect-ratio: 2/1; */
+        border-radius: 1rem 1rem 0 0;
+    }
+    .score-card img{
+        /* aspect-ratio: 2/1; */
+    }
+}
+

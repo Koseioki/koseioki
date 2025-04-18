@@ -7,7 +7,7 @@ function BreadCrumbs() {
     <nav className="breadcrumbs" aria-label="Breadcrumbs">
       <ol>
         <li>
-          <Link to="/">
+          <Link to="/" className="plain-link">
             Home
           </Link>
         </li>
@@ -20,7 +20,7 @@ function BreadCrumbs() {
               {isLast ? (
                 <span aria-current="page" className="breadcrumbs-last">{decodeURIComponent(value)}</span>
               ) : (
-                <Link to={to}>
+                <Link to={to} className="plain-link">
                   {decodeURIComponent(value)}
                 </Link>
               )}

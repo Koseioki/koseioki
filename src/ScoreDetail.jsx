@@ -25,8 +25,8 @@ function ScoreDetail() {
       </WarningSection>
         <div className="detail-header">
           <div>
-            <h1>{score.title}</h1>
-            <dl>
+            <h1 className="headings">{score.title}</h1>
+            <dl className="paragraph">
               <dt>Composer</dt>
               <dd>{score.composer}</dd>
               <dt>Year of Publication</dt>
@@ -44,8 +44,8 @@ function ScoreDetail() {
         </div>
         <hr aria-hidden="true" />
 
-        <h2>Demo</h2>
-        <p>Coming soon</p>
+        <h2 className="headings">Demo</h2>
+        <p className="paragraph">Coming soon</p>
       </main>
 
       <Footer />

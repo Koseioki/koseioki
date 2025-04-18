@@ -38,20 +38,30 @@ html, body{
 h1{
   font-size: 2rem;
   font-weight: bold;
-
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
   
 }
 
 h2{
   font-size: 1.5rem;
   font-weight: bold;
-
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 h3{
   font-size: 1.25rem;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
 
+.headings{
+  margin: 1rem 0;
 }
 
 ul{
@@ -60,12 +70,26 @@ ul{
   margin: 0;
 
 }
+li{
+  line-height: 1.5;
+}
 
 hr{
   border: none;
   border-top: 0.0625rem solid var(--text-light);
   margin: 2rem 0;
   width: 100%;
+}
+
+p{
+  max-width: 40rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.paragraph{
+  margin: 1rem 0;
 }
 
 section{
@@ -98,4 +122,14 @@ a:focus{
 
 .primary-button:hover{
   background-color: var(--primary-hover);
+}
+
+@media (max-width: 568px) {
+  html, body{
+    padding: 0 0.5rem;
+  }
+  .primary-button{
+    /* width: 100%; */
+    /* text-align: center; */
+  }
 }

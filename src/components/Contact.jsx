@@ -2,7 +2,7 @@
 function Contact() {
   return (
     <section id="contact">
-      <h2>Contact</h2>
+      <h2 className="headings">Contact</h2>
       <ul>
         <li>
             <a className="plain-link" href="tel:+45 9196 4325">+45 9196 4325</a>

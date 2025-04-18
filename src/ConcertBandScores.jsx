@@ -17,8 +17,8 @@ function ConcertBandScores() {
 <Header/>
 <BreadCrumbs />
 <main id="main-content">
-    <h1>Concert Band Scores</h1>
-    <p>I created concert band arrangements of various musical pieces, with full scores and individual sheet music available for each part.</p>  
+    <h1 className="headings">Concert Band Scores</h1>
+    <p className="paragraph">I created concert band arrangements of various musical pieces, with full scores and individual sheet music available for each part.</p>  
     <ul className="score-list">
         {scores.map((score) => (
 

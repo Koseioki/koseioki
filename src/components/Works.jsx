@@ -5,7 +5,7 @@ import ConcertBandScores from '../assets/concert-band-scores.webp'
 function Works() {
   return (
     <section id="works">
-      <h2>Works</h2>
+      <h2 className="headings">Works</h2>
       <ul className="work-card-list">
      
           <WorkCard
