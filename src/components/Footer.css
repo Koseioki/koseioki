@@ -1,12 +1,20 @@
 footer {
-    /* background-color: #333; */
-    /* color: white; */
-    /* text-align: center; */
-    margin: 2rem 0;
+    background-color: var(--text-light);
+    color: var(--white);
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
 }
 
-@media (max-width: 568px) {
+.back-to-top-container{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 2rem;
+}
+
+/* @media (max-width: 568px) {
     footer {
         text-align: center;
     }
-}
+} */

@@ -36,7 +36,7 @@ function ScoreDetail() {
 
         <div className="detail-header">
           <div>
-          
+          <h2>Details</h2>
             <dl className="paragraph">
               <dt>Composer</dt>
               <dd>{score.composer}</dd>
@@ -56,10 +56,10 @@ function ScoreDetail() {
             <img src={score.image} alt="" className="detail-score-thumbnail" aria-hidden="true" />
           </div>
         </div>
-        <hr aria-hidden="true" />
+        {/* <hr aria-hidden="true" />
 
         <h2 className="headings">Description</h2>
-        <p className="paragraph">Coming soon</p>
+        <p className="paragraph">Coming soon</p> */}
       </main>
 
       <Footer />

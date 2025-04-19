@@ -33,11 +33,12 @@ function ComponentDetail() {
       <main id="main-content">
       <h1 ref={headingRef} tabIndex="-1" className="headings">{component.title}</h1>
 
-      <WarningSection>
+      {/* <WarningSection>
           <li>Images without text alternatives</li>
-        </WarningSection>
+        </WarningSection> */}
         <div className="detail-header">
           <div>
+            <h2>Description</h2>
   
             <p className="paragraph">{component.description}</p>
             <div className="button-container">
