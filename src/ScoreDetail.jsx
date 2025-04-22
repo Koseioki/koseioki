@@ -7,6 +7,8 @@ import WarningSection from './components/WarningSection.jsx';
 import './DetailPages.css'
 import { Helmet } from 'react-helmet';
 import { useEffect, useRef } from "react";
+import Icon from './components/Icon.jsx';
+
 
 function ScoreDetail() {
   const { slug } = useParams();
@@ -48,8 +50,11 @@ function ScoreDetail() {
               <dd>{score.grade}</dd>
             </dl>
             <div className="button-container">
-              <a href={score.pdf} className="primary-button">View Score & Parts</a>
-              <a href={score.audio} className="secondary-button">Listen to Demo</a>
+              <a href={score.pdf} className="primary-button">
+                <Icon icon="File"/>View Score & Parts
+                </a>
+              <a href={score.audio} className="secondary-button">
+                <Icon icon="Headphones"/>Listen to Demo</a>
             </div>
           </div>
           <div>

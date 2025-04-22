@@ -8,6 +8,7 @@ import WarningSection from "./components/WarningSection";
 import './DetailPages.css';
 import { Helmet } from 'react-helmet';
 import { useEffect, useRef } from "react";
+import Icon from './components/Icon.jsx';
 
 function ComponentDetail() {
   const { slug } = useParams();
@@ -43,7 +44,9 @@ function ComponentDetail() {
             <p className="paragraph">{component.description}</p>
             <div className="button-container">
               <a href={component.demo} className="primary-button">View Demo</a>
-              <a href={component.github} className="secondary-button">View Github</a>
+              <a href={component.github} className="secondary-button">
+                <Icon icon="Github"/>View Github
+                </a>
             </div>
           </div>
           <div className="detail-thumbnail-container">
