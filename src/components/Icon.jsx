@@ -8,10 +8,10 @@ import Phone from '../assets/phone.svg';
 import Warning from '../assets/warning.svg';
 import './Icon.css';
 
-function Icon ({ icon }) {
-if (icon === 'Warning') {
-    icon = Warning;
-  }
+function Icon({ icon }) {
+    if (icon === 'Warning') {
+        icon = Warning;
+    }
     if (icon === 'Email') {
         icon = Email;
     }
@@ -33,10 +33,10 @@ if (icon === 'Warning') {
     if (icon === 'Phone') {
         icon = Phone;
     }
-    
-  return (
-    <img src={icon} alt="" aria-hidden="true" className="icon"/>
-  );
+
+    return (
+        <img src={icon} alt="" aria-hidden="true" className="icon" />
+    );
 }
 
 export default Icon;
