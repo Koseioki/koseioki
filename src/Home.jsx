@@ -12,17 +12,22 @@ import { useEffect } from 'react';
 
 
 function Home() {
-  const location = useLocation();
+  const { hash } = useLocation();
+
   useEffect(() => {
-    if(location.hash){
-      const element = document.querySelector(location.hash); 
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      } 
+    if (hash) {
+      // Defer focus until DOM is ready
+      const timeout = setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) {
+          el.focus();
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 0); // Delay one tick
+
+      return () => clearTimeout(timeout);
     }
-  },[location]);  
-
-
+  }, [hash]);
 
   return (
     <>

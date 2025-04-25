@@ -1,7 +1,29 @@
 import './Header.css';
 import { NavLink } from "react-router-dom";
+import { useLocation, useNavigate } from 'react-router-dom';
 function Header() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick = (e, hash) => {
+    e.preventDefault();
+    if (location.pathname === '/' && location.hash === hash) {
+      // Manually scroll/focus
+      const el = document.querySelector(hash);
+      if (el) {
+        el.focus();
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate(`/${hash}`);
+    }
+  };
+
+
   return (
+
+
+    
     <>
     <div className="skip-to-content">
       <a href="#main-content" >Skip to content</a>
@@ -14,10 +36,10 @@ function Header() {
       <nav aria-label="Main navigation">
         <ul>
           <li className="nav-item">
-            <NavLink to="/#works">Works</NavLink>
+            <NavLink to="/#works" onClick={(e) => handleClick(e, '#works')}>Works</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/#contact">Contact</NavLink>
+            <NavLink to="/#contact" onClick={(e) => handleClick(e, '#contact')}>Contact</NavLink>
           </li>
         </ul>
       </nav>

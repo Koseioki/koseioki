@@ -2,8 +2,8 @@ import Icon from './Icon.jsx';
 
 function Contact() {
   return (
-    <section id="contact">
-      <h2 className="headings">Contact</h2>
+    <section>
+      <h2 id="contact" tabIndex={-1} className="headings">Contact</h2>
       <ul>
         <li>
             <a className="plain-link" href="tel:+45 9196 4325">
