@@ -15,7 +15,7 @@ function Profile() {
 
   return (
     <section id="profile">
-        <img className="profile-picture" src={Kosei} alt="" />
+        <img className="profile-picture" src={Kosei} alt="" aria-hidden="true" />
       <div>
         {/* <h1 ref={headingRef} tabIndex="-1" className="headings">Kosei Oki</h1> */}
         <h1 className="headings">Kosei Oki</h1>
