@@ -45,7 +45,7 @@ function ComponentDetail() {
             <div className="button-container">
               <a href={component.demo} className="primary-button">View Demo</a>
               <a href={component.github} className="secondary-button">
-                <Icon icon="Github"/>View Github
+                <Icon icon="Github"/>View GitHub
                 </a>
             </div>
           </div>
