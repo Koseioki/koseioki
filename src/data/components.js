@@ -1,3 +1,4 @@
+import DescriptionListWithAccordion from '../assets/description-list-with-accordion.webp';
 import ResnponsiveTable from '../assets/responsive-table.webp';
 import NewsFeed from '../assets/news-feed.webp';
 import TeaserBlock from '../assets/teaser-block.webp';
@@ -5,6 +6,16 @@ import FormValidation from '../assets/form-validation.webp';
 import ContactCard from '../assets/contact-card.webp';
 
 export const components = [
+    {
+        slug: "description-list-with-accordion",
+        title: "Description List with Accordion",
+        image: DescriptionListWithAccordion,
+        demo:"https://koseioki.github.io/datatable-with-accordion/",
+        github:"https://github.com/Koseioki/datatable-with-accordion.git",
+        description: "An expandable description list"
+
+
+    },
     {
         slug: "responsive-table",
         title: "Responsive Table",
