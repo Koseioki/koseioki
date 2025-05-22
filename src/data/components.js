@@ -47,6 +47,15 @@ export const components = [
         description: "A product comparison table designed to be responsive and accessible to screen readers",
         specifications: [ProduktSammenligneren1, ProduktSammenligneren2, ProduktSammenligneren3, ProduktSammenligneren4, ProduktSammenligneren5, ProduktSammenligneren6]
     },
+       {
+        slug: "form-validation",
+        title: "Form Validation",
+        image: FormValidation,
+        demo: "https://koseioki.github.io/form-validation/",
+        github:"https://github.com/Koseioki/form-validation.git",
+        description: "Normal and error states for different native form elements"
+        , specifications: [Forms1, Forms2, Forms3, Forms4, Forms6, Forms7, Forms8, Forms9]
+    },
     {
         slug: "news-feed",
         title: "News Feed (Carousel)",
@@ -65,15 +74,7 @@ export const components = [
         description: "A clickable element with a background image and text overlay",
         specifications: [Teaserblok1, Teaserblok2, Teaserblok3]
     },
-    {
-        slug: "form-validation",
-        title: "Form Validation",
-        image: FormValidation,
-        demo: "https://koseioki.github.io/form-validation/",
-        github:"https://github.com/Koseioki/form-validation.git",
-        description: "Normal and error states for different native form elements"
-        , specifications: [Forms1, Forms2, Forms3, Forms4, Forms6, Forms7, Forms8, Forms9]
-    },
+ 
     {
         slug: "contact-card",
         title: "Contact Card",
