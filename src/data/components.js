@@ -29,12 +29,12 @@ import Forms8 from '../assets/Forms.008.webp';
 import Forms9 from '../assets/Forms.009.webp';
 
 
-import ProduktSammenLigneren1 from '../assets/ProduktSammenligneren.001.webp';
-import ProduktSammenLigneren2 from '../assets/ProduktSammenligneren.002.webp';
-import ProduktSammenLigneren3 from '../assets/ProduktSammenligneren.003.webp';
-import ProduktSammenLigneren4 from '../assets/ProduktSammenligneren.004.webp';
-import ProduktSammenLigneren5 from '../assets/ProduktSammenligneren.005.webp';
-import ProduktSammenLigneren6 from '../assets/ProduktSammenligneren.006.webp';
+import ProduktSammenligneren1 from '../assets/Produktsammenligneren.001.webp';
+import ProduktSammenligneren2 from '../assets/Produktsammenligneren.002.webp';
+import ProduktSammenligneren3 from '../assets/Produktsammenligneren.003.webp';
+import ProduktSammenligneren4 from '../assets/Produktsammenligneren.004.webp';
+import ProduktSammenligneren5 from '../assets/Produktsammenligneren.005.webp';
+import ProduktSammenligneren6 from '../assets/Produktsammenligneren.006.webp';
 
 export const components = [
 
@@ -45,7 +45,7 @@ export const components = [
         demo:"https://koseioki.github.io/responsive-table/",
         github:"https://github.com/Koseioki/responsive-table.git",
         description: "A product comparison table designed to be responsive and accessible to screen readers",
-        specifications: [ProduktSammenLigneren1, ProduktSammenLigneren2, ProduktSammenLigneren3, ProduktSammenLigneren4, ProduktSammenLigneren5, ProduktSammenLigneren6]
+        specifications: [ProduktSammenligneren1, ProduktSammenligneren2, ProduktSammenligneren3, ProduktSammenligneren4, ProduktSammenligneren5, ProduktSammenligneren6]
     },
     {
         slug: "news-feed",
