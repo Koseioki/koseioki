@@ -53,3 +53,8 @@ display: flex;
         max-width: 20rem; */
     }
 }
+
+.specification-images img{
+    width: 100%;
+    max-width: 40rem;
+}

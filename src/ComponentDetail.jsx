@@ -34,9 +34,9 @@ function ComponentDetail() {
       <main id="main-content">
       <h1 ref={headingRef} tabIndex="-1" className="headings">{component.title}</h1>
 
-      {/* <WarningSection>
+      <WarningSection>
           <li>Images without text alternatives</li>
-        </WarningSection> */}
+        </WarningSection>
         <div className="detail-header">
           <div>
             <h2>Description</h2>
@@ -57,7 +57,16 @@ function ComponentDetail() {
         <hr aria-hidden="true" />
 
         <h2 className="headings">Specifications</h2>
-        <p className="paragraph">Coming soon</p>
+        <p className="paragraph">More details to follow.</p>
+
+{/* add all the images that are inside {component.specifications} */}
+        <div className="specification-images">
+          {component.specifications && component.specifications.map((image, index) => (
+            <img key={index} src={image} alt="" />
+          ))}
+        </div>
+
+
       </main>
       <Footer />
     </>
