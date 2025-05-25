@@ -6,7 +6,7 @@ import './Profile.css';
 function Profile() {
 
   // const headingRef = useRef(null);
-  
+
   // useEffect(() => {
   //   if (headingRef.current) {
   //     headingRef.current.focus();
@@ -15,24 +15,24 @@ function Profile() {
 
   return (
     <section id="profile">
-        <img className="profile-picture" src={Kosei} alt="" aria-hidden="true" />
+      <img className="profile-picture" src={Kosei} alt="" aria-hidden="true" />
       <div>
         {/* <h1 ref={headingRef} tabIndex="-1" className="headings">Kosei Oki</h1> */}
         <h1 className="headings">Kosei Oki</h1>
         <p>I’m an inclusive digital product designer, intersectionalist, percussionist.</p>
-          <p>I also like fruits.</p>
-          <h2 className="sr-only">Social Media</h2>
+        <p>I also like fruits.</p>
+        <h2 className="sr-only">Social Media</h2>
         <ul className="paragraph">
           <li>
             <a className="plain-link" href="https://www.instagram.com/koseioki1225/">
-            <Icon icon="Instagram"/>Instagram
+              <Icon icon="Instagram" />Instagram
             </a>
-            </li>
+          </li>
           <li>
             <a className="plain-link" href="https://www.linkedin.com/in/kosei-oki-340129234/">
-            <Icon icon="LinkedIn"/>LinkedIn
+              <Icon icon="LinkedIn" />LinkedIn
             </a>
-            </li>
+          </li>
         </ul>
       </div>
     </section>
