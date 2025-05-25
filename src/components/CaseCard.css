@@ -1,0 +1,30 @@
+
+.case-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+.case-card a{
+    text-decoration: underline;
+    color: var(--text);
+}
+.case-card a:hover{
+    text-decoration: none;
+}
+.case-card a:focus{
+    outline: none;
+    box-shadow: var(--focus-indicator);
+}
+
+.case-card img{
+    width: 100%;
+    max-width: 20rem;
+
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    /* border: 0.5rem solid var(--text); */
+    /* box-shadow: var(--drop-shadow); */
+    /* border-radius: 1rem; */
+}

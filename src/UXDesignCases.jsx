@@ -4,6 +4,7 @@ import Header from './components/Header';
 import BreadCrumbs from './components/BreadCrumbs';
 import { uxCases } from './data/uxCases'
 import CaseCard from './components/CaseCard';
+import Footer from './components/Footer';
 
 
 
@@ -28,7 +29,7 @@ function UXDesignCases() {
 
             <main id="main-content">
                 <h1 ref={headingRef} tabIndex="-1" className="headings">UX Design Cases</h1>
-                <p className="paragraph">text here</p>
+                <p className="paragraph">I have worked on UX cases where I immersed myself in the context and actively listened to users to design digital products that improve everyday life.</p>
 
                 <ul>
                     {uxCases.map((caseItem) => (
@@ -40,6 +41,7 @@ function UXDesignCases() {
                 </ul>
 
             </main>
+            <Footer/>
         </>
     );
 }

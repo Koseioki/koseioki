@@ -23,12 +23,6 @@ function CaseDetail() {
       <h1 ref={headingRef} tabIndex="-1" className="headings">{uxCase.title}</h1>
       <p className="paragraph">{uxCase.description}</p>
 
-    <div className="case-detail">
-      <h2>{uxCase.title}</h2>
-      <p>{uxCase.description}</p>
-      <p>Status: {uxCase.status}</p>
-      <p>Assigned to: {uxCase.assignedTo}</p>
-    </div>
     </>
   );
 }

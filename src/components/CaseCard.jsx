@@ -1,17 +1,37 @@
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import './CaseCard.css';
 
 function CaseCard({ caseItem }) {
+    const path = `/ux-design-cases/${caseItem.slug}`;
+    const navigate = useNavigate();
+    const handleClick = () => {
+        if (path) {
+            navigate(path);
+        } else {
+            console.log("No path provided");
+        }
+    }
 
     return (
-        <div>
-            
-            <h2><NavLink to={`/ux-design-cases/${caseItem.slug}`} className="case-card">
-            {caseItem.title}
-            </NavLink></h2>
-            <p>{caseItem.description}</p>
-            <a href={caseItem.demo} target="_blank" rel="noopener noreferrer">Demo</a>
-            <a href={caseItem.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
+        <li>
+            <hr aria-hidden="true" />
+            <div className="case-card">
+    
+                    <img src={caseItem.image} alt="" aria-hidden="true" />
+          
+
+                <div className="card-text">
+                    <h2>
+                        <NavLink to={`/ux-design-cases/${caseItem.slug}`} className="card-title">
+                            {caseItem.title}
+                        </NavLink>
+                    </h2>
+                    <p>{caseItem.description}</p>
+
+                </div>
+            </div>
+        </li>
     );
 }
 

@@ -1,6 +1,7 @@
 import WorkCard from './WorkCard';
 import AccessibleComponents from '../assets/accessible-components.webp'
 import ConcertBandScores from '../assets/concert-band-scores.webp'
+import UXCases from '../assets/ux-cases.webp'
 
 
 function Works() {
@@ -22,7 +23,8 @@ function Works() {
           <WorkCard
           link="/ux-design-cases"
           title="UX Design Cases"
-          description="description"
+          image={UXCases}
+          description="I have worked on UX cases, focusing on contextual understanding and inclusive design."
           />
 
         </ul>
