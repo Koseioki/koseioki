@@ -1,9 +1,7 @@
 // this page is dynamic
 import { components } from "./data/components";
 import { useParams } from "react-router-dom";
-import Header from "./components/Header";
 import BreadCrumbs from "./components/BreadCrumbs";
-import Footer from "./components/Footer";
 import WarningSection from "./components/WarningSection";
 import './DetailPages.css';
 import { Helmet } from 'react-helmet';
@@ -28,8 +26,6 @@ function ComponentDetail() {
       <Helmet>
         <title>{component.title} - Kosei Oki</title>
       </Helmet>
-
-      <Header />
       <BreadCrumbs />
       <main id="main-content">
       <h1 ref={headingRef} tabIndex="-1" className="headings">{component.title}</h1>
@@ -39,7 +35,7 @@ function ComponentDetail() {
         </WarningSection>
         <div className="detail-header">
           <div>
-            <h2>Description</h2>
+            <h2 className="headings">Description</h2>
   
             <p className="paragraph">{component.description}</p>
             <div className="button-container">
@@ -68,7 +64,6 @@ function ComponentDetail() {
 
 
       </main>
-      <Footer />
     </>
   );
 }

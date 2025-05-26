@@ -3,6 +3,7 @@ import Icon from './Icon.jsx';
 function Contact() {
   return (
     <section>
+      <hr aria-hidden="true" />
       <h2 id="contact" tabIndex={-1} className="headings">Contact</h2>
       <ul>
         <li>

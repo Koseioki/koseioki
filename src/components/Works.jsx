@@ -10,6 +10,7 @@ function Works() {
   return (
     <>
       <section>
+        <hr aria-hidden="true" />
         <h2 id="works" tabIndex={-1} className="headings" >Works</h2>
         <h3 className="headings">Digital Products</h3>
         <ul className="work-card-list">

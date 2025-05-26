@@ -1,5 +1,4 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
 import { scores } from './data/scores'
 import ScoreCard from "./components/ScoreCard";
 import './ConcertBandScores.css';
@@ -24,7 +23,6 @@ function ConcertBandScores() {
         <title>Concert Band Scores - Kosei Oki</title>
       </Helmet>
 
-      <Header />
       <BreadCrumbs />
       <main id="main-content">
         <h1 ref={headingRef} tabIndex="-1" className="headings">Concert Band Scores</h1>
@@ -50,7 +48,6 @@ function ConcertBandScores() {
         </ul>
       </main>
 
-      <Footer />
     </div>
   );
 }

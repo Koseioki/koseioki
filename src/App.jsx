@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 import Home from './Home'
@@ -8,6 +7,8 @@ import ConcertBandScores from './ConcertBandScores'
 import ScoreDetail from './ScoreDetail'
 import UXDesignCases from './UXDesignCases'
 import CaseDetail from './CaseDetail'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <>
       <ScrollToTop />
+      <Header />
       <Routes>
 
         <Route path="/" element={<Home />} />
@@ -25,6 +27,7 @@ const App = () => {
         <Route path="/concert-band-scores" element={<ConcertBandScores />} />
         <Route path="/concert-band-scores/:slug" element={<ScoreDetail />} />
       </Routes>
+      <Footer />
 
     </>
   )

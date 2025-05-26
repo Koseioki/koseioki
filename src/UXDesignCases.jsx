@@ -1,10 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
-import Header from './components/Header';
 import BreadCrumbs from './components/BreadCrumbs';
 import { uxCases } from './data/uxCases'
 import CaseCard from './components/CaseCard';
-import Footer from './components/Footer';
 
 
 
@@ -23,7 +21,6 @@ function UXDesignCases() {
             <Helmet>
                 <title>UX Design Cases - Kosei Oki</title>
             </Helmet>
-            <Header />
             <BreadCrumbs />
 
 
@@ -41,7 +38,6 @@ function UXDesignCases() {
                 </ul>
 
             </main>
-            <Footer/>
         </>
     );
 }
