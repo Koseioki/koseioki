@@ -1,7 +1,5 @@
 import './AccessibleWebComponents.css';
-import Header from "./components/Header";
 import BreadCrumbs from "./components/BreadCrumbs";
-import Footer from "./components/Footer";
 import ComponentCard from "./components/ComponentCard";
 import {components} from "./data/components";
 import { Helmet } from 'react-helmet';  
@@ -24,7 +22,6 @@ function AccessibleWebComponents() {
       <title>Accessible Web Components - Kosei Oki</title>
       </Helmet>
 
-    <Header/>
     <BreadCrumbs/>
 
     <main id="main-content">
@@ -48,7 +45,6 @@ function AccessibleWebComponents() {
       </ul>
     
     </main>
-    <Footer/>
     </>
   );
 }

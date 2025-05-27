@@ -1,8 +1,6 @@
 import { scores } from './data/scores.js';
 import { useParams } from "react-router-dom";
-import Header from "./components/Header";
 import BreadCrumbs from "./components/BreadCrumbs";
-import Footer from "./components/Footer";
 import WarningSection from './components/WarningSection.jsx';
 import './DetailPages.css'
 import { Helmet } from 'react-helmet';
@@ -26,7 +24,6 @@ function ScoreDetail() {
       <Helmet>
         <title>{score.title} - Kosei Oki</title>
       </Helmet>
-      <Header />
       <BreadCrumbs />
 
       <main id="main-content">
@@ -38,7 +35,7 @@ function ScoreDetail() {
 
         <div className="detail-header">
           <div>
-          <h2>Details</h2>
+          <h2 className="headings">Details</h2>
             <dl className="paragraph">
               <dt>Composer</dt>
               <dd>{score.composer}</dd>
@@ -67,7 +64,6 @@ function ScoreDetail() {
         <p className="paragraph">Coming soon</p> */}
       </main>
 
-      <Footer />
     </>
   );
 }

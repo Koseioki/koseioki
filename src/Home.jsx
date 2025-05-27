@@ -2,11 +2,9 @@ import { Helmet } from 'react-helmet';
 
 import './index.css'
 import './Home.css'
-import Header from './components/Header'
 import Profile from './components/Profile'
 import Works from './components/Works'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -34,14 +32,12 @@ function Home() {
       <Helmet>
         <title>Kosei Oki</title>
         </Helmet>
-      <Header/>
       <main id="main-content">
       <Profile/>
       <Works />
       <Contact />
       </main>
      
-<Footer />
     
     </>
   )

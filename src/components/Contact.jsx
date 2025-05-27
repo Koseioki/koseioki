@@ -3,8 +3,9 @@ import Icon from './Icon.jsx';
 function Contact() {
   return (
     <section>
+      <hr aria-hidden="true" />
       <h2 id="contact" tabIndex={-1} className="headings">Contact</h2>
-      <ul>
+      <ul className="link-list paragraph">
         <li>
             <a className="plain-link" href="tel:+45 9196 4325">
               <Icon icon="Phone"/>+45 9196 4325
