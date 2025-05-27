@@ -28,9 +28,8 @@ function CaseCard({ caseItem }) {
                         </NavLink>
                     </h2>
                     <p className="paragraph">{caseItem.description}</p>
-                    <NavLink to={`/ux-design-cases/${caseItem.slug}`} className="secondary-button">
-                       Read More about the Project
-                        </NavLink>
+                      {/* <NavLink role="presentation" to={`/ux-design-cases/${caseItem.slug}`} className="read-more-link" aria-hidden="true">Read More about the Project →</NavLink>  */}
+                    
 
                 </div>
             </div>

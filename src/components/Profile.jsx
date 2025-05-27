@@ -21,8 +21,9 @@ function Profile() {
         <h1 className="headings">Kosei Oki</h1>
         <p>I’m an inclusive digital product designer, intersectionalist, percussionist.</p>
         <p>I also like fruits.</p>
+        <a className="plain-link paragraph" href="https://certification.accessibilityassociation.org/s/certified-professional-directory">Certified Professional in Accessibility Core Competencies (CPACC).</a>
         <h2 className="sr-only">Social Media</h2>
-        <ul className="paragraph">
+        <ul className="link-list paragraph">
           <li>
             <a className="plain-link" href="https://www.instagram.com/koseioki1225/">
               <Icon icon="Instagram" />Instagram

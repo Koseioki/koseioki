@@ -11,12 +11,11 @@ function CaseDetail() {
   const uxCase = uxCases.find(p => p.slug === slug);
 
   const headingRef = useRef(null);
-
-  useEffect(() => {
-    if (headingRef.current) {
-      headingRef.current.focus();
-    }
-  }, []);
+      useEffect(() => {
+      if (headingRef.current) {
+        headingRef.current.focus();
+      }
+    }, []);
 
   return (
     <>
@@ -40,10 +39,12 @@ function CaseDetail() {
         </div>
         <hr aria-hidden="true" />
 
-
+<h2 className="headings">Process</h2>
         {uxCase.sections && uxCase.sections.map((section, index) => (
           <SectionRenderer key={index} section={section} />
         ))}
+
+        <p className="paragraph">More details to follow.</p>
       </main>
     </>
   );
