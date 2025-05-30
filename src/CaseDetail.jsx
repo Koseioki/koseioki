@@ -11,11 +11,11 @@ function CaseDetail() {
   const uxCase = uxCases.find(p => p.slug === slug);
 
   const headingRef = useRef(null);
-      useEffect(() => {
-      if (headingRef.current) {
-        headingRef.current.focus();
-      }
-    }, []);
+  useEffect(() => {
+    if (headingRef.current) {
+      headingRef.current.focus();
+    }
+  }, []);
 
   return (
     <>
@@ -29,8 +29,10 @@ function CaseDetail() {
 
         <div className="detail-header">
           <div>
-            <h2 className="headings">Description</h2>
-            <p className="paragraph">{uxCase.description}</p>
+            <h2>Project Summary</h2>
+            {uxCase.summary.map((block, i) => (
+              <SectionRenderer key={`summary-${i}`} section={block} />
+            ))}
 
           </div>
           <div>
@@ -39,12 +41,34 @@ function CaseDetail() {
         </div>
         <hr aria-hidden="true" />
 
-<h2 className="headings">Process</h2>
-        {uxCase.sections && uxCase.sections.map((section, index) => (
-          <SectionRenderer key={index} section={section} />
+
+        <h2 className="headings">Design Process</h2>
+        {uxCase.problem.map((block, i) => (
+          <SectionRenderer key={`problem-${i}`} section={block} />
         ))}
 
-        <p className="paragraph">More details to follow.</p>
+        <div>
+          {uxCase.sections.map((sec, i) => (
+            <details key={`section-${i}`}>
+              <summary>
+                <h3 id={`section-${i}`}>{sec.title}</h3>
+              </summary>
+              <section className="detail-content" aria-labelledby={`section-${i}`}>
+                {sec.content.map((block, j) => (
+                  <SectionRenderer key={`block-${i}-${j}`} section={block} />
+                ))}
+              </section>
+            </details>
+          ))}
+        </div>
+
+
+        <h3 className="headings">Conclusion</h3>
+        {uxCase.conclusion.map((block, i) => (
+          <SectionRenderer key={`conclusion-${i}`} section={block} />
+        ))}
+
+
       </main>
     </>
   );

@@ -8,32 +8,53 @@ export const uxCases = [
         title: "Prehab Plus",
         image: PrehabPlus,
         description: "I developed a web app that helps sustain the motivation of colorectal cancer patients in prehabilitation programs by providing an oragnised overview of the treatment journey, a daily to-do list, and direct communication channels with assigned healthcare staff for tangible support.",
-        sections: [
-
-     
-
-        ]
     },
     {
         slug: "coop-management",
         title: "Coop Management",
         image: CoopManagement,
-        description: "Our initial aim was to create an alternative for Too Good To Go, but it ended up an inventory management system designed to reduce food waste at stores.",
+        summary: [
+            {
+                type: "paragraph",
+                text: "summary summary We aimed to develop a more sustainable alternative to Too Good To Go for reducing food waste.",
+
+            },
+            {
+                type: "paragraph",
+                text: "The goal was to create a system that helps businesses manage surplus food without encouraging overconsumption."
+            }
+        ],
+        problem: [
+            {
+                type: "paragraph",
+                text: "Too Good to Go allows businesses to sell surplus food, but has been criticized for its profit-driven model and high fees."
+            },
+            {
+                type: "paragraph",
+                text: "Our challenge was creating a solution for B2B clients that could genuinely engage local B2C audiences."
+            }
+        ],
+        conclusion: [
+            {
+                type: "paragraph",
+                text: "The resulting system helps businesses track and manage surplus more effectively, without encouraging overconsumption."
+            }
+        ],
         sections: [
             {
-                "type": "heading",
-                "level": 3,
-                "text": "Challenges"
+                title: "User Research",
+                content: [
+                    { type: "paragraph", text: "We conducted interviews with store managers..." },
+                    { type: "list", items: ["Lack of time", "Lack of tools", "Limited insights"] }
+                ]
             },
             {
-                "type": "paragraph",
-                "text": "Too Good to Go allows businesses to sell surplus food in discount bags, aiming to reduce food waste. However, criticism has grown over its profit-driven model and 30% commission fees, potentially promoting overconsumption."
-            },
-            {
-                "type": "paragraph",
-                "text": "Our goal was to enhance our web app for B2B clients, engaging their local B2C audience and selling surplus food sustainably."
-            },
-
+                title: "Wireframing",
+                content: [
+                    { type: "image", src: "/path/to/wireframe.jpg" },
+                    { type: "paragraph", text: "Early sketches helped define our IA..." }
+                ]
+            }
         ]
     }
 ]
