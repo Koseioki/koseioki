@@ -52,13 +52,15 @@ function CaseDetail() {
         <hr aria-hidden="true" />
 
 
-        <h2 className="headings">Design Process</h2>
-
-
-        <h3 className="sr-only">Challenges</h3>
+        <h2 className="headings">Challenges</h2>
         {uxCase.problem.map((block, i) => (
           <SectionRenderer key={`problem-${i}`} section={block} />
         ))}
+
+        <h2 className="headings">Design Process</h2>
+
+
+
 
 
         <div>
