@@ -24,7 +24,7 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
   line-height: 1.5;
-
+/* scroll-behavior: smooth; */
 }
 
 .sr-only {
@@ -197,7 +197,7 @@ summary {
   list-style-type: none;
 }
 
-summary::after {
+summary span::after {
   content: "▼";
   position: absolute;
   left: 1rem;
@@ -207,7 +207,7 @@ summary::after {
   transition: transform 0.2s;
 }
 
-details[open] summary::after {
+details[open] summary span::after {
   content: "▲";
 }
 

@@ -53,15 +53,20 @@ function CaseDetail() {
 
 
         <h2 className="headings">Design Process</h2>
+
+
+        <h3 className="sr-only">Challenges</h3>
         {uxCase.problem.map((block, i) => (
           <SectionRenderer key={`problem-${i}`} section={block} />
         ))}
+
 
         <div>
           {uxCase.sections.map((sec, i) => (
             <details className="design-process-details" key={`section-${i}`}>
               <summary>
                 <h3 id={`section-${i}`}>{sec.title}</h3>
+                <span aria-hidden="true"></span>
               </summary>
               <section aria-labelledby={`section-${i}`}>
                 {sec.content.map((block, j) => (
@@ -71,12 +76,6 @@ function CaseDetail() {
             </details>
           ))}
         </div>
-
-        {/* 
-        <h3 className="headings">Conclusion</h3>
-        {uxCase.conclusion.map((block, i) => (
-          <SectionRenderer key={`conclusion-${i}`} section={block} />
-        ))} */}
 
 
       </main>
