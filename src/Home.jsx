@@ -1,5 +1,4 @@
-import { Helmet } from 'react-helmet';
-
+import { Helmet } from 'react-helmet-async';
 import './index.css'
 import './Home.css'
 import Profile from './components/Profile'
@@ -31,14 +30,14 @@ function Home() {
     <>
       <Helmet>
         <title>Kosei Oki</title>
-        </Helmet>
+      </Helmet>
       <main id="main-content">
-      <Profile/>
-      <Works />
-      <Contact />
+        <Profile />
+        <Works />
+        <Contact />
       </main>
-     
-    
+
+
     </>
   )
 }

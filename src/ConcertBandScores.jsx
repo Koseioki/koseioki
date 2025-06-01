@@ -3,7 +3,7 @@ import { scores } from './data/scores'
 import ScoreCard from "./components/ScoreCard";
 import './ConcertBandScores.css';
 import BreadCrumbs from "./components/BreadCrumbs";
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useEffect, useRef } from "react";
 
 function ConcertBandScores() {

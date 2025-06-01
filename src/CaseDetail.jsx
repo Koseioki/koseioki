@@ -3,7 +3,7 @@ import { uxCases } from './data/uxCases.js';
 import { useParams } from 'react-router-dom';
 import BreadCrumbs from './components/BreadCrumbs.jsx';
 import './DetailPages.css';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import SectionRenderer from './components/SectionRenderer.jsx';
 import WarningSection from './components/WarningSection.jsx';
 
