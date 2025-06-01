@@ -13,6 +13,19 @@ import PrehabPlusScreenshot4 from "../assets/prehab-plus/screenshot4.webp";
 import PrehabPlusScreenshot5 from "../assets/prehab-plus/screenshot5.webp";
 import PrehabPlusUserflow from "../assets/prehab-plus/user-flow.webp";
 
+import CoopManagementAffinityDiagram from "../assets/coop-management/affinity-diagram.webp";
+import Coop from "../assets/coop-management/coop.webp";
+import CoopManagementHowMightWe from "../assets/coop-management/how-might-we.webp";
+import CoopManagementLoFi from "../assets/coop-management/lo-fi.webp";
+import CoopManagementLoFiTesting from "../assets/coop-management/lo-fi-test.webp";
+import CoopManagementScreenshot1 from "../assets/coop-management/screenshot1.webp";
+import CoopManagementScreenshot2 from "../assets/coop-management/screenshot2.webp";
+import CoopManagementScreenshot3 from "../assets/coop-management/screenshot3.webp";
+import CoopManagementScreenshot4 from "../assets/coop-management/screenshot4.webp";
+import CoopManagementScreenshot5 from "../assets/coop-management/screenshot5.webp";
+import CoopManagementUserflow from "../assets/coop-management/user-flow.webp";
+import CoopManagementUserPersona from "../assets/coop-management/user-persona.webp";
+
 import CoopManagement from "../assets/coop-management.webp";
 
 export const uxCases = [
@@ -99,7 +112,7 @@ export const uxCases = [
                         src: PrehabPlusPrioritisationMatrix
                     }
 
-                    
+
                 ]
             },
 
@@ -170,50 +183,144 @@ export const uxCases = [
     },
     {
         slug: "coop-management",
-        title: "Coop Management",
+        title: "Coop Management (Concept)",
+        client: "Coop Danmark",
+        clientLogo: Coop,
         image: CoopManagement,
         summary: [
             {
                 type: "paragraph",
-                text: "summary summary We aimed to develop a more sustainable alternative to Too Good To Go for reducing food waste.",
-
-            },
-            {
-                type: "paragraph",
-                text: "The goal was to create a system that helps businesses manage surplus food without encouraging overconsumption."
+                text: "A web app for Coop supermarkets that enables the easy and sustainable sale of discounted surplus food."
             }
         ],
         problem: [
             {
                 type: "paragraph",
-                text: "Too Good to Go allows businesses to sell surplus food, but has been criticized for its profit-driven model and high fees."
+                text: "Coop had been relying on a third-party provider—an expensive solution—to sell surplus food as “discount bags”."
             },
             {
                 type: "paragraph",
-                text: "Our challenge was creating a solution for B2B clients that could genuinely engage local B2C audiences."
-            }
-        ],
-        conclusion: [
+                text: "However, the process of selling those was time-consuming, costly, and required significant effort."
+            },
             {
                 type: "paragraph",
-                text: "The resulting system helps businesses track and manage surplus more effectively, without encouraging overconsumption."
+                text: "They needed a new system that was easier to manage, more cost-effective, and practical for everyday use."
             }
         ],
         sections: [
             {
-                title: "User Research",
+                title: "Discover (Research)",
                 content: [
-                    { type: "paragraph", text: "We conducted interviews with store managers..." },
-                    { type: "list", items: ["Lack of time", "Lack of tools", "Limited insights"] }
+                    {
+                        type: "paragraph",
+                        text: "We began by researching the third-party provider to understand the existing context. Then, we conducted semi-structured interviews with Coop employees to gain insights into their current workflow and operational challenges."
+                    },
+                    {
+                        type: "paragraph",
+                        text: "Afterwards, we organised all the findings using an affinity diagram to identify patterns."
+                    },
+                    {
+                        type: "image",
+                        src: CoopManagementAffinityDiagram
+                    },
+                    {
+                        type: "paragraph",
+                        text: "After the research, we found out that:"
+                    },
+                    {
+                        type: "paragraph",
+                        text: "Based on the insights from the affinity diagram, we created a user persona to clarify and simplify our understanding of the target user, helping us stay focused on who we were designing the solution for."
+                    },
+                    {
+                        type: "image",
+                        src: CoopManagementUserPersona
+                    },
+                    {
+                        type: "paragraph",
+                        text: "Through this process, we identified key issues:"
+                    },
+                    {
+                        type: "list",
+                        items: [
+                            "Checking expiring/expired food takes a long time to finish, since it is done manually.",
+                            "Employees get frustrated when people reserve discount bags but do not appear on time.",
+                            "The third-party app they were using was slow.",
+                            "They used to have an app where they could sell discount bags, but since the commission fee was quite expensive, they stopped using it."
+                        ]
+                    },
+                    {
+                        type: "paragraph",
+                        text: "Based on the challenges identified, we used ‘How Might We’ questions to generate potential solutions."
+                    },
+                    {
+                        type: "image",
+                        src: CoopManagementHowMightWe
+                    }
                 ]
             },
             {
-                title: "Wireframing",
+                title: "Define (Concept)",
                 content: [
-                    { type: "image", src: "/path/to/wireframe.jpg" },
-                    { type: "paragraph", text: "Early sketches helped define our IA..." }
+                    {
+                        type: "paragraph",
+                        text: "Based on the research and mapping activities, the solution needed to meet the following criteria:"
+                    },
+                    {
+                        type: "list",
+                        items: [
+                            "An inventory management system directly connected to the discount bag sales platform",
+                            "The ability to track who placed an order and when they are scheduled to pick it up",
+                            "Automated reminders to help prevent no-shows as much as possible."
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "Develop (Prototyping and Testing)",
+                content: [
+                    {
+                        type: "paragraph",
+                        text: "Before starting any visual design work, we created a user flow to structure how users would navigate the solution in order to complete their tasks."
+                    },
+                    {
+                        type: "image",
+                        src: CoopManagementUserflow
+                    },
+                    {
+                        type: "paragraph",
+                        text: "Following the user flow, we developed a low-fidelity prototype and conducted think-aloud testing to assess its usability, particularly for first-time users."
+                    },
+                    {
+                        type: "image",
+                        src: CoopManagementLoFi
+                    },
+                    {
+                        type: "image",
+                        src: CoopManagementLoFiTesting
+                    }
+                ]
+            },
+            {
+                title: "Deliver (Finish Product)",
+                content: [
+                    {
+                        type: "screenshots",
+                        items: [
+                            CoopManagementScreenshot1,
+                            CoopManagementScreenshot2,
+                            CoopManagementScreenshot3,
+                            CoopManagementScreenshot4,
+                            CoopManagementScreenshot5
+                        ]
+                    },
+                    {
+                        type: "paragraph",
+                        text: "The final product is a web app that allows Coop employees to easily manage surplus food sales, providing an efficient way to sell discounted items while reducing waste."
+                    }
                 ]
             }
+          
         ]
     }
+
 ]

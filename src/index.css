@@ -2,6 +2,7 @@
   --text: #1C1C1C;
   --text-light: #525252;
   --background: #f5f5f5;
+  --background-dark: #e0e0e0;
   --white: #ffffff;
   --primary: #3D2FFC;
   --primary-hover: #241C96;
@@ -211,11 +212,12 @@ details[open] summary::after {
 }
 
 details:has(summary:hover) {
-  background-color: var(--white);
+  background-color: var(--background-dark);
 }
 
 details section {
-  margin : 0 1rem 1rem 1rem;
+  margin : 0 1rem;
+  padding-bottom: 1rem;
 }
 
 summary:focus {
@@ -225,7 +227,7 @@ summary:focus {
 .client-logo{
     width: 100%;
     max-width: 10rem;
-    margin: 0 auto;
+    margin: 0.5rem auto;
 }
 
 @media (max-width: 568px) {
