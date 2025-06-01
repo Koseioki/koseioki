@@ -9,7 +9,7 @@
 }
 
 .case-card:hover {
-    background-color: var(--white);
+    background-color: var(--background-dark);
     /* box-shadow: var(--drop-shadow); */
 }
 
@@ -18,16 +18,16 @@
     color: var(--text);
 }
 
-.case-card:hover a {
+/* .case-card:hover a {
     text-decoration: none;
-}
+} */
 
 .case-card a:focus {
     outline: none;
     box-shadow: var(--focus-indicator);
 }
 
-.case-card img {
+.case-card-thumbnail {
     width: 100%;
     max-width: 16rem;
 
@@ -51,10 +51,10 @@
 @media (max-width: 568px) {
     .case-card {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
     }
 
-    .case-card img {
-        max-width: 100%;
+    .case-card-thumbnail {
+        /* max-width: 80%; */
     }
 }

@@ -16,7 +16,6 @@ function Footer() {
         </a>
       </div>
 
-
       <footer>
         {/* <hr aria-hidden="true"/> */}
         <h2 className="sr-only">Site footer</h2>

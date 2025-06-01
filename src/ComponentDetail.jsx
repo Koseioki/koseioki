@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import BreadCrumbs from "./components/BreadCrumbs";
 import WarningSection from "./components/WarningSection";
 import './DetailPages.css';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useEffect, useRef } from "react";
 import Icon from './components/Icon.jsx';
 

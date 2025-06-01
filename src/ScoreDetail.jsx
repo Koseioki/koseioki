@@ -1,9 +1,9 @@
 import { scores } from './data/scores.js';
 import { useParams } from "react-router-dom";
 import BreadCrumbs from "./components/BreadCrumbs";
-import WarningSection from './components/WarningSection.jsx';
+// import WarningSection from './components/WarningSection.jsx';
 import './DetailPages.css'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useEffect, useRef } from "react";
 import Icon from './components/Icon.jsx';
 
@@ -28,14 +28,14 @@ function ScoreDetail() {
 
       <main id="main-content">
         <h1 ref={headingRef} tabIndex="-1" className="headings">{score.title}</h1>
-        <WarningSection>
-              <li>Audio content without text alternatives</li>
-              <li>PDF documents without text alternatives</li>
-            </WarningSection>
+        {/* <WarningSection>
+          <li>Audio content without text alternatives</li>
+          <li>PDF documents without text alternatives</li>
+        </WarningSection> */}
 
         <div className="detail-header">
           <div>
-          <h2 className="headings">Details</h2>
+            <h2 className="headings">Details</h2>
             <dl className="paragraph">
               <dt>Composer</dt>
               <dd>{score.composer}</dd>
@@ -48,10 +48,10 @@ function ScoreDetail() {
             </dl>
             <div className="button-container">
               <a href={score.pdf} className="primary-button">
-                <Icon icon="File"/>View Score & Parts
-                </a>
+                <Icon icon="File" />View Score & Parts
+              </a>
               <a href={score.audio} className="secondary-button">
-                <Icon icon="Headphones"/>Listen to Demo</a>
+                <Icon icon="Headphones" />Listen to Demo</a>
             </div>
           </div>
           <div>

@@ -1,5 +1,5 @@
-function SectionRenderer ({ section }) {
-  
+function SectionRenderer({ section }) {
+
   switch (section.type) {
     case "heading": {
       const Tag = `h${section.level}`;
@@ -8,7 +8,15 @@ function SectionRenderer ({ section }) {
     case "paragraph":
       return <p className="paragraph">{section.text}</p>;
     case "image":
-      return <img src={section.src} alt="" />;
+      return <img src={section.src} alt="" aria-hidden="true" />;
+    case "screenshots":
+      return (
+        <div className="product-screenshots">
+          {section.items.map((item, i) => (
+            <img key={i} src={item} className="product-screenshot" alt="" aria-hidden="true"/>
+          ))}
+        </div>
+      );
     case "list":
       return (
         <ul className="bulleted-list">
@@ -17,7 +25,6 @@ function SectionRenderer ({ section }) {
           ))}
         </ul>
       );
-    // Add more cases as needed
     default:
       return null;
   }

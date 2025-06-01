@@ -2,7 +2,7 @@ import './AccessibleWebComponents.css';
 import BreadCrumbs from "./components/BreadCrumbs";
 import ComponentCard from "./components/ComponentCard";
 import {components} from "./data/components";
-import { Helmet } from 'react-helmet';  
+import { Helmet } from 'react-helmet-async';
 import { useEffect, useRef } from "react";
 
 function AccessibleWebComponents() {
