@@ -5,6 +5,7 @@ import BreadCrumbs from './components/BreadCrumbs.jsx';
 import './DetailPages.css';
 import { Helmet } from 'react-helmet';
 import SectionRenderer from './components/SectionRenderer.jsx';
+import WarningSection from './components/WarningSection.jsx';
 
 function CaseDetail() {
   const { slug } = useParams();
@@ -27,12 +28,21 @@ function CaseDetail() {
       <main id="main-content">
         <h1 ref={headingRef} tabIndex="-1" className="headings">{uxCase.title}</h1>
 
+        <WarningSection>
+          <li>Images without text alternatives</li>
+        </WarningSection>
+
         <div className="detail-header">
           <div>
             <h2>Project Summary</h2>
             {uxCase.summary.map((block, i) => (
               <SectionRenderer key={`summary-${i}`} section={block} />
             ))}
+            <img
+              src={uxCase.clientLogo}
+              className="client-logo"
+              alt={`Client: ${uxCase.client}`}
+            />
 
           </div>
           <div>
@@ -49,11 +59,11 @@ function CaseDetail() {
 
         <div>
           {uxCase.sections.map((sec, i) => (
-            <details key={`section-${i}`}>
+            <details className="design-process-details" key={`section-${i}`}>
               <summary>
                 <h3 id={`section-${i}`}>{sec.title}</h3>
               </summary>
-              <section className="detail-content" aria-labelledby={`section-${i}`}>
+              <section aria-labelledby={`section-${i}`}>
                 {sec.content.map((block, j) => (
                   <SectionRenderer key={`block-${i}-${j}`} section={block} />
                 ))}
@@ -62,11 +72,11 @@ function CaseDetail() {
           ))}
         </div>
 
-
+        {/* 
         <h3 className="headings">Conclusion</h3>
         {uxCase.conclusion.map((block, i) => (
           <SectionRenderer key={`conclusion-${i}`} section={block} />
-        ))}
+        ))} */}
 
 
       </main>

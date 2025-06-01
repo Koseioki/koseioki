@@ -27,7 +27,7 @@
     box-shadow: var(--focus-indicator);
 }
 
-.case-card img {
+.case-card-thumbnail {
     width: 100%;
     max-width: 16rem;
 

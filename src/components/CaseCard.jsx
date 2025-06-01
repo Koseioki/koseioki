@@ -18,7 +18,7 @@ function CaseCard({ caseItem }) {
             {/* <hr aria-hidden="true" /> */}
             <div className="case-card" onClick={handleClick}>
     
-                    <img src={caseItem.image} alt="" aria-hidden="true" />
+                    <img src={caseItem.image} className="case-card-thumbnail" alt="" aria-hidden="true" />
           
 
                 <div className="card-text">
@@ -27,9 +27,13 @@ function CaseCard({ caseItem }) {
                             {caseItem.title}
                         </NavLink>
                     </h2>
-                    <p className="paragraph">{caseItem.description}</p>
-                      {/* <NavLink role="presentation" to={`/ux-design-cases/${caseItem.slug}`} className="read-more-link" aria-hidden="true">Read More about the Project →</NavLink>  */}
-                    
+
+                    {caseItem.summary.map((block, i) => (
+                        <p key={`summary-${i}`} className="paragraph">{block.text}</p>
+                    ))}
+                    <img src={caseItem.clientLogo} className="client-logo" alt={`Client: ${caseItem.client}`} />
+
+                
 
                 </div>
             </div>

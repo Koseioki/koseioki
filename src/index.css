@@ -182,10 +182,10 @@ details {
 details:last-child {
   border-bottom: 0.0625rem solid var(--text-light);
 }
-.detail-content {
+/* .detail-content {
   padding: 0 1rem 1rem 1rem;
   margin: 0;
-}
+} */
 
 summary {
   outline: none;
@@ -214,8 +214,18 @@ details:has(summary:hover) {
   background-color: var(--white);
 }
 
+details section {
+  margin : 0 1rem 1rem 1rem;
+}
+
 summary:focus {
   box-shadow: var(--focus-indicator-inset);
+}
+
+.client-logo{
+    width: 100%;
+    max-width: 10rem;
+    margin: 0 auto;
 }
 
 @media (max-width: 568px) {
