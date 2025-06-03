@@ -45,8 +45,17 @@ function ComponentDetail() {
               </a>
             </div>
           </div>
-          <div className="detail-thumbnail-container">
-            <img src={component.image} className="detail-thumbnail" alt="" aria-hidden="true" />
+          <div
+            className="detail-thumbnail-container"
+            onClick={() => window.open(component.demo, "_self")}
+            aria-hidden="true"
+          >
+            <img
+              src={component.image}
+              className="detail-thumbnail"
+              alt=""
+              aria-hidden="true"
+            />
           </div>
         </div>
 

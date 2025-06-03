@@ -1,3 +1,4 @@
+
 function SectionRenderer({ section }) {
 
   switch (section.type) {
@@ -8,12 +9,16 @@ function SectionRenderer({ section }) {
     case "paragraph":
       return <p className="paragraph">{section.text}</p>;
     case "image":
-      return <img src={section.src} alt="" aria-hidden="true" />;
+      return (
+        // <a href={section.src} aria-label="Open image">
+          <img src={section.src} alt="" aria-hidden="true"  className="image-link" />
+        // </a>
+      );
     case "screenshots":
       return (
         <div className="product-screenshots">
           {section.items.map((item, i) => (
-            <img key={i} src={item} className="product-screenshot" alt="" aria-hidden="true"/>
+            <img key={i} src={item} className="product-screenshot" alt="" aria-hidden="true" />
           ))}
         </div>
       );

@@ -55,7 +55,12 @@ function ScoreDetail() {
             </div>
           </div>
           <div>
-            <img src={score.image} alt="" className="detail-score-thumbnail" aria-hidden="true" />
+            <img
+              src={score.image}
+              alt=""
+              className="detail-score-thumbnail"
+              aria-hidden="true"
+              onClick={() => window.open(score.pdf, "_self")} />
           </div>
         </div>
         {/* <hr aria-hidden="true" />

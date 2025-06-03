@@ -191,7 +191,7 @@ details:last-child {
 summary {
   outline: none;
   cursor: pointer;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1rem;
   position: relative;
   padding-left: 2.5rem; /* space for arrow */
   list-style-type: none;
@@ -229,6 +229,20 @@ summary:focus {
     max-width: 10rem;
     margin: 0.5rem auto;
 }
+
+
+/* a:has(.image-link) {
+  outline: none;
+  box-shadow: none;
+
+}
+a:has(.image-link):hover .image-link {
+  filter: brightness(0.9);
+}
+a:has(.image-link):focus .image-link {
+  outline: none;
+  box-shadow: var(--focus-indicator);
+} */
 
 @media (max-width: 568px) {
 

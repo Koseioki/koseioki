@@ -20,6 +20,10 @@
     background-color: var(--white);
     padding: 2rem;
 }
+.detail-thumbnail-container:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
 
 .detail-thumbnail {
     width: 100%;
@@ -27,12 +31,24 @@
     object-fit: contain;
 }
 
+
+
+
 .detail-score-thumbnail {
     width: 100%;
+    /* aspect-ratio: 1/1; */
+    /* object-fit: contain; */
+    background-color: var(--white);
+    padding: 1rem;
     max-width: 15rem;
     display: flex;
     justify-content: center;
     margin: 0 auto;
+}
+
+.detail-score-thumbnail:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
 }
 
 .button-container {
