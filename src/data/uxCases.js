@@ -39,7 +39,7 @@ export const uxCases = [
         summary: [
             {
                 type: "paragraph",
-                text: "I developed a web app that supports colorectal cancer prehabilitation programmes at Region Sjælland and provides an overview of the entire process.",
+                text: "I developed a web app that supports colorectal cancer prehabilitation programmes at Region Sjælland and helps make the entire process manageable during a difficult time in patients’ lives.",
 
             }
         ],
@@ -70,6 +70,10 @@ export const uxCases = [
                         text: "This included gathering insights from the surgeon and prehabilitation coordinator at Region Sjælland, as well as analysing interviews from previous research papers."
                     },
                     {
+                        type: "paragraph",
+                        text: "Additionally, I researched the difficulties older generations in Denmark face when using digital solutions, as typical patients are aged 50 and above."
+                    },
+                    {
                         type: "image",
                         src: PrehabPlusAidpro
                     },
@@ -92,7 +96,8 @@ export const uxCases = [
                             "Lack of support can lead to patients not completing prehabilitation.",
                             "Low health literacy and language barriers are also major factors contributing to non-completion.",
                             "Too many appointments and scattered information create confusion and overwhelm.",
-                            "Exercise is the most important component—once patients start exercising, they gain a sense of autonomy, feel significantly better, and are more likely to complete the program."
+                            "Exercise is the most important component—once patients start exercising, they gain a sense of autonomy, feel significantly better, and are more likely to complete the program.",
+                            "Some patients prefer in-person communication over digital solutions, and some do not own digital devices at all."
                         ]
                     },
                     {
@@ -121,14 +126,26 @@ export const uxCases = [
                 content: [
                     {
                         type: "paragraph",
-                        text: "Based on the research and mapping activities, the solution needed to meet the following criteria:"
+                        text: "Based on the research and mapping activities, the solution would include those features:"
                     },
                     {
                         type: "list",
                         items: [
-                            "Be check-offable to motivate patients to complete their daily tasks",
-                            "Provide a clear overview of the entire schedule and process",
-                            "Enable easy access to support from assigned staff members"
+                            "Check-offable list to motivate patients to complete their daily tasks.",
+                            "Clear overview of the entire schedule and process.",
+                            "Easy access to support from assigned staff members."
+                        ]
+                    },
+                    {
+                        type: "paragraph",
+                        text: "The solution needed to meet the following criteria:"
+                    },
+                    {
+                        type: "list",
+                        items: [
+                            "It had to remain intuitive without relying on digital conventions, using familiar, real-life elements such as 3D buttons, calendars, and notepads instead of modern flat style.",
+                            "It had to be understandable and perceivable, combining images, text, video, and colours to support different levels of health literacy.",
+                            "It had to be accessible, as guidelines from the WAI (Web Accessibility Initiative) emphasise that accessible applications benefit older users as well"
                         ]
                     }
                 ]
@@ -138,7 +155,7 @@ export const uxCases = [
                 content: [
                     {
                         type: "paragraph",
-                        text: "Before starting any visual design work, I created a user flow to structure how users would navigate the solution in order to complete their tasks."
+                        text: "Before starting any visual design work, I created a user flow based on the list of requirements, to structure how users would navigate the solution in order to complete their tasks."
                     },
                     {
                         type: "image",
@@ -146,7 +163,7 @@ export const uxCases = [
                     },
                     {
                         type: "paragraph",
-                        text: "Following the user flow, I developed a low-fidelity prototype and conducted think-aloud testing to assess its usability, particularly for first-time users."
+                        text: "Based on user flow, I developed a Lo-Fi prototype and conducted think-aloud testing to assess its usability, particularly for first-time users."
                     },
                     {
                         type: "image",
@@ -155,6 +172,10 @@ export const uxCases = [
                     {
                         type: "image",
                         src: PrehabPlusLoFiTesting
+                    },
+                    {
+                        type: "paragraph",
+                        text: "I identified several issues through the testing results and addressed them in the next iteration of the prototype."
                     }
                 ]
             },
@@ -174,6 +195,10 @@ export const uxCases = [
                     {
                         type: "paragraph",
                         text: "The final product is a web app that provides an overview of the entire prehabilitation process, allowing patients to check off tasks as they complete them. It also includes a chat feature for easy access to support from assigned staff members."
+                    },
+                    {
+                        type: "paragraph",
+                        text: "The interface uses real-life elements to feel familiar across generations, and combines images, text, video, and colours to enhance understanding. The app is also designed with accessibility in mind, ensuring it can be used effectively by older users and those with varying levels of digital literacy."
                     }
 
                 ]
@@ -190,7 +215,7 @@ export const uxCases = [
         summary: [
             {
                 type: "paragraph",
-                text: "A web app for Coop supermarkets that enables the easy and sustainable sale of discounted surplus food."
+                text: "A web app for Coop supermarkets that manages the sale of discounted bags of surplus food, which was eventually integrated with the inventory management system."
             }
         ],
         problem: [
@@ -204,7 +229,7 @@ export const uxCases = [
             },
             {
                 type: "paragraph",
-                text: "They needed a new system that was easier to manage, more cost-effective, and practical for everyday use."
+                text: "They needed a new system that was easier to manage and more cost- and time-efficient."
             }
         ],
         sections: [
@@ -213,7 +238,7 @@ export const uxCases = [
                 content: [
                     {
                         type: "paragraph",
-                        text: "We began by researching the third-party provider to understand the existing context. Then, we conducted semi-structured interviews with Coop employees to gain insights into their current workflow and operational challenges."
+                        text: "We began by researching the third-party provider to understand the existing context. Then, we conducted semi-structured interviews with Coop employees, focusing on their current workflow and operational challenges. Rather than asking directly about their desired features, we aimed to deeply understand their day-to-day context before proposing any solutions."
                     },
                     {
                         type: "paragraph",
@@ -222,10 +247,6 @@ export const uxCases = [
                     {
                         type: "image",
                         src: CoopManagementAffinityDiagram
-                    },
-                    {
-                        type: "paragraph",
-                        text: "After the research, we found out that:"
                     },
                     {
                         type: "paragraph",
@@ -263,7 +284,7 @@ export const uxCases = [
                 content: [
                     {
                         type: "paragraph",
-                        text: "Based on the research and mapping activities, the solution needed to meet the following criteria:"
+                        text: "Based on the research and mapping activities, the solution would include those features:"
                     },
                     {
                         type: "list",
@@ -280,7 +301,7 @@ export const uxCases = [
                 content: [
                     {
                         type: "paragraph",
-                        text: "Before starting any visual design work, we created a user flow to structure how users would navigate the solution in order to complete their tasks."
+                        text: "Before starting any visual design work, I created a user flow based on the list of requirements, to structure how users would navigate the solution in order to complete their tasks."
                     },
                     {
                         type: "image",
@@ -289,6 +310,10 @@ export const uxCases = [
                     {
                         type: "paragraph",
                         text: "Following the user flow, we developed a low-fidelity prototype and conducted think-aloud testing to assess its usability, particularly for first-time users."
+                    },
+                    {
+                        type: "paragraph",
+                        text: "I identified several issues through the testing results and addressed them in the next iteration of the prototype."
                     },
                     {
                         type: "image",
@@ -315,7 +340,7 @@ export const uxCases = [
                     },
                     {
                         type: "paragraph",
-                        text: "The final product is a web app that allows Coop employees to easily manage surplus food sales, providing an efficient way to sell discounted items while reducing waste."
+                        text: "We created a solution that allows Coop employees to easily manage and post discounted food bags, directly integrated with the inventory management system. The app also sends automated reminders to customers who have reserved a bag, helping reduce no-shows and food waste."
                     }
                 ]
             }

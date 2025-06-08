@@ -20,7 +20,7 @@ function Profile() {
         {/* <h1 ref={headingRef} tabIndex="-1" className="headings">Kosei Oki</h1> */}
         <h1 className="headings">Kosei Oki</h1>
         <p>I’m an inclusive digital product designer, intersectionalist, percussionist.</p>
-        <p>Certified Professional in Accessibility Core Competencies (CPACC).</p>
+        <p><a className="plain-link" href="https://www.credly.com/badges/d96c149c-63c1-4764-ba03-c04703e8abbd/linked_in_profile">IAAP Certified Professionals in Accessibility Core Competencies (CPACC).</a></p>
         <p>I also like fruits.</p>
         <h2 className="sr-only">Social Media</h2>
         <ul className="link-list paragraph">
