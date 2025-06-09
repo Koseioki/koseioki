@@ -34,6 +34,10 @@ function Profile() {
               <Icon icon="LinkedIn" />LinkedIn
             </a>
           </li>
+          <li>
+            <a className="plain-link" href="https://github.com/Koseioki">
+            <Icon icon="GithubBlack" />GitHub</a>
+          </li>
         </ul>
       </div>
     </section>

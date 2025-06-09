@@ -1,11 +1,12 @@
-import Email from '../assets/email.svg';
-import Github from '../assets/github.svg';
-import LinkedIn from '../assets/linkedin.svg';
-import File from '../assets/file.svg';
-import Headphones from '../assets/headphones.svg';
-import Instagram from '../assets/instagram.svg';
-import Phone from '../assets/phone.svg';
-import Warning from '../assets/warning.svg';
+import Email from '../assets/icons/email.svg';
+import Github from '../assets/icons/github.svg';
+import GithubBlack from '../assets/icons/github-black.svg';
+import LinkedIn from '../assets/icons/linkedin.svg';
+import File from '../assets/icons/file.svg';
+import Headphones from '../assets/icons/headphones.svg';
+import Instagram from '../assets/icons/instagram.svg';
+import Phone from '../assets/icons/phone.svg';
+import Warning from '../assets/icons/warning.svg';
 import './Icon.css';
 
 function Icon({ icon }) {
@@ -17,6 +18,10 @@ function Icon({ icon }) {
     }
     if (icon === 'Github') {
         icon = Github;
+    }
+    if (icon === 'GithubBlack'){
+        icon = GithubBlack;
+
     }
     if (icon === 'LinkedIn') {
         icon = LinkedIn;
