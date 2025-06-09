@@ -1,0 +1,68 @@
+.accordion {
+    max-width: 40rem;
+    border-top: 0.0625rem solid var(--text-light);
+    /* box-sizing: border-box; */
+    /* margin: 0 auto; */
+}
+
+.accordion:last-child {
+    border-bottom: 0.0625rem solid var(--text-light);
+}
+
+
+
+.accordion button {
+    width: 100%;
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text);
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.accordion:has(button:hover) {
+    background-color: var(--background-dark);
+}
+
+.accordion button span::after {
+    content: "▼";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text);
+    transition: transform 0.2s;
+}
+
+.accordion button[aria-expanded="true"] span::after {
+    content: "▲";
+}
+
+.accordion button:focus {
+    box-shadow: var(--focus-indicator-inset);
+}
+
+.accordion-content {
+    margin: 0 1rem;
+    padding-bottom: 1rem;
+}
+
+.accordion-content img {
+    width: 100%;
+    max-width: 40rem;
+    margin: 1rem 0;
+}
+
+.accordion-content .product-screenshots {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { uxCases } from './data/uxCases.js';
 import { useParams } from 'react-router-dom';
 import BreadCrumbs from './components/BreadCrumbs.jsx';
@@ -6,17 +6,28 @@ import './DetailPages.css';
 import { Helmet } from 'react-helmet-async';
 import SectionRenderer from './components/SectionRenderer.jsx';
 import WarningSection from './components/WarningSection.jsx';
+import AccordionSection from './components/AccordionSection.jsx';
 
 function CaseDetail() {
   const { slug } = useParams();
   const uxCase = uxCases.find(p => p.slug === slug);
 
   const headingRef = useRef(null);
+  const [openSections, setOpenSections] = useState([]);
+
   useEffect(() => {
     if (headingRef.current) {
       headingRef.current.focus();
     }
   }, []);
+
+  const handleAccordionToggle = (idx) => {
+    setOpenSections(prev =>
+      prev.includes(idx)
+        ? prev.filter(i => i !== idx)
+        : [...prev, idx]
+    );
+  };
 
   return (
     <>
@@ -30,7 +41,7 @@ function CaseDetail() {
 
         <WarningSection>
           <li>Images without text alternatives</li>
-          <li>Some screen readers may not correctly announce <code>&lt;details&gt;</code> elements</li>
+          {/* <li>Some screen readers may not correctly announce <code>&lt;details&gt;</code> elements</li> */}
         </WarningSection>
 
         <div className="detail-header">
@@ -60,25 +71,17 @@ function CaseDetail() {
 
         <h2 className="headings">Design Process</h2>
 
-
-
-
-
-        <div>
+        {/* <div> */}
           {uxCase.sections.map((sec, i) => (
-            <details className="design-process-details" key={`section-${i}`}>
-              <summary>
-                <h3 id={`section-${i}`}>{sec.title}</h3>
-                <span aria-hidden="true"></span>
-              </summary>
-              <section aria-labelledby={`section-${i}`}>
-                {sec.content.map((block, j) => (
-                  <SectionRenderer key={`block-${i}-${j}`} section={block} />
-                ))}
-              </section>
-            </details>
+            <AccordionSection
+              key={`section-${i}`}
+              section={sec}
+              index={i}
+              open={openSections.includes(i)}
+              onToggle={handleAccordionToggle}
+            />
           ))}
-        </div>
+        {/* </div> */}
 
 
       </main>

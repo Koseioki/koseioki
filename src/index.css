@@ -187,53 +187,7 @@ a:focus {
 }
 
 
-details {
-  max-width: 40rem;
-  border-top: 0.0625rem solid var(--text-light);
-}
-details:last-child {
-  border-bottom: 0.0625rem solid var(--text-light);
-}
-/* .detail-content {
-  padding: 0 1rem 1rem 1rem;
-  margin: 0;
-} */
 
-summary {
-  outline: none;
-  cursor: pointer;
-  padding: 1.5rem 1rem;
-  position: relative;
-  padding-left: 2.5rem; /* space for arrow */
-  list-style-type: none;
-}
-
-summary span::after {
-  content: "▼";
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text);
-  transition: transform 0.2s;
-}
-
-details[open] summary span::after {
-  content: "▲";
-}
-
-details:has(summary:hover) {
-  background-color: var(--background-dark);
-}
-
-details section {
-  margin : 0 1rem;
-  padding-bottom: 1rem;
-}
-
-summary:focus {
-  box-shadow: var(--focus-indicator-inset);
-}
 
 .client-logo{
     width: 100%;
