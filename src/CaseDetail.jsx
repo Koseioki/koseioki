@@ -30,6 +30,7 @@ function CaseDetail() {
 
         <WarningSection>
           <li>Images without text alternatives</li>
+          <li>Some screen readers may not correctly announce <code>&lt;details&gt;</code> elements</li>
         </WarningSection>
 
         <div className="detail-header">
