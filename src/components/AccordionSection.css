@@ -51,7 +51,10 @@
 
 .accordion-content {
     margin: 0 1rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
 }
 
 .accordion-content img {
@@ -65,4 +68,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+}
+
+
+
+.accordion-content.open {
+    /* No need to set max-height here, handled inline */
+    padding-bottom:1rem;
 }
