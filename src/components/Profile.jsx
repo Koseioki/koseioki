@@ -24,11 +24,7 @@ function Profile() {
         <p>I also like fruits.</p>
         <h2 className="sr-only">Social Media</h2>
         <ul className="link-list paragraph">
-          <li>
-            <a className="plain-link" href="https://www.instagram.com/koseioki1225/">
-              <Icon icon="Instagram" />Instagram
-            </a>
-          </li>
+
           <li>
             <a className="plain-link" href="https://www.linkedin.com/in/kosei-oki-340129234/">
               <Icon icon="LinkedIn" />LinkedIn
@@ -37,6 +33,11 @@ function Profile() {
           <li>
             <a className="plain-link" href="https://github.com/Koseioki">
             <Icon icon="GithubBlack" />GitHub</a>
+          </li>
+                    <li>
+            <a className="plain-link" href="https://www.instagram.com/koseioki1225/">
+              <Icon icon="Instagram" />Instagram
+            </a>
           </li>
         </ul>
       </div>
