@@ -42,6 +42,7 @@
     color: var(--text);
     position: relative;
     padding-left: 4rem;
+    text-align: left;
 }
 
 /* .accordion:has(button:hover), */
