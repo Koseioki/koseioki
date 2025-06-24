@@ -17,13 +17,13 @@ footer {
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    margin: 2rem auto;
+    margin: 4rem auto 3rem auto;
     max-width: var(--page-width);
     padding: 0 1rem;
 }
 
 .back-to-top-container a{
-    color: var(--red);
+    color: var(--text);
 }
 
 /* @media (max-width: 568px) {
