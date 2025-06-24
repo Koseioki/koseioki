@@ -22,6 +22,10 @@ footer {
     padding: 0 1rem;
 }
 
+.back-to-top-container a{
+    color: var(--red);
+}
+
 /* @media (max-width: 568px) {
     footer {
         text-align: center;

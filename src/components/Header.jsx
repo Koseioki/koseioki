@@ -23,29 +23,29 @@ function Header() {
   return (
 
 
-    
+
     <>
-    <div className="skip-to-content">
-      <a href="#main-content" >Skip to content</a>
+      <div className="skip-to-content">
+        <a href="#main-content" >Skip to content</a>
       </div>
 
-    <header>
-      <div className="header-content">
-      <div>
-        <NavLink to="/" className="site-title">Kosei Oki</NavLink>
-      </div>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li className="nav-item">
-            <NavLink to="/#works" onClick={(e) => handleClick(e, '#works')}>Works</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/#contact" onClick={(e) => handleClick(e, '#contact')}>Contact</NavLink>
-          </li>
-        </ul>
-      </nav>
-</div>
-    </header>
+      <header>
+        <div className="header-content">
+          <div className="site-title">
+            <NavLink to="/">Kosei Oki</NavLink>
+          </div>
+          <nav className="main-nav" aria-label="Main navigation">
+            <ul>
+              <li className="nav-item">
+                <NavLink to="/#works" onClick={(e) => handleClick(e, '#works')}>Works</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/#contact" onClick={(e) => handleClick(e, '#contact')}>Contact</NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </>
   );
 }

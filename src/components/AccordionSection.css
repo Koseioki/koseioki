@@ -41,7 +41,7 @@
     font-weight: bold;
     color: var(--text);
     position: relative;
-    padding-left: 2.5rem;
+    padding-left: 4rem;
 }
 
 /* .accordion:has(button:hover), */
@@ -52,10 +52,12 @@
 }
 
 .accordion button span::after {
+    font-weight: normal;
     content: "+";
     position: absolute;
-    left: 1rem;
+    left: 2rem;
     top: 50%;
+    /* top: 1.5rem; */
     transform: translateY(-50%);
     color: var(--primary);
     transition: transform 0.2s;
@@ -63,7 +65,7 @@
 }
 
 .accordion button[aria-expanded="true"] span::after {
-    content: "-";
+    content: "−";
 }
 
 .accordion button:focus {

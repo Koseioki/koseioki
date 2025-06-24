@@ -8,8 +8,16 @@
     align-items: stretch;
 }
 
-/* mobile devices */
-@media (max-width: 568px) {
+/* smaller devices  */
+
+@media (max-width: 768px) {
+    .work-card-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
     .work-card-list {
         grid-template-columns: 1fr;
         gap: 1rem;

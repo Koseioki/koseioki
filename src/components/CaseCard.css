@@ -19,13 +19,15 @@
 }
 
 .case-card a.headings {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--text);
+    
 }
 
-/* .case-card:hover a {
-    text-decoration: none;
-} */
+.case-card:hover a {
+    text-decoration: underline;
+    color: var(--primary);
+}
 
 .case-card a:focus {
     outline: none;

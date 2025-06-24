@@ -20,11 +20,11 @@ function WorkCard({ image, title, link, description }) {
     <li className="card-wrapper" onClick={handleClick}>
       <img src={image} alt="" aria-hidden="true" />
       <div className="card-text">
-        <h4>
+        <h3 className="headings">
           <NavLink to={link} className="card-title">
             {title}
           </NavLink>
-        </h4>
+        </h3>
         <p>{description}</p>
       </div>
     </li>

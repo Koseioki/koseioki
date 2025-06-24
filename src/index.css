@@ -228,10 +228,9 @@ a:has(.image-link):focus .image-link {
 } */
 
 @media (max-width: 568px) {
-
-  html,
-  body {
+/* 
+  main{
     padding: 0 0.5rem;
-  }
+  } */
 
 }

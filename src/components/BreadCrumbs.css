@@ -2,6 +2,7 @@
     max-width: var(--page-width);
     margin: 2rem auto;
     color: var(--red);;
+    padding: 0 1rem;
 }
 
 .breadcrumbs a {

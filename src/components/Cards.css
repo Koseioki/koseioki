@@ -28,6 +28,7 @@ a.card-title{
     font-weight: bold;
     line-height: 1.5;
     margin: 0;
+    /* margin-bottom: 1rem; */
     padding: 0;
     /* margin: 1rem; */
 }
@@ -39,6 +40,7 @@ a.card-title{
 a.card-title:focus{
     text-decoration: underline;
     box-shadow: none;
+    color: var(--primary);
 }
 
 .card-wrapper:has(a.card-title:focus){
@@ -47,6 +49,7 @@ a.card-title:focus{
 
 .card-wrapper:hover a.card-title{
     text-decoration: underline;
+    color: var(--primary);
 }
 
 
