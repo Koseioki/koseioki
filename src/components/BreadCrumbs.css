@@ -1,3 +1,14 @@
+.breadcrumbs {
+    max-width: var(--page-width);
+    margin: 2rem auto;
+    color: var(--red);;
+}
+
+.breadcrumbs a {
+    color: var(--red);
+}
+
+
 .breadcrumbs ol{
     display: flex;
     flex-wrap: wrap;
@@ -10,5 +21,5 @@
 }
 
 .breadcrumbs-last{
-    font-weight: bold;
+    /* font-weight: bold; */
 }

@@ -4,7 +4,7 @@
     border: var(--warning-dark) 0.0625rem solid;
     border-radius: 1rem;
     padding: 1.5rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     color: var(--warning-dark);
 }
 .warning-section p{

@@ -8,7 +8,8 @@
 }
 
 .card-wrapper:hover{
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    background-color: var(--background-dark);
     cursor: 
     pointer;
 }

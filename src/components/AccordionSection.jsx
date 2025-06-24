@@ -21,7 +21,6 @@ function AccordionSection({ section, index, open, onToggle }) {
           aria-expanded={open}
           aria-controls={`section-content-${index}`}
           onClick={() => onToggle(index)}
-          className="accordion-btn"
         ><span aria-hidden="true"></span>
           {section.title}
         </button>

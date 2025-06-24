@@ -7,6 +7,8 @@ import { Helmet } from 'react-helmet-async';
 import SectionRenderer from './components/SectionRenderer.jsx';
 import WarningSection from './components/WarningSection.jsx';
 import AccordionSection from './components/AccordionSection.jsx';
+import './components/AccordionSection.css';
+
 
 function CaseDetail() {
   const { slug } = useParams();
@@ -71,7 +73,7 @@ function CaseDetail() {
 
         <h2 className="headings">Design Process</h2>
 
-        {/* <div> */}
+        <div className="accordion-container">
           {uxCase.sections.map((sec, i) => (
             <AccordionSection
               key={`section-${i}`}
@@ -81,7 +83,7 @@ function CaseDetail() {
               onToggle={handleAccordionToggle}
             />
           ))}
-        {/* </div> */}
+        </div>
 
 
       </main>

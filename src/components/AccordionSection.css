@@ -1,12 +1,27 @@
-.accordion {
+.accordion-container {
+
+    border-radius: 1rem;
+    box-shadow: var(--drop-shadow);
+    /* border:1rem solid var(--text-light); */
     max-width: 40rem;
-    border-top: 0.0625rem solid var(--text-light);
+    background-color: var(--white);
+
+}
+
+.accordion {
+    /* border-top: 0.0625rem solid var(--text-light); */
+    border-bottom: 0.0625rem solid var(--text-light);
+    /* background-color: var(--white); */
+    /* border-radius: 0.5rem; */
+    /* box-shadow: var(--drop-shadow); */
+    /* margin: 1rem auto; */
     /* box-sizing: border-box; */
     /* margin: 0 auto; */
 }
 
 .accordion:last-child {
-    border-bottom: 0.0625rem solid var(--text-light);
+    /* border-bottom: 0.0625rem solid var(--text-light); */
+    border: none;
 }
 
 
@@ -16,10 +31,12 @@
     box-shadow: none;
     background-color: transparent;
     border: none;
+    /* border: 0.0625rem solid var(--text); */
+    /* border-radius: 1rem; */
     outline: none;
     display: flex;
     cursor: pointer;
-    padding: 1.5rem 1rem;
+    padding: 2rem;
     font-size: 1rem;
     font-weight: bold;
     color: var(--text);
@@ -27,22 +44,26 @@
     padding-left: 2.5rem;
 }
 
-.accordion:has(button:hover) {
-    background-color: var(--background-dark);
+/* .accordion:has(button:hover), */
+.accordion button:hover {
+    color: var(--primary);
+    /* background-color: var(--background-dark); */
+    /* border-radius: 1rem 1rem 0 0    ; */
 }
 
 .accordion button span::after {
-    content: "▼";
+    content: "+";
     position: absolute;
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--text);
+    color: var(--primary);
     transition: transform 0.2s;
+    font-size: 1.5rem;
 }
 
 .accordion button[aria-expanded="true"] span::after {
-    content: "▲";
+    content: "-";
 }
 
 .accordion button:focus {
@@ -50,7 +71,7 @@
 }
 
 .accordion-content {
-    margin: 0 1rem;
+    margin: 0 2rem;
     /* padding-bottom: 1rem; */
     overflow: hidden;
     max-height: 0;
@@ -60,7 +81,7 @@
 .accordion-content img {
     width: 100%;
     max-width: 40rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .accordion-content .product-screenshots {
@@ -74,5 +95,5 @@
 
 .accordion-content.open {
     /* No need to set max-height here, handled inline */
-    padding-bottom:1rem;
+    padding-bottom: 2rem;
 }

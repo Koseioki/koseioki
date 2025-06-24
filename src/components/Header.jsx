@@ -30,6 +30,7 @@ function Header() {
       </div>
 
     <header>
+      <div className="header-content">
       <div>
         <NavLink to="/" className="site-title">Kosei Oki</NavLink>
       </div>
@@ -43,7 +44,7 @@ function Header() {
           </li>
         </ul>
       </nav>
-
+</div>
     </header>
     </>
   );
