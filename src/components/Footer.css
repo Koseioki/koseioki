@@ -1,7 +1,7 @@
 footer {
     background-color: var(--primary);
     margin-top: 2rem;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .footer-content {
