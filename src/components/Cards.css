@@ -82,9 +82,13 @@ a.card-title:focus{
 
 /* ----- score card (grid) ----- */
 .score-card img {
-    aspect-ratio: 3/2;
+    aspect-ratio: 4/5;
     object-fit: cover;
     object-position: top;
+}
+
+.score-card .card-text{
+    margin-top: 0.5rem;
 }
 .score-card h2,
 .score-card a{

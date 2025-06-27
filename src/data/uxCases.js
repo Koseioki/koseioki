@@ -1,6 +1,7 @@
 import PrehabPlus from "../assets/prehab-plus/prehab-plus.webp";
 import PrehabPlusAidpro from "../assets/prehab-plus/aidpro.webp";
 import PrehabPlusAffinityDiagram from "../assets/prehab-plus/affinity-diagram.webp";
+import PrehabPlusExperienceMapping from "../assets/prehab-plus/experience-mapping.webp";
 import PrehabPlusHowMightWe from "../assets/prehab-plus/how-might-we.webp";
 import PrehabPlusLoFi from "../assets/prehab-plus/lo-fi.webp";
 import PrehabPlusLoFiTesting from "../assets/prehab-plus/lo-fi-test.webp";
@@ -84,6 +85,18 @@ export const uxCases = [
                     {
                         type: "image",
                         src: PrehabPlusAffinityDiagram
+                    },
+                    {
+                        type: "paragraph",
+                        text: "I also created an Experience Map to both organise all the findings chronologically and identify the users’ pains and gains."
+                    },
+                    {
+                        type: "paragraph",
+                        text: "However, due to a lack of input—especially in the “Feeling” section—I decided to leave it incomplete."
+                    },
+                    {
+                        type: "image",
+                        src: PrehabPlusExperienceMapping
                     },
                     {
                         type: "paragraph",

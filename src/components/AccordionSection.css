@@ -71,6 +71,8 @@
 
 .accordion button:focus {
     box-shadow: var(--focus-indicator-inset);
+    /* color: var(--primary); */
+
 }
 
 .accordion-content {

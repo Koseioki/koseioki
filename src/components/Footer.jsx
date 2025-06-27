@@ -19,9 +19,27 @@ function Footer() {
       <footer>
         <div className="footer-content">
 
-          {/* <hr aria-hidden="true"/> */}
           <h2 className="sr-only">Site footer</h2>
           <p>© Kosei Oki 2025 - All rights reserved</p>
+          <ul className="footer-links">
+            <li>
+              <a href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkeIn</a>
+              </li>
+            <li>
+              <a href="https://github.com/Koseioki?tab=repositories">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/koseioki1225/">Instagram</a>
+            </li>
+            <li>
+              <a href="tel:+45 9196 4325">+45 9196 4325</a>
+            </li>
+            <li>
+              <a href="mailto:koseioki1225@gmail.com">
+                koseioki1225@gmail.com
+              </a>
+            </li>
+          </ul>
     </div>
           </footer>
 

@@ -10,7 +10,6 @@
     border-radius: 1rem;
     box-shadow: var(--drop-shadow);
 
-
 }
 
 .case-card:hover {
@@ -32,6 +31,8 @@
 .case-card a:focus {
     outline: none;
     box-shadow: var(--focus-indicator);
+        text-decoration: underline;
+    color: var(--primary);
 }
 
 .case-card-thumbnail {

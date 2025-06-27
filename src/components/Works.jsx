@@ -14,19 +14,19 @@ function Works() {
         <h2 id="works" tabIndex={-1} className="headings" >Works</h2>
         {/* <h3 className="headings">Digital Products</h3> */}
         <ul className="work-card-list">
-
-          <WorkCard
-            link="/accessible-web-components"
-            title="Accessible Web Components"
-            image={AccessibleComponents}
-            description="At Bankdata, I developed accessible web components for local banks to use on their websites."
-          />
           <WorkCard
             link="/ux-design-cases"
             title="UX Design Cases"
             image={UXCases}
             description="I have worked on UX cases, focusing on contextual understanding and inclusive design."
           />
+          <WorkCard
+            link="/accessible-web-components"
+            title="Accessible Web Components"
+            image={AccessibleComponents}
+            description="At Bankdata, I developed accessible web components for local banks to use on their websites."
+          />
+
           <WorkCard
             link="/concert-band-scores"
             title="Concert Band Scores"

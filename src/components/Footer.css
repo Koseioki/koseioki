@@ -8,8 +8,12 @@ footer {
     max-width: var(--page-width);
     margin: 0 auto;
     padding: 0 1rem;
-    text-align: center;
+    /* text-align: center; */
     color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem  ;
 
 }
 
@@ -26,6 +30,21 @@ footer {
     color: var(--text);
 }
 
+.footer-links {
+    /* margin-top: 1rem; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+.footer-links a {
+    color: var(--white);
+    text-decoration: underline;
+}
+.footer-links a:hover {
+    text-decoration: none;
+}
 /* @media (max-width: 568px) {
     footer {
         text-align: center;
