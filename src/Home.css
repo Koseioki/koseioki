@@ -1,7 +1,7 @@
 .work-card-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -13,13 +13,13 @@
 @media (max-width: 768px) {
     .work-card-list {
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        /* gap: 1rem; */
     }
 }
 
 @media (max-width: 480px) {
     .work-card-list {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        /* gap: 1rem; */
     }
 }
