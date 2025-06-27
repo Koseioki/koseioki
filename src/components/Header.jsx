@@ -26,7 +26,26 @@ function Header() {
 
     <>
       <div className="skip-to-content">
-        <a href="#main-content" >Skip to content</a>
+        <a 
+          href="#" 
+          onClick={e => {
+            e.preventDefault();
+            const h1 = document.querySelector('h1');
+            if (h1) {
+              h1.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+              });
+              setTimeout(() => {
+                h1.setAttribute('tabindex', '-1');
+                h1.focus();
+              }, 300);
+            }
+          }}
+        >
+          Skip to content
+        </a>
       </div>
 
       <header>

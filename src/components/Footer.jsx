@@ -4,12 +4,23 @@ function Footer() {
     <>
       <div className="back-to-top-container">
         <a
-          href="#main-content"
+          href="#"
           className="plain-link"
           onClick={e => {
             e.preventDefault();
-            const el = document.getElementById('main-content');
-            if (el) el.scrollIntoView({ behavior: 'smooth' });
+            const h1 = document.querySelector('h1');
+            if (h1) {
+              h1.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+              });
+              // Set focus after scroll completes
+              setTimeout(() => {
+                h1.setAttribute('tabindex', '-1');
+                h1.focus();
+              }, 300);
+            }
           }}
         >
           <span aria-hidden="true">↑ </span>Back to Top
