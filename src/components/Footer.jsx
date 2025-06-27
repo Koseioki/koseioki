@@ -34,7 +34,7 @@ function Footer() {
           <p>© Kosei Oki 2025 - All rights reserved</p>
           <ul className="footer-links">
             <li>
-              <a href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkeIn</a>
+              <a href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkedIn</a>
               </li>
             <li>
               <a href="https://github.com/Koseioki?tab=repositories">GitHub</a>
