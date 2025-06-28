@@ -100,6 +100,14 @@ export const uxCases = [
                     },
                     {
                         type: "paragraph",
+                        text: "I didn’t create a user persona, which is often used to define the main users, because this approach tends to highlight only the “best candidate” for solutions."
+                    },
+                    {
+                        type: "paragraph",
+                        text: "In other words, it can overlook the diversity of people and situations, which goes directly against the goals of this solution."
+                    },
+                    {
+                        type: "paragraph",
                         text: "After the research, I found out that:"
                     }
                     ,
