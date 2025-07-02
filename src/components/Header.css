@@ -55,7 +55,6 @@ header a:focus {
     color: var(--text);
     text-decoration: none;
     padding: 1rem 1rem;
-    font-family: "Roboto Slab", sans-serif;
 }
 
 .site-title a:hover {

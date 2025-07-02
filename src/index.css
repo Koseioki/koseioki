@@ -13,25 +13,27 @@
   --warning-dark: #B20000;
   --focus-indicator: 0 0 0 0.125rem var(--white), 0 0 0 0.25rem var(--blue);
   --focus-indicator-inset: inset 0 0 0 0.125rem var(--blue), inset 0 0 0 0.25rem var(--white);
-  --drop-shadow: 0 0 1rem rgba(26, 26, 26, 0.2);
+  --drop-shadow: 0 0 0.125rem rgba(26, 26, 26, 0.5);
   --page-width: 60rem;
 
 }
 
-html{
-background-color: var(--yellow);
+html {
+  background-color: var(--yellow);
 }
-.background{
-      background-color: var(--background);
 
+.background {
+  background-color: var(--background);
+  background-image: radial-gradient(var(--text-light) 0.0625rem, transparent 0);
+  background-size: 1.25rem 1.25rem;
 }
+
 html,
 body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   color: var(--text);
   margin: 0 auto;
-    /* padding: 0; */
   line-height: 1.5;
 
 }
@@ -73,7 +75,8 @@ section {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.site-title a {
   font-family: "Roboto Slab", sans-serif;
 
 }
