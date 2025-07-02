@@ -1,7 +1,6 @@
 .skip-to-content {
     position: absolute;
     top: -10rem;
-    text-align: center;
 
 }
 
@@ -13,6 +12,9 @@
 }
 
 .skip-to-content a {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
     box-shadow: none;
     text-decoration: none;
     color: var(--primary);
