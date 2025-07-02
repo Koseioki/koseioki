@@ -18,6 +18,11 @@
     box-shadow: var(--drop-shadow);
 }
 
+.pronunciation{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
 /* mobile devices */
 @media (max-width: 568px) {
     #profile{
