@@ -32,7 +32,7 @@ function Profile() {
           </li>
           <li>
             <a className="plain-link" href="https://github.com/Koseioki">
-            <Icon icon="GithubBlack" />GitHub</a>
+            <Icon icon="Github"/>GitHub</a>
           </li>
                     <li>
             <a className="plain-link" href="https://www.instagram.com/koseioki1225/">

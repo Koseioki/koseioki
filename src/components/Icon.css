@@ -1,11 +1,8 @@
-.icon{
+.icon {
     height: 1rem;
-    width: auto;
+    width: 1rem;
     display: inline-block;
     vertical-align: -0.125rem;
-    /* margin-left: 0.5rem; */
     margin-right: 0.5rem;
-}
-.plain-link .icon{
-  fill: var(--text);
+    flex-shrink: 0;
 }
