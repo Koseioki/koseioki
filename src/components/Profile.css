@@ -18,9 +18,14 @@
     box-shadow: var(--drop-shadow);
 }
 
-.pronunciation{
-    font-size: 1.5rem;
-    font-weight: normal;
+.name-and-pronunciation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    /* align-items: flex-end; */
+    gap: 0.5rem;
+
 }
 
 /* mobile devices */

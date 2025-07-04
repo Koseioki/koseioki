@@ -182,7 +182,8 @@ a.plain-link:hover {
   text-decoration: none;
 }
 
-a:focus {
+a:focus,
+button:focus {
   outline: none;
   box-shadow: var(--focus-indicator);
 }
@@ -196,6 +197,7 @@ a:focus {
   font-weight: bold;
   display: inline-block;
   box-shadow: var(--drop-shadow);
+  cursor: pointer;
 }
 
 .primary-button:hover {
@@ -212,6 +214,7 @@ a:focus {
   font-weight: bold;
   display: inline-block;
   box-shadow: var(--drop-shadow);
+  cursor: pointer;
 }
 
 .secondary-button:hover {

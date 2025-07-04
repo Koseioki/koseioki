@@ -1,6 +1,7 @@
 import Icon from './Icon.jsx';
 import Kosei from '../assets/kosei.webp';
 import './Profile.css';
+import Pronunciation from './Pronunciation.jsx';
 // import { useEffect, useRef } from 'react';
 
 function Profile() {
@@ -18,7 +19,10 @@ function Profile() {
       <img className="profile-picture" src={Kosei} alt="" aria-hidden="true" />
       <div>
         {/* <h1 ref={headingRef} tabIndex="-1" className="headings">Kosei Oki</h1> */}
-        <h1 className="headings">Hello! I'm Kosei. <span className="pronunciation">/ˈkoʊ.seɪ/</span></h1>
+        <div className="name-and-pronunciation">
+          <h1 className="headings">Hello! I'm Kosei.</h1>
+          <Pronunciation />
+        </div>
         <p>I’m an inclusive digital product designer, intersectionalist, percussionist.</p>
         <p><a className="plain-link" href="https://www.credly.com/badges/d96c149c-63c1-4764-ba03-c04703e8abbd/linked_in_profile">IAAP Certified Professionals in Accessibility Core Competencies (CPACC)</a> certified.</p>
         <p>I also like fruits (strawberries and bananas).</p>
@@ -32,9 +36,9 @@ function Profile() {
           </li>
           <li>
             <a className="plain-link" href="https://github.com/Koseioki">
-            <Icon icon="Github"/>GitHub</a>
+              <Icon icon="Github" />GitHub</a>
           </li>
-                    <li>
+          <li>
             <a className="plain-link" href="https://www.instagram.com/koseioki1225/">
               <Icon icon="Instagram" />Instagram
             </a>

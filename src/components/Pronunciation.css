@@ -1,0 +1,46 @@
+.pronunciation-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--white);
+    border: 0.0625rem solid var(--yellow);
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    top: -1.5rem;
+    margin-left: 1rem;
+}
+
+.pronunciation-container::before {
+    content: '';
+    position: absolute;
+    left: -0.46rem;
+    top: 70%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--white);
+    border-left: 0.0625rem solid var(--yellow);
+    border-bottom: 0.0625rem solid var(--yellow);
+}
+
+.pronunciation-ipa {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.pronunciation-container div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pronunciation-container button{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: normal;
+    padding: 1rem;
+}
