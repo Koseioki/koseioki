@@ -10,11 +10,14 @@
     /* box-shadow: var(--drop-shadow); */
 }
 .warning-section p{
-    margin-top: 0;
+    margin: 0;
 }
 .warning-section ul{
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     list-style:inside;
     /* padding-left: 1rem; */
     /* list-style-position: inside; */
+}
+.warning-section li::marker {
+  color: var(--warning-dark);
 }
