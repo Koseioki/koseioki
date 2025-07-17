@@ -1,11 +1,13 @@
 
 .warning-section{
     background-color: var(--warning);
-    border: var(--warning-dark) 0.0625rem solid;
+    border: var(--warning-dark) 0.0625rem dashed;
     border-radius: 1rem;
     padding: 1.5rem;
     margin: 2rem 0;
     color: var(--warning-dark);
+
+    /* box-shadow: var(--drop-shadow); */
 }
 .warning-section p{
     margin-top: 0;

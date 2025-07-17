@@ -9,8 +9,8 @@
   --yellow: #fc3;
   --blue: #238CEC;
   --red: #B20000;
-  --warning: #FFE8E8;
-  --warning-dark: #B20000;
+  --warning: #f6f9fc;
+  --warning-dark: #0062be;
   --focus-indicator: 0 0 0 0.125rem var(--white), 0 0 0 0.25rem var(--blue);
   --focus-indicator-inset: inset 0 0 0 0.125rem var(--blue), inset 0 0 0 0.25rem var(--white);
   --drop-shadow: 0 0 0.125rem rgba(26, 26, 26, 0.5);
