@@ -31,7 +31,7 @@ function ComponentDetail() {
         <h1 ref={headingRef} tabIndex="-1" className="headings">{component.title}</h1>
 
         <WarningSection>
-          <li>Images without text alternatives</li>
+          <li>Images of specification documents without text alternatives</li>
         </WarningSection>
         <div className="detail-header">
           <div>
