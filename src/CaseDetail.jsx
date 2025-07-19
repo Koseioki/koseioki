@@ -41,10 +41,9 @@ function CaseDetail() {
       <main id="main-content">
         <h1 ref={headingRef} tabIndex="-1" className="headings">{uxCase.title}</h1>
 
-        <WarningSection>
+        {/* <WarningSection>
           <li>Images without text alternatives</li>
-          {/* <li>Some screen readers may not correctly announce <code>&lt;details&gt;</code> elements</li> */}
-        </WarningSection>
+        </WarningSection> */}
 
         <div className="detail-header">
           <div>
