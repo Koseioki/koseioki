@@ -72,7 +72,7 @@ function CaseDetail() {
 
         <h2 className="headings">Design Process</h2>
 
-        <div className="accordion-container">
+        <ul className="accordion-container">
           {uxCase.sections.map((sec, i) => (
             <AccordionSection
               key={`section-${i}`}
@@ -82,7 +82,7 @@ function CaseDetail() {
               onToggle={handleAccordionToggle}
             />
           ))}
-        </div>
+        </ul>
 
 
       </main>

@@ -15,7 +15,7 @@ function AccordionSection({ section, index, open, onToggle }) {
   }, [open, section.content]);
 
   return (
-    <div className="accordion">
+    <li className="accordion">
       <h3 id={`section-${index}`}>
         <button
           aria-expanded={open}
@@ -41,7 +41,7 @@ function AccordionSection({ section, index, open, onToggle }) {
           <SectionRenderer key={`block-${index}-${j}`} section={block} />
         ))}
       </section>
-    </div>
+    </li>
   );
 }
 
