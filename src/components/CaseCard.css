@@ -1,9 +1,9 @@
 .case-card {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    /* gap: 1rem; */
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     cursor: pointer;
     background-color: var(--white);
     border-radius: 1rem;
@@ -19,6 +19,10 @@
     text-decoration: none;
     color: var(--text);
 
+}
+
+.card-text{
+    margin: 1.5rem;
 }
 
 .case-card:hover a {
@@ -42,9 +46,9 @@
 .case-card-thumbnail {
     width: 100%;
     max-width: 16rem;
-
     aspect-ratio: 1 / 1;
     object-fit: contain;
+    padding: 2rem;
 
 }
 
@@ -66,5 +70,10 @@
 
     .case-card-thumbnail {
         /* max-width: 80%; */
+        padding: 1rem;
+    }
+
+    .card-text {
+        margin: 1rem;
     }
 }

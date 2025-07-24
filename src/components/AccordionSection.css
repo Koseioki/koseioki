@@ -48,6 +48,7 @@
 /* .accordion:has(button:hover), */
 .accordion button:hover {
     color: var(--primary);
+
     /* background-color: var(--background-dark); */
     /* border-radius: 1rem 1rem 0 0    ; */
 }
@@ -92,8 +93,15 @@
 .accordion-content .product-screenshots {
     margin: 1rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+}
+
+.accordion-content .product-screenshots img {
+    margin: 0;
+    /* width: 100%; */
+    /* aspect-ratio: 1/1; */
+    /* object-fit: contain; */
 }
 
 
@@ -101,4 +109,24 @@
 .accordion-content.open {
     /* No need to set max-height here, handled inline */
     padding-bottom: 2rem;
+}
+
+@media (max-width: 568px) {
+    .accordion button {
+        /* padding: 2rem 1rem; */
+        padding-left: 3rem;
+
+    }
+
+    .accordion button span::after {
+        left: 1.5rem;
+    }
+
+    .accordion-content {
+        margin: 0 1rem;
+    }
+
+    /* .accordion-content .product-screenshots {
+        grid-template-columns: 1fr 1fr;
+    } */
 }

@@ -70,9 +70,7 @@
         max-width: 20rem; */
     }
 
-    .design-process-details .product-screenshots{
-    grid-template-columns: 1fr 1fr;
-}
+
 }
 
 .specification-images img {
