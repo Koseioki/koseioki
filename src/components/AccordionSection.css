@@ -93,7 +93,10 @@
 .accordion-content .product-screenshots {
     margin: 1rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); */
+    /* grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr)); */
+
     gap: 1rem;
 }
 
