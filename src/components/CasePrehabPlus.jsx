@@ -66,18 +66,18 @@ function CasePrehabPlus() {
                         <p className="paragraph">
                             Additionally, I researched the difficulties older generations in Denmark face when using digital solutions, as typical patients are aged 50 and above.
                         </p>
-                        <img src={PrehabPlusAidpro} alt="" />
+                        <img src={PrehabPlusAidpro} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             Afterwards, I organised all the findings using an affinity diagram to identify patterns.
                         </p>
-                        <img src={PrehabPlusAffinityDiagram} alt="" />
+                        <img src={PrehabPlusAffinityDiagram} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I also created an Experience Map to both organise all the findings chronologically and identify the users’ pains and gains.
                         </p>
                         <p className="paragraph">
                             However, due to a lack of input—especially in the “Feeling” section—I decided to leave it incomplete.
                         </p>
-                        <img src={PrehabPlusExperienceMapping} alt="" />
+                        <img src={PrehabPlusExperienceMapping} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I didn’t create a user persona, which is often used to define the main users, because this approach tends to highlight only the “best candidate” for solutions.
                         </p>
@@ -98,12 +98,12 @@ function CasePrehabPlus() {
                         <p className="paragraph">
                             Based on the challenges identified, I used ‘How Might We’ questions to generate potential solutions.
                         </p>
-                        <img src={PrehabPlusHowMightWe} alt="" />
+                        <img src={PrehabPlusHowMightWe} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I then used a prioritisation matrix to evaluate which potential solutions would have the most impact and be the most feasible.
 
                         </p>
-                        <img src={PrehabPlusPrioritisationMatrix} alt="" />
+                        <img src={PrehabPlusPrioritisationMatrix} alt="" aria-hidden="true"/>
 
                     </AccordionSection>
 
@@ -131,37 +131,37 @@ function CasePrehabPlus() {
                             Before starting any visual design work, I created a user flow based on the list of requirements, to structure how users would navigate the solution in order to complete their tasks.
 
                         </p>
-                        <img src={PrehabPlusUserflow} alt="" />
+                        <img src={PrehabPlusUserflow} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             After completing the user flow, I moved on to the sketching phase. I began by creating rough sketches based on the user flow, using the Crazy 8’s method, which is effective for generating flexible and creative ideas within a short time frame.
 
                         </p>
-                        <img src={PrehabPlusCrazy8s} alt="" />
+                        <img src={PrehabPlusCrazy8s} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             Afterwards, I created more refined sketches, adding details that could not be fully developed during the Crazy 8’s exercise.
 
                         </p>
-                        <img src={PrehabPlusSketches} alt="" />
+                        <img src={PrehabPlusSketches} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             Based on the sketches and user flow, I then created a Lo-Fi prototype in Figma with less emphasis on visual aesthetics, since it will be easier for me to modify after finding flaws in the flow during usability testing afterwards.
 
                         </p>
-                        <img src={PrehabPlusLoFi} alt="" />
+                        <img src={PrehabPlusLoFi} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             In the prototype, a to-do list for daily tasks is included in the interface. Ticking off completed tasks can provide a sense of reward and accomplishment.
 
                         </p>
-                        <img src={PrehabPlusToDoList} alt="" />
+                        <img src={PrehabPlusToDoList} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             A list of the patient’s appointments is included in both a list view and a calendar view. This dual-format approach provides a clear chronological overview of the entire treatment process, helping to reduce uncertainty and improve the patient’s sense of control.
 
                         </p>
-                        <img src={PrehabPlusListOfAppointments} alt="" />
+                        <img src={PrehabPlusListOfAppointments} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             A dedicated page was added where patients can directly contact their assigned staff members. This makes it easier for patients to seek human assistance when needed, fostering a sense of support regardless of their social situations.
 
                         </p>
-                        <img src={PrehabPlusContact} alt="" />
+                        <img src={PrehabPlusContact} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             In this prototype, I applied various UX laws to enhance user navigation and overall usability.
 
@@ -176,12 +176,12 @@ function CasePrehabPlus() {
                             In this example, I used components that resemble a to-do list and a three-dimensional button commonly seen in real life, making it easier for users to “guess” their purpose.
 
                         </p>
-                        <img src={PrehabPlusJakob1} alt="" />
+                        <img src={PrehabPlusJakob1} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             In this calendar example, I used the concept of a tear-off calendar to indicate the date.
 
                         </p>
-                        <img src={PrehabPlusJakob2} alt="" />
+                        <img src={PrehabPlusJakob2} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I deliberately avoided relying too heavily on digital layout conventions or icons, although I included some when no better real-world alternatives were available. According to Digitaliseringsstyrelsen, while older generations in Denmark do use digital devices, their primary purpose is communication rather than browsing or using apps.
 
@@ -199,12 +199,12 @@ function CasePrehabPlus() {
                             I created a moodboard to better understand the overall visual style. To select imagery that best fits the context of this solution, I referred to the list of values developed during the mapping, along with the “emotional insights” gathered throughout the research process.
 
                         </p>
-                        <img src={PrehabPlusMoodboard} alt="" />
+                        <img src={PrehabPlusMoodboard} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             Using the Mood Board as a guide, I created a Style Tile to specify the design elements such as colours and typefaces for all the pages to ensure the solution would be visually consistent across all its pages.
 
                         </p>
-                        <img src={PrehabPlusStyletile} alt="" />
+                        <img src={PrehabPlusStyletile} alt="" aria-hidden="true"/>
                     </AccordionSection>
 
                     <AccordionSection title="Testing" index={4}>
@@ -218,7 +218,7 @@ function CasePrehabPlus() {
 
                         </p>
 
-                        <img src={PrehabPlusLoFiTesting} alt="" />
+                        <img src={PrehabPlusLoFiTesting} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             Based on the testing results, I made updates to the high-fidelity prototype.
 
@@ -227,28 +227,28 @@ function CasePrehabPlus() {
                             I added a “Skip” button to the login confirmation screen, as one participant tried to tap the screen to proceed.
 
                         </p>
-                        <img src={PrehabPlusTesting1} alt="" />
+                        <img src={PrehabPlusTesting1} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I included a checkbox on each exercise page, since some participants expected to find it there rather than needing to return to the list page.
 
                         </p>
-                        <img src={PrehabPlusTesting2} alt="" />
+                        <img src={PrehabPlusTesting2} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             On the “Skema” page, I changed the link button text from “Læs mere” to “Det sker til aftalen,” based on feedback that “Læs mere” sounded uncertain—making it unclear whether the information was essential or just additional.
 
                         </p>
-                        <img src={PrehabPlusTesting3} alt="" />
+                        <img src={PrehabPlusTesting3} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I added a short explanation to the contact card, as some participants were unsure about the person’s area of expertise or whether they were the appropriate contact.
 
 
                         </p>
-                        <img src={PrehabPlusTesting4} alt="" />
+                        <img src={PrehabPlusTesting4} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I included a brief message emphasising that all these exercises are intended for today, not for the entire treatment period. This clarification was based on one participant misunderstanding them as long-term tasks.
 
                         </p>
-                        <img src={PrehabPlusTesting5} alt="" />
+                        <img src={PrehabPlusTesting5} alt="" aria-hidden="true"/>
 
                     </AccordionSection>
 
@@ -262,28 +262,28 @@ function CasePrehabPlus() {
                             When creating the style tile, I made sure the colour contrast between text and background in all combinations have a minimum of 4.5:1, including buttons and toggles.
 
                         </p>
-                        <img src={PrehabPlusA11y1} alt="" />
+                        <img src={PrehabPlusA11y1} alt="" aria-hidden="true"/>
 
                         <p className="paragraph">
                             The exercise tutorial page includes both a video and a text-based tutorial. According to WCAG, all non-text content presented to users must have a text alternative that serves an equivalent purpose (Success Criterion 1.1.1: Non-text Content)
 
                         </p>
-                        <img src={PrehabPlusA11y2} alt="" />
+                        <img src={PrehabPlusA11y2} alt=""  aria-hidden="true"/>
                         <p className="paragraph">
                             On the calendar page, I avoided using colour as the sole indicator for the type of appointments, in accordance with WCAG, which states that color must not be used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element (Success Criterion 1.4.1: Use of Color).
 
                         </p>
-                        <img src={PrehabPlusA11y3} alt="" />
+                        <img src={PrehabPlusA11y3} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I used a heading in each section in accordance with WCAG Success Criterion 1.3.1: Info and Relationships, as screen reader users often navigate pages by headings to understand the structure and quickly locate relevant content.
 
                         </p>
-                        <img src={PrehabPlusA11y4} alt="" />
+                        <img src={PrehabPlusA11y4} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             However, this introduced a problem: in this example, since the DOM order is checkbox → heading → time → button, when a screen reader focuses on the heading, it might miss the checkbox, as the checkbox is not programmatically associated with the heading.
 
                         </p>
-                        <img src={PrehabPlusA11y5} alt="" />
+                        <img src={PrehabPlusA11y5} alt="" aria-hidden="true"/>
 
                         <p className="paragraph">
                             To resolve this, I inserted an invisible heading before the checkbox and applied aria-hidden=&quot;true&quot; to the visible heading. This ensures that screen readers recognise only the hidden heading, placing the checkbox under it in the accessibility tree, while the visible heading remains available for sighted users.
@@ -293,7 +293,7 @@ function CasePrehabPlus() {
                             I implemented a bypass block in the form of a “Skip to main content” link within the navigation. This allows keyboard users and users of assistive technologies to quickly jump to the main content without having to tab through the entire navigation each time. This improves usability and supports accessibility best practices (Success Criterion 2.4.1: Bypass Blocks).
 
                         </p>
-                        <img src={PrehabPlusA11y6} alt="" />
+                        <img src={PrehabPlusA11y6} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I added visible focus indicators to all interactive elements to ensure that keyboard users can clearly identify which element is currently focused. This aligns with Success Criterion 2.4.7: Focus Visible.
 
@@ -302,7 +302,7 @@ function CasePrehabPlus() {
                             Additionally, I ensured that the focus indicators meet sufficient colour contrast requirements against both the element and the background in all possible combinations, improving visibility and accessibility for users with low vision.
 
                         </p>
-                        <img src={PrehabPlusA11y7} alt="" />
+                        <img src={PrehabPlusA11y7} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I added aria-labels to the link buttons in the to-do list, including the specific name of each exercise (Success Criterion 2.4.4: Link Purpose (In Context)).
 
@@ -311,7 +311,7 @@ function CasePrehabPlus() {
                             This ensures that screen reader users—who may navigate using a list of links—receive meaningful context instead of repetitive and uninformative text like “Se vejledning, Se vejledning, Se vejledning…”.
 
                         </p>
-                        <img src={PrehabPlusA11y8} alt="" />
+                        <img src={PrehabPlusA11y8} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             Since this application is built in React, navigating between pages can sometimes result in the focus landing in the middle of the page, which may disorient users—especially those relying on screen readers or keyboard navigation.
 
@@ -324,7 +324,7 @@ function CasePrehabPlus() {
                             To make the &lt;h1&gt; focusable without adding it to the tab order, I used tabIndex={-1}. This enables programmatic focus while preventing users from reaching the element through normal tab navigation.
 
                         </p>
-                        <img src={PrehabPlusA11y9} alt="" />
+                        <img src={PrehabPlusA11y9} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             I ensured that the list/calendar view toggle is fully operable for screen reader users. To support WCAG Success Criterion 1.3.1: Info and Relationships, I included a visually hidden heading labelled “Skift visning”, allowing screen reader users to easily locate the section.
 
@@ -341,7 +341,7 @@ function CasePrehabPlus() {
                             This region dynamically announces which view is currently selected once the toggle is activated. By setting aria-live=&quot;polite&quot;, the screen reader announces the change without interrupting the user’s current task.
 
                         </p>
-                        <img src={PrehabPlusA11y10} alt="" />
+                        <img src={PrehabPlusA11y10} alt="" aria-hidden="true" />
 
 
                     </AccordionSection>

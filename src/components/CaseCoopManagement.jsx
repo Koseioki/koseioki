@@ -44,12 +44,12 @@ function CaseCoopManagement() {
                             Afterwards, we organised all the findings using an affinity diagram to identify patterns.
 
                         </p>
-                        <img src={CoopManagementAffinityDiagram} alt="" />
+                        <img src={CoopManagementAffinityDiagram} alt="" aria-hidden="true" />
                         <p className="paragraph">
                             Based on the insights from the affinity diagram, we created a user persona to clarify and simplify our understanding of the target user, helping us stay focused on who we were designing the solution for.
 
                         </p>
-                        <img src={CoopManagementUserPersona} alt="" />
+                        <img src={CoopManagementUserPersona} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             Through this process, we identified key issues:
                         </p>
@@ -63,7 +63,7 @@ function CaseCoopManagement() {
                             Based on the challenges identified, we used ‘How Might We’ questions to generate potential solutions.
 
                         </p>
-                        <img src={CoopManagementHowMightWe} alt="" />
+                        <img src={CoopManagementHowMightWe} alt="" aria-hidden="true"/>
                     </AccordionSection>
 
                     <AccordionSection title="Define (Concept)" index={1}>
@@ -83,7 +83,7 @@ function CaseCoopManagement() {
                         <p className="paragraph">
                             Before starting any visual design work, I created a user flow based on the list of requirements, to structure how users would navigate the solution in order to complete their tasks.
                         </p>
-                        <img src={CoopManagementUserflow} alt="" />
+                        <img src={CoopManagementUserflow} alt="" aria-hidden="true"/>
                         <p className="paragraph">
                             Following the user flow, we developed a low-fidelity prototype and conducted think-aloud testing to assess its usability, particularly for first-time users.
 
@@ -92,16 +92,15 @@ function CaseCoopManagement() {
                             I identified several issues through the testing results and addressed them in the next iteration of the prototype.
 
                         </p>
-                        <img src={CoopManagementLoFi} alt="" />
-                        <img src={CoopManagementLoFiTesting} alt="" />
+                        <img src={CoopManagementLoFi} alt="" aria-hidden="true"/>
+                        <img src={CoopManagementLoFiTesting} alt="" aria-hidden="true"/>
 
                     </AccordionSection>
                     <AccordionSection title="Deliver (Finish Product)" index={3}>
                         <div className="product-screenshots">
                             <img src={CoopManagementScreenshot1} className="product-screenshot" alt="" aria-hidden="true" />
                             <img src={CoopManagementScreenshot2} className="product-screenshot" alt="" aria-hidden="true" />
-                            <img src={CoopManagementScreenshot3} className="product-screenshot" alt
-                                ="" aria-hidden="true" />
+                            <img src={CoopManagementScreenshot3} className="product-screenshot" alt="" aria-hidden="true" />
                             <img src={CoopManagementScreenshot4} className="product-screenshot" alt="" aria-hidden="true" />
                             <img src={CoopManagementScreenshot5} className="product-screenshot" alt="" aria-hidden="true" />
 
