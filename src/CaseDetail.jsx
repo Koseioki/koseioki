@@ -10,6 +10,7 @@ import AccordionSection from './components/AccordionSection.jsx';
 import './components/AccordionSection.css';
 
 import CasePrehabPlus from './components/CasePrehabPlus.jsx'; 
+import CaseCoopManagement from './components/CaseCoopManagement.jsx';
 
 
 function CaseDetail() {
@@ -21,7 +22,9 @@ function CaseDetail() {
 
   // load the case data
   const componentMap = {
-    CasePrehabPlus
+    CasePrehabPlus,
+    CaseCoopManagement
+
   };
   const CustomComponent = componentMap[uxCase.customSection];
 

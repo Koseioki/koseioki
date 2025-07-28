@@ -286,7 +286,7 @@ function CasePrehabPlus() {
                         <img src={PrehabPlusA11y5} alt="" />
 
                         <p className="paragraph">
-                            To resolve this, I inserted an invisible heading before the checkbox and applied aria-hidden="true" to the visible heading. This ensures that screen readers recognise only the hidden heading, placing the checkbox under it in the accessibility tree, while the visible heading remains available for sighted users.
+                            To resolve this, I inserted an invisible heading before the checkbox and applied aria-hidden=&quot;true&quot; to the visible heading. This ensures that screen readers recognise only the hidden heading, placing the checkbox under it in the accessibility tree, while the visible heading remains available for sighted users.
 
                         </p>
                         <p className="paragraph">
@@ -330,7 +330,7 @@ function CasePrehabPlus() {
 
                         </p>
                         <p className="paragraph">
-                            The toggle button itself is assigned role="switch" and aria-label="Skift visning", enabling screen readers to accurately convey the function and purpose of the control.
+                            The toggle button itself is assigned role=&quot;switch&quot; and aria-label=&quot;Skift visning&quot;, enabling screen readers to accurately convey the function and purpose of the control.
 
                         </p>
                         <p className="paragraph">
@@ -338,7 +338,7 @@ function CasePrehabPlus() {
 
                         </p>
                         <p className="paragraph">
-                            This region dynamically announces which view is currently selected once the toggle is activated. By setting aria-live="polite", the screen reader announces the change without interrupting the user’s current task.
+                            This region dynamically announces which view is currently selected once the toggle is activated. By setting aria-live=&quot;polite&quot;, the screen reader announces the change without interrupting the user’s current task.
 
                         </p>
                         <img src={PrehabPlusA11y10} alt="" />
