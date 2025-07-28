@@ -1,8 +1,14 @@
-import { useRef, useEffect, useState } from 'react';
-import SectionRenderer from './SectionRenderer.jsx';
+import { useRef, useEffect, useState, Children, useContext, createContext } from 'react';
 import './AccordionSection.css';
 
-function AccordionSection({ section, index, open, onToggle }) {
+// Create context for accordion state
+const AccordionContext = createContext();
+
+// function AccordionSection({ section, index, open, onToggle }) {
+function AccordionSection({ children, title, index }) {
+  const { openSections, toggleSection } = useContext(AccordionContext);
+  const open = openSections.includes(index);
+
   const contentRef = useRef(null);
   const [maxHeight, setMaxHeight] = useState(open ? 'none' : '0px');
 
@@ -12,7 +18,7 @@ function AccordionSection({ section, index, open, onToggle }) {
     } else {
       setMaxHeight('0px');
     }
-  }, [open, section.content]);
+  }, [open, children]);
 
   return (
     <li className="accordion">
@@ -20,9 +26,9 @@ function AccordionSection({ section, index, open, onToggle }) {
         <button
           aria-expanded={open}
           aria-controls={`section-content-${index}`}
-          onClick={() => onToggle(index)}
+          onClick={() => toggleSection(index)}
         ><span aria-hidden="true"></span>
-          {section.title}
+          {title}
         </button>
       </h3>
       <section
@@ -37,11 +43,29 @@ function AccordionSection({ section, index, open, onToggle }) {
         }}
         aria-hidden={!open}
       >
-        {section.content.map((block, j) => (
-          <SectionRenderer key={`block-${index}-${j}`} section={block} />
-        ))}
+        {children}
       </section>
     </li>
+ 
+  );
+}
+
+// AccordionProvider component to manage state
+export function AccordionProvider({ children }) {
+  const [openSections, setOpenSections] = useState([]);
+
+  const toggleSection = (idx) => {
+    setOpenSections(prev =>
+      prev.includes(idx)
+        ? prev.filter(i => i !== idx)
+        : [...prev, idx]
+    );
+  };
+
+  return (
+    <AccordionContext.Provider value={{ openSections, toggleSection }}>
+      {children}
+    </AccordionContext.Provider>
   );
 }
 

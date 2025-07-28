@@ -9,6 +9,8 @@ import WarningSection from './components/WarningSection.jsx';
 import AccordionSection from './components/AccordionSection.jsx';
 import './components/AccordionSection.css';
 
+import CasePrehabPlus from './components/CasePrehabPlus.jsx'; 
+
 
 function CaseDetail() {
   const { slug } = useParams();
@@ -16,6 +18,12 @@ function CaseDetail() {
 
   const headingRef = useRef(null);
   const [openSections, setOpenSections] = useState([]);
+
+  // load the case data
+  const componentMap = {
+    CasePrehabPlus
+  };
+  const CustomComponent = componentMap[uxCase.customSection];
 
   useEffect(() => {
     if (headingRef.current) {
@@ -64,7 +72,9 @@ function CaseDetail() {
         </div>
         <hr aria-hidden="true" />
 
+        {CustomComponent && <CustomComponent />}
 
+{/* 
         <h2 className="headings">Challenges</h2>
         {uxCase.problem.map((block, i) => (
           <SectionRenderer key={`problem-${i}`} section={block} />
@@ -82,7 +92,7 @@ function CaseDetail() {
               onToggle={handleAccordionToggle}
             />
           ))}
-        </ul>
+        </ul> */}
 
 
       </main>

@@ -64,6 +64,7 @@ export const uxCases = [
         image: PrehabPlus,
         client: "Region Sjælland",
         clientLogo: RegionSjaelland,
+        customSection: "CasePrehabPlus",
         summary: [
             {
                 type: "paragraph",
@@ -535,6 +536,8 @@ export const uxCases = [
         client: "Coop Danmark",
         clientLogo: Coop,
         image: CoopManagement,
+        customSection: "CaseCoopManagement",
+
         summary: [
             {
                 type: "paragraph",
