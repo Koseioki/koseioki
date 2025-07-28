@@ -10,7 +10,7 @@ function Footer() {
             e.preventDefault();
             const h1 = document.querySelector('h1');
             if (h1) {
-              h1.scrollIntoView({ 
+              h1.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start',
                 inline: 'nearest'
@@ -36,15 +36,6 @@ function Footer() {
           <p>© Kosei Oki 2025 - All rights reserved</p>
           <ul className="footer-links">
             <li>
-              <a href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkedIn</a>
-              </li>
-            <li>
-              <a href="https://github.com/Koseioki?tab=repositories">GitHub</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/koseioki1225/">Instagram</a>
-            </li>
-            <li>
               <a href="tel:+45 9196 4325">+45 9196 4325</a>
             </li>
             <li>
@@ -52,12 +43,22 @@ function Footer() {
                 koseioki1225@gmail.com
               </a>
             </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://github.com/Koseioki?tab=repositories">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/koseioki1225/">Instagram</a>
+            </li>
+
           </ul>
-    </div>
-          </footer>
+        </div>
+      </footer>
 
     </>
-    
+
   );
 }
 export default Footer;

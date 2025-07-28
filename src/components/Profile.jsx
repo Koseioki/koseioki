@@ -29,7 +29,7 @@ function Profile() {
         </p>
         <p className="paragraph">I play percussion and steel pan (Low Tenor and Double Guitar).</p>
         {/* <p>I also like fruits (strawberries and bananas).</p> */}
-        <h2 className="sr-only">Social Media</h2>
+        {/* <h2 className="sr-only">Social Media</h2>
         <ul className="link-list paragraph">
 
           <li>
@@ -46,7 +46,7 @@ function Profile() {
               <Icon icon="Instagram" />Instagram
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
   );
