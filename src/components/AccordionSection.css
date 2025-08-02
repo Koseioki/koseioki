@@ -85,9 +85,11 @@
 }
 
 .accordion-content img {
-    width: 100%;
+    width: calc(100% - 0.125rem);
     max-width: 40rem;
     margin: 2rem 0;
+    border: 0.0625rem solid var(--text-light);
+    /* z-index: 100; */
 }
 
 .accordion-content .product-screenshots {

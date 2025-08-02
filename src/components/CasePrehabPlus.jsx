@@ -120,7 +120,7 @@ function CasePrehabPlus() {
 
                     <AccordionSection title="Mapping" index={1}>
                         <p className="paragraph">
-                            Afterwards, I organised all the findings using an affinity diagram to identify patterns.
+                            After the research, I organised all the findings using an affinity diagram to identify patterns.
                         </p>
                         <img src={PrehabPlusAffinityDiagram} alt="" aria-hidden="true" />
                         <p className="paragraph">
