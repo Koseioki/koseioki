@@ -1,8 +1,8 @@
-import Finale from '../assets/finale.webp'
-import MerryChristmasMrLawrence from '../assets/merry-christmas-mr-lawrence.webp'
-import AbandonedTown from '../assets/abandoned-town.webp'
-import EuphoniumVariationWaltz from '../assets/euphonium-variation-waltz.webp'
-import Reunion from '../assets/reunion.webp'
+import Finale from '../assets/scores/finale.webp'
+import MerryChristmasMrLawrence from '../assets/scores/merry-christmas-mr-lawrence.webp'
+import AbandonedTown from '../assets/scores/abandoned-town.webp'
+import EuphoniumVariationWaltz from '../assets/scores/euphonium-variation-waltz.webp'
+import Reunion from '../assets/scores/reunion.webp'
 export const scores = [
     {
         slug: "finale",

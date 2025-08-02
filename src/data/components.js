@@ -1,9 +1,9 @@
-import DescriptionListWithAccordion from '../assets/description-list-with-accordion.webp';
-import ResnponsiveTable from '../assets/responsive-table.webp';
-import NewsFeed from '../assets/news-feed.webp';
-import TeaserBlock from '../assets/teaser-block.webp';
-import FormValidation from '../assets/form-validation.webp';
-import ContactCard from '../assets/contact-card.webp';
+import DescriptionListWithAccordion from '../assets/components/description-list-with-accordion.webp';
+import ResnponsiveTable from '../assets/components/responsive-table.webp';
+import NewsFeed from '../assets/components/news-feed.webp';
+import TeaserBlock from '../assets/components/teaser-block.webp';
+import FormValidation from '../assets/components/form-validation.webp';
+import ContactCard from '../assets/components/contact-card.webp';
 
 import Teaserblok1 from '../assets/Teaserblok.001.webp';
 import Teaserblok2 from '../assets/Teaserblok.002.webp';
