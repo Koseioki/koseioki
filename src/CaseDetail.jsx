@@ -11,6 +11,7 @@ import './components/AccordionSection.css';
 
 import CasePrehabPlus from './components/CasePrehabPlus.jsx'; 
 import CaseCoopManagement from './components/CaseCoopManagement.jsx';
+import CaseFryzerium from './components/CaseFryzerium.jsx'; // Import Fryzerium case component
 
 
 function CaseDetail() {
@@ -23,7 +24,9 @@ function CaseDetail() {
   // load the case data
   const componentMap = {
     CasePrehabPlus,
-    CaseCoopManagement
+    CaseCoopManagement,
+    CaseFryzerium
+
 
   };
   const CustomComponent = componentMap[uxCase.customSection];

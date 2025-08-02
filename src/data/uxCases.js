@@ -2,6 +2,8 @@ import PrehabPlus from "../assets/prehab-plus/prehab-plus.webp";
 import RegionSjaelland from "../assets/prehab-plus/region-sjaelland.webp";
 import CoopManagement from "../assets/coop-management.webp";
 import Coop from "../assets/coop-management/coop.webp";
+import FryzeriumLogo from "../assets/fryzerium/fryzerium-2-logo.webp";
+import Fryzerium2 from "../assets/fryzerium/fryzerium-2.webp";
 
 
 export const uxCases = [
@@ -34,6 +36,20 @@ export const uxCases = [
             {
                 type: "paragraph",
                 text: "A web app for Coop supermarkets that manages the sale of discounted bags of surplus food, which was eventually integrated with the inventory management system."
+            }
+        ]
+    },
+    {
+        slug: "fryzerium-2.0",
+        title: "Fryzerium 2.0 Joanna & Łukasz",
+        client: "Fryzerium 2.0 Joanna & Łukasz",
+        clientLogo: FryzeriumLogo,
+        image: Fryzerium2,
+        customSection: "CaseFryzerium",
+        summary: [
+            {
+                type: "paragraph",
+                text: "Summary here"
             }
         ]
     }
