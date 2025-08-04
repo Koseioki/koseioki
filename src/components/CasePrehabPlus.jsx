@@ -429,7 +429,7 @@ function CasePrehabPlus() {
 
                     </AccordionSection>
 
-                    <AccordionSection title="Finish Product" index={7}>
+                    <AccordionSection title="Outcomes and Finish Product" index={7}>
                         <div className="product-screenshots">
                             <img src={PrehabPlusScreenshot1} className="product-screenshot" alt="" aria-hidden="true" />
                             <img src={PrehabPlusScreenshot2} className="product-screenshot" alt="" aria-hidden="true" />

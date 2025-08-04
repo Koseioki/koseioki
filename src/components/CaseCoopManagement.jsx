@@ -219,7 +219,7 @@ function CaseCoopManagement() {
                             We conducted testing sessions for the Hi-Fi prototype in the same way as we did for the Lo-Fi version. Afterwards, we analysed the results and identified the main issues, as we had done with the Lo-Fi prototypes.
                         </p>
                     </AccordionSection>
-                    <AccordionSection title="Finish Product" index={4}>
+                    <AccordionSection title="Outcomes and Finish Product" index={4}>
                         <div className="product-screenshots">
                             <img src={CoopManagementScreenshot1} className="product-screenshot" alt="" aria-hidden="true" />
                             <img src={CoopManagementScreenshot2} className="product-screenshot" alt="" aria-hidden="true" />
