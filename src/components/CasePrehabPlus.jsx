@@ -438,9 +438,17 @@ function CasePrehabPlus() {
                             <img src={PrehabPlusScreenshot5} className="product-screenshot" alt="" aria-hidden="true" />
                         </div>
                         <p className="paragraph">
-                            The final product is a web app that provides an overview of the entire prehabilitation process, allowing patients to check off tasks as they complete them. It also includes a chat feature for easy access to support from assigned staff members.
-
+                            I created an app designed to support colorectal cancer patients at Region
+                            Sjælland during the prehabilitation process, helping them through a
+                            challenging time by:
                         </p>
+                        <ul className="bulleted-list">
+                            <li>Simplifying which exercises the patient needs to complete each day</li>
+                            <li>Making task completion feel rewarding</li>
+                            <li>Clarifying what appointments the patient has and when they occur</li>
+                            <li>Providing a clear overview of the entire period leading up to the operation</li>
+                            <li>Helping patients feel connected to someone—such as a staff member—even if they do not have support from people around them</li>
+                        </ul>
                         <p className="paragraph">
                             The interface uses real-life elements to feel familiar across generations, and combines images, text, video, and colours to enhance understanding. The app is also designed with accessibility in mind, ensuring it can be used effectively by older users and those with varying levels of digital literacy.
 
