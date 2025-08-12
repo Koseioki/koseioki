@@ -220,14 +220,13 @@ function CaseCoopManagement() {
                         </p>
                     </AccordionSection>
                     <AccordionSection title="Outcomes and Finish Product" index={4}>
-                        <div className="product-screenshots">
+                        
                             <img src={CoopManagementScreenshot1} className="product-screenshot" alt="" aria-hidden="true" />
                             <img src={CoopManagementScreenshot2} className="product-screenshot" alt="" aria-hidden="true" />
                             <img src={CoopManagementScreenshot3} className="product-screenshot" alt="" aria-hidden="true" />
                             <img src={CoopManagementScreenshot4} className="product-screenshot" alt="" aria-hidden="true" />
                             <img src={CoopManagementScreenshot5} className="product-screenshot" alt="" aria-hidden="true" />
 
-                        </div>
                         <p className="paragraph">
                             We created a solution that allows Coop employees to easily manage and post discounted food bags, directly integrated with the inventory management system. The app also sends automated reminders to customers who have reserved a bag, helping reduce no-shows and food waste.
 
