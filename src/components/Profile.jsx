@@ -24,7 +24,7 @@ function Profile() {
         </div>
         {/* <p>I’m an inclusive digital product designer, intersectionalist, percussionist.</p> */}
 
-        <p className="paragraph">I aim to create inclusive and accessible designs within Information and Communication Technologies (ICT). I'm an <a className="plain-link" href="https://www.credly.com/badges/d96c149c-63c1-4764-ba03-c04703e8abbd/linked_in_profile">IAAP Certified Professional in Accessibility Core Competencies (CPACC).</a></p>
+        <p className="paragraph">I create inclusive and accessible designs within Information and Communication Technologies (ICT). I'm an <a className="plain-link" href="https://www.credly.com/badges/d96c149c-63c1-4764-ba03-c04703e8abbd/linked_in_profile">IAAP Certified Professional in Accessibility Core Competencies (CPACC).</a></p>
         <p className="paragraph">I study intersectionality and advocate for awareness of people from various backgrounds such as race, gender, sexual orientation, social class, disability, and more.
         </p>
         <p className="paragraph">I play percussion and steel pan (Low Tenor and Double Guitar).</p>
