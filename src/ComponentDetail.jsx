@@ -2,7 +2,7 @@
 import { components } from "./data/components";
 import { useParams } from "react-router-dom";
 import BreadCrumbs from "./components/BreadCrumbs";
-import WarningSection from "./components/WarningSection";
+// import WarningSection from "./components/WarningSection";
 import './DetailPages.css';
 import { Helmet } from 'react-helmet-async';
 import { useEffect, useRef } from "react";
@@ -30,9 +30,9 @@ function ComponentDetail() {
       <main id="main-content">
         <h1 ref={headingRef} tabIndex="-1" className="headings">{component.title}</h1>
 
-        <WarningSection>
+        {/* <WarningSection>
           <li>Images of specification documents without text alternatives</li>
-        </WarningSection>
+        </WarningSection> */}
         <div className="detail-header">
           <div>
             <h2 className="headings">Description</h2>
@@ -61,16 +61,23 @@ function ComponentDetail() {
 
         <hr aria-hidden="true" />
 
+
         <h2 className="headings">Specifications</h2>
-        <p className="paragraph">More details to follow.</p>
 
-        {/* add all the images that are inside {component.specifications} */}
-        <div className="specification-images">
-          {component.specifications && component.specifications.map((image, index) => (
-            <img key={index} src={image} alt="" aria-hidden="true" />
-          ))}
-        </div>
-
+        {component.specifications && component.specifications.length > 0 ? (
+          <div className="specification-images">
+            <ul>
+      
+            {component.specifications.map((spec, index) => (
+              <li key={index}>
+                <img src={spec.src} alt={spec.alt} />
+              </li>
+            ))}
+          </ul>
+          </div>
+        ) : (
+          <p className="paragraph">More details to follow.</p>
+        )}
 
       </main>
     </>
