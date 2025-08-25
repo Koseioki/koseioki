@@ -38,6 +38,23 @@ body {
 
 }
 
+html:has(body.dark-mode) {
+  background-color: var(--primary-hover);
+}
+
+.dark-mode {
+  color: var(--text-light);
+}
+
+.dark-mode .background{
+    background-color: var(--text);
+  background-image: radial-gradient(var(--text) 0.0625rem, transparent 0);
+}
+
+.dark-mode .plain-link{
+  color: var(--text-light);
+}
+
 main {
   max-width: var(--page-width);
   margin: 0 auto;

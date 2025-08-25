@@ -62,6 +62,9 @@ function Header() {
                 <NavLink to="/#contact" onClick={(e) => handleClick(e, '#contact')}>Contact</NavLink>
               </li>
             </ul>
+            <button onClick={() => document.body.classList.toggle('dark-mode')}>
+              Switch to Darkmode
+            </button>
           </nav>
         </div>
       </header>

@@ -7,6 +7,11 @@
     /* transition: all 0.1s ease-in-out; */
 }
 
+.dark-mode .card-wrapper {
+    background-color: var(--text);
+    outline: 0.0625rem solid var(--background-dark);
+}
+
 .card-wrapper h3{
     margin-bottom: 0.5rem;
 }
@@ -18,6 +23,11 @@
     pointer;
 }
 
+.dark-mode .card-wrapper:hover{
+    background-color: var(--text);
+
+}
+
 .card-text{
     margin: 1.5rem;
 }
@@ -26,6 +36,11 @@ a.card-title{
     text-decoration: none;
     color: var(--text);
 }
+
+.dark-mode a.card-title{
+    color: var(--text-light);
+}
+
 .card-title{
     font-size: 1.25rem;
     font-weight: bold;
@@ -53,6 +68,12 @@ a.card-title:focus{
 .card-wrapper:hover a.card-title{
     text-decoration: underline;
     color: var(--primary);
+}
+
+.dark-mode .card-title:focus,
+.dark-mode .card-wrapper:hover a.card-title{
+
+    color: var(--yellow);
 }
 
 

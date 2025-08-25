@@ -5,8 +5,17 @@
     padding: 0 1rem;
 }
 
+.dark-mode .breadcrumbs {
+    color: var(--yellow);
+
+}
+
 .breadcrumbs a {
     color: var(--red);
+}
+
+.dark-mode .breadcrumbs a {
+    color: var(--yellow);
 }
 
 

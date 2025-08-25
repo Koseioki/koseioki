@@ -11,8 +11,17 @@
 
 }
 
+.dark-mode .case-card {
+    background-color: var(--text);
+    outline: 0.0625rem solid var(--text-light);
+}
+
 .case-card:hover {
     background-color: var(--background-dark);
+}
+
+.dark-mode .case-card:hover {
+    background-color: var(--text);
 }
 
 .case-card a.headings {
@@ -20,6 +29,11 @@
     color: var(--text);
 
 }
+
+.dark-mode .case-card a.headings {
+    color: var(--text-light);
+}
+
 
 .card-text{
     margin: 1.5rem;
@@ -30,12 +44,20 @@
     color: var(--primary);
 }
 
+.dark-mode .case-card:hover a {
+    color: var(--yellow);
+}
+
 .case-card a:focus {
     outline: none;
     /* box-shadow: var(--focus-indicator); */
     box-shadow: none;
     text-decoration: underline;
     color: var(--primary);
+}
+
+.dark-mode .case-card a:focus {
+    color: var(--yellow);
 }
 
 .case-card:has(a:focus) {

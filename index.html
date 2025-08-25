@@ -36,6 +36,25 @@ I also like fruits (strawberries and bananas).">
     <div id="root"></div>
   </div>
   <script type="module" src="/src/main.jsx"></script>
+  <!-- light/dark mode depending on the system -->
+  <script>
+    function applySystemColorScheme() {
+      const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function updateTheme(e) {
+        if (e.matches) {
+          document.body.classList.add('dark-mode');
+        } else {
+          document.body.classList.remove('dark-mode');
+        }
+      }
+
+      updateTheme(darkModeQuery);
+      darkModeQuery.addEventListener('change', updateTheme);
+    }
+
+    document.addEventListener('DOMContentLoaded', applySystemColorScheme);
+  </script>
 </body>
 
 </html>

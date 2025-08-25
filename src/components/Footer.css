@@ -8,6 +8,10 @@ footer {
 
 }
 
+.dark-mode footer {
+    border-bottom: 0.25rem solid var(--primary-hover);
+}
+
 .footer-content {
     max-width: var(--page-width);
     margin: 0 auto;
@@ -36,11 +40,11 @@ footer {
     gap: 0.5rem 1rem;
 }
 
-.footer-links a {
+/* .footer-links a {
     color: var(--text);
     text-decoration: underline;
 }
 
 .footer-links a:hover {
     text-decoration: none;
-}
+} */
