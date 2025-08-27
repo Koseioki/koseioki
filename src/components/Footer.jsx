@@ -1,5 +1,6 @@
 import './Footer.css';
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import ThemeSwitcher from './ThemeSwitcher';
 function Footer() {
   return (
     <>
@@ -26,6 +27,8 @@ function Footer() {
         >
           <span aria-hidden="true">↑ </span>Back to Top
         </a>
+        <ThemeSwitcher />
+
       </div>
 
       <footer>
@@ -34,27 +37,30 @@ function Footer() {
 
 
           <h2 className="sr-only">Site footer</h2>
+
+
           <p>© Kosei Oki 2025 - All rights reserved</p>
+
           <ul className="footer-links">
-            <li>
+            {/* <li>
               <NavLink className="plain-link" to="/accessibility">Accessibility</NavLink>
-              </li>
+              </li> */}
             <li>
-              <a className="plain-link"href="tel:+45 9196 4325">+45 9196 4325</a>
+              <a className="plain-link" href="tel:+45 9196 4325">+45 9196 4325</a>
             </li>
             <li>
-              <a className="plain-link"href="mailto:koseioki1225@gmail.com">
+              <a className="plain-link" href="mailto:koseioki1225@gmail.com">
                 koseioki1225@gmail.com
               </a>
             </li>
             <li>
-              <a className="plain-link"href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkedIn</a>
+              <a className="plain-link" href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkedIn</a>
             </li>
             <li>
-              <a className="plain-link"href="https://github.com/Koseioki?tab=repositories">GitHub</a>
+              <a className="plain-link" href="https://github.com/Koseioki?tab=repositories">GitHub</a>
             </li>
             <li>
-              <a className="plain-link"href="https://www.instagram.com/koseioki1225/">Instagram</a>
+              <a className="plain-link" href="https://www.instagram.com/koseioki1225/">Instagram</a>
             </li>
 
           </ul>

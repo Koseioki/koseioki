@@ -21,7 +21,7 @@ const App = () => {
       <Routes>
 
         <Route path="/" element={<Home />} />
-        <Route path="accessibility" element={<Accessibility />} />
+        {/* <Route path="accessibility" element={<Accessibility />} /> */}
         <Route path="/accessible-web-components" element={<AccessibleWebComponents />} />
         <Route path="/accessible-web-components/:slug" element={<ComponentDetail />} />
         <Route path="/ux-design-cases" element={<UXDesignCases />} />

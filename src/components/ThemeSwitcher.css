@@ -1,0 +1,32 @@
+button.theme-switcher{
+    background-color: var(--background);
+    color: var(--text);
+    border: none;
+    box-shadow: var(--drop-shadow);
+    font-size: 0.875rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+button.theme-switcher:hover {
+    background-color: var(--background-dark);
+}
+
+.dark-mode button.theme-switcher {
+    background-color: var(--text);
+    color: var(--text-light);
+    border: 0.0625rem solid var(--text-light);
+}
+
+.dark-mode button.theme-switcher:hover {
+    background-color: var(--text);
+}
+
+button.theme-switcher:focus {
+    outline: none;
+    box-shadow: var(--focus-indicator);
+}

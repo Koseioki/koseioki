@@ -18,6 +18,8 @@
 
 }
 
+
+
 html {
   background-color: var(--yellow);
 }
@@ -224,6 +226,7 @@ a:focus {
   background-color: var(--primary-hover);
 }
 
+
 .secondary-button {
   background-color: var(--white);
   color: var(--primary);
@@ -250,23 +253,9 @@ a:focus {
 }
 
 
-/* a:has(.image-link) {
-  outline: none;
-  box-shadow: none;
 
-}
-a:has(.image-link):hover .image-link {
-  filter: brightness(0.9);
-}
-a:has(.image-link):focus .image-link {
-  outline: none;
-  box-shadow: var(--focus-indicator);
-} */
 
 @media (max-width: 568px) {
-  /* 
-  main{
-    padding: 0 0.5rem;
-  } */
+
 
 }
