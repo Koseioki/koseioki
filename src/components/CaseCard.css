@@ -11,18 +11,18 @@
 
 }
 
-.dark-mode .case-card {
+/* .dark-mode .case-card {
     background-color: var(--text);
     outline: 0.0625rem solid var(--text-light);
-}
+} */
 
 .case-card:hover {
     background-color: var(--background-dark);
 }
 
-.dark-mode .case-card:hover {
+/* .dark-mode .case-card:hover {
     background-color: var(--text);
-}
+} */
 
 .case-card a.headings {
     text-decoration: none;
@@ -30,9 +30,9 @@
 
 }
 
-.dark-mode .case-card a.headings {
+/* .dark-mode .case-card a.headings {
     color: var(--text-light);
-}
+} */
 
 
 .card-text{
@@ -44,9 +44,9 @@
     color: var(--primary);
 }
 
-.dark-mode .case-card:hover a {
+/* .dark-mode .case-card:hover a {
     color: var(--yellow);
-}
+} */
 
 .case-card a:focus {
     outline: none;
@@ -56,9 +56,9 @@
     color: var(--primary);
 }
 
-.dark-mode .case-card a:focus {
+/* .dark-mode .case-card a:focus {
     color: var(--yellow);
-}
+} */
 
 .case-card:has(a:focus) {
     box-shadow: var(--focus-indicator);

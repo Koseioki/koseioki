@@ -5,18 +5,18 @@
     padding: 0 1rem;
 }
 
-.dark-mode .breadcrumbs {
+/* .dark-mode .breadcrumbs {
     color: var(--yellow);
 
-}
+} */
 
 .breadcrumbs a {
     color: var(--red);
 }
 
-.dark-mode .breadcrumbs a {
+/* .dark-mode .breadcrumbs a {
     color: var(--yellow);
-}
+} */
 
 
 .breadcrumbs ol{

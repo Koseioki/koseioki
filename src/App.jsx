@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 import Home from './Home'
 import Accessibility from './Accessibility'
+import Privacy from './Privacy'
 import AccessibleWebComponents from './AccessibleWebComponents'
 import ComponentDetail from './ComponentDetail'
 import ConcertBandScores from './ConcertBandScores'
@@ -21,7 +22,8 @@ const App = () => {
       <Routes>
 
         <Route path="/" element={<Home />} />
-        {/* <Route path="accessibility" element={<Accessibility />} /> */}
+        <Route path="accessibility" element={<Accessibility />} />
+        <Route path="/privacy" element={<Privacy />} />
         <Route path="/accessible-web-components" element={<AccessibleWebComponents />} />
         <Route path="/accessible-web-components/:slug" element={<ComponentDetail />} />
         <Route path="/ux-design-cases" element={<UXDesignCases />} />

@@ -1,5 +1,5 @@
 button.theme-switcher{
-    background-color: var(--background);
+    background-color: var(--white);
     color: var(--text);
     border: none;
     box-shadow: var(--drop-shadow);
@@ -16,7 +16,7 @@ button.theme-switcher:hover {
     background-color: var(--background-dark);
 }
 
-.dark-mode button.theme-switcher {
+/* .dark-mode button.theme-switcher {
     background-color: var(--text);
     color: var(--text-light);
     border: 0.0625rem solid var(--text-light);
@@ -24,7 +24,7 @@ button.theme-switcher:hover {
 
 .dark-mode button.theme-switcher:hover {
     background-color: var(--text);
-}
+} */
 
 button.theme-switcher:focus {
     outline: none;

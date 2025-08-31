@@ -6,10 +6,10 @@
     background-color: var(--white);
 }
 
-.dark-mode .accordion-container {
+/* .dark-mode .accordion-container {
     background-color: var(--text);
     border: 0.0625rem solid var(--text-light);
-}
+} */
 
 .accordion {
     border-bottom: 0.0625rem solid var(--text-light);
@@ -39,17 +39,17 @@
     text-align: left;
 }
 
-.dark-mode .accordion button {
+/* .dark-mode .accordion button {
     color: var(--text-light);
-}
+} */
 
 .accordion button:hover {
     color: var(--primary);
 }
 
-.dark-mode .accordion button:hover {
+/* .dark-mode .accordion button:hover {
     color: var(--yellow);
-}
+} */
 
 .accordion button span::after {
     font-weight: normal;
@@ -64,9 +64,9 @@
     font-size: 1.5rem;
 }
 
-.dark-mode .accordion button span::after {
+/* .dark-mode .accordion button span::after {
     color: var(--yellow);
-}
+} */
 
 .accordion button[aria-expanded="true"] span::after {
     content: "−";
