@@ -4,7 +4,7 @@ import CoopManagement from "../assets/coop-management.webp";
 import Coop from "../assets/coop-management/coop.webp";
 
 
-export const uxCases = [
+export const uxuiCases = [
 
     {
         slug: "prehab-plus",

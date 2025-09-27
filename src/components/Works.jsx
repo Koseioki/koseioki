@@ -15,10 +15,10 @@ function Works() {
         {/* <h3 className="headings">Digital Products</h3> */}
         <ul className="work-card-list">
           <WorkCard
-            link="/ux-design-cases"
-            title="UX Design Cases"
+            link="/ux-ui-design-cases"
+            title="UX/UI Design Cases"
             image={UXCases}
-            description="I have worked on UX cases, focusing on contextual understanding and inclusive design."
+            description="I have worked on UX/UI cases, focusing on contextual understanding and inclusive design."
           />
           <WorkCard
             link="/accessible-web-components"
