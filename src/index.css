@@ -37,6 +37,10 @@
   img {
     filter: brightness(0.9);
   }
+
+  .client-logo {
+    background-color: white;
+  }
 }
 
 html {
@@ -273,6 +277,8 @@ a:focus {
   width: 100%;
   max-width: 10rem;
   margin: 0.5rem auto;
+  padding: 0.5rem;
+
 }
 
 
