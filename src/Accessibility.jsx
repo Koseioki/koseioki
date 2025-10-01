@@ -44,7 +44,7 @@ function Accessibility() {
         <h2 className="headings">Feedback and Contact Information</h2>
         <p className="paragraph">Please contact me directly if you encounter any accessibility barriers:</p>
         <ul>
-          <li>Email: <a className="plain-link" href="mailto:kosei1225@gmail.com">kosei1225@gmail.com</a></li>
+          <li>Email: <a className="plain-link" href="mailto:koseioki1225@gmail.com">koseioki1225@gmail.com</a></li>
           <li>Phone: <a className="plain-link" href="tel:+4591964325">+45 91 96 43 25</a></li>
         </ul>
         <p className="paragraph">I try to respond to feedback as quickly as possible.</p>
