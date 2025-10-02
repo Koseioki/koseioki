@@ -24,8 +24,8 @@ function Accessibility() {
         <p className="paragraph">This accessibility statement applies to all pages under the domain <a className="plain-link" href="https://koseioki.github.io/koseioki/">koseioki.github.io/koseioki/.</a></p>
 
         <h2 className="headings">Compliance Status</h2>
-        <p className="paragraph">This website is fully compliant with the <a className="plain-link" href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2 Level AA.</a></p>
-        <p className="paragraph">I built and manage this website with universal design in mind from the beginning, more than just for compliance.</p>
+        <p className="paragraph">While this website is compliant with the <a className="plain-link" href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2 Level AA</a>, 
+I built and manage this website with universal design in mind from the beginning, more than just for compliance.</p>
 
         <h2 className="headings">Non-Accessible Content</h2>
         <p className="paragraph">There may be some non-accessible content on pages linked from this website, including:</p>
