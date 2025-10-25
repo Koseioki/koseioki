@@ -1,0 +1,10 @@
+.note-container {
+    background-color: var(--white);
+    padding: 0.5rem 2rem;
+    border-left: 0.25rem solid var(--primary);
+    max-width: 40rem;
+}
+
+.note-container .bulleted-list li::marker {
+    /* color: var(--warning-dark); */
+}

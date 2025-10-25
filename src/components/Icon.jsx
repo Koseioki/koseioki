@@ -1,4 +1,5 @@
 import './Icon.css';
+import '../assets/icons/LightBulb.svg';
 
 const iconPaths = {
     Email: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01L12 12l8-5.99V6H4zm0 2.43V18h16V8.43l-8 5.57-8-5.57z",
@@ -8,10 +9,11 @@ const iconPaths = {
     Phone: "M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z",
     File: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z",
     Headphones: "M12 1C7 1 3 5 3 10v7a3 3 0 0 0 3 3h3v-8H5v-2a7 7 0 0 1 14 0v2h-4v8h3a3 3 0 0 0 3-3v-7c0-5-4-9-9-9z",
-    Warning: "M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 16v2h2v-2h-2zm0-6v4h2v-4h-2z"
+    Warning: "M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 16v2h2v-2h-2zm0-6v4h2v-4h-2z",
+    LightBulb: "M11 0V3.13043H13V0H11ZM4.22266 2.93071L2.80859 4.40625L4.92969 6.61957L6.34375 5.14402L4.22266 2.93071ZM19.7773 2.93071L17.6562 5.14402L19.0703 6.61957L21.1914 4.40625L19.7773 2.93071ZM12 5.21739C8.14567 5.21739 5 8.49983 5 12.5217C5 15.4099 6.65612 17.8458 9 19.0272V21.913C9 23.0536 9.90694 24 11 24H13C14.0931 24 15 23.0536 15 21.913V19.0272C17.3439 17.8458 19 15.4099 19 12.5217C19 8.49983 15.8543 5.21739 12 5.21739ZM12 7.30435C14.7737 7.30435 17 9.62748 17 12.5217C17 14.8011 15.6053 16.7195 13.666 17.4355L13 17.68V21.913H11V17.68L10.334 17.4355C8.39467 16.7195 7 14.8011 7 12.5217C7 9.62748 9.22633 7.30435 12 7.30435ZM0 11.4783V13.5652H3V11.4783H0ZM21 11.4783V13.5652H24V11.4783H21ZM4.92969 18.4239L2.80859 20.6372L4.22266 22.1128L6.34375 19.8995L4.92969 18.4239ZM19.0703 18.4239L17.6562 19.8995L19.7773 22.1128L21.1914 20.6372L19.0703 18.4239Z"
 };
 
-function Icon({ icon, color = 'currentColor' }) {
+function Icon({ icon, fontSize='currentFontSize', color = 'currentColor' }) {
     const pathData = iconPaths[icon];
     
     if (!pathData) {
@@ -28,10 +30,23 @@ function Icon({ icon, color = 'currentColor' }) {
         return color;
     };
 
+    const getFontSize = () => {
+        if (fontSize === 'p') return '1.25rem';
+        if (fontSize === 'h1') return '2.5rem';
+        if (fontSize === 'h2') return '2rem';
+        if (fontSize === 'h3') return '1.75rem';
+        if (fontSize === 'h4') return '1.5rem';
+        if (fontSize === 'h5') return '1.25rem';
+        if (fontSize === 'h6') return '1rem';
+        return fontSize;
+
+    }
+
     return (
         <svg 
             className="icon" 
             viewBox="0 0 24 24" 
+            width={getFontSize()} 
             fill={getColor()}
             aria-hidden="true"
         >

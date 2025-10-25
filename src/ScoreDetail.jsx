@@ -48,10 +48,10 @@ function ScoreDetail() {
             </dl>
             <div className="button-container">
               <a href={score.pdf} className="primary-button">
-                <Icon icon="File" />View Score & Parts
+                <Icon icon="File" fontSize="p" />View Score & Parts
               </a>
               <a href={score.audio} className="secondary-button">
-                <Icon icon="Headphones" />Listen to Demo</a>
+                <Icon icon="Headphones" fontSize="p" />Listen to Demo</a>
             </div>
           </div>
           <div>

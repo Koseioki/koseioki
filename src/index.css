@@ -3,7 +3,7 @@
   --text-light: #d7d7d5;
   --background: #fafaf4;
   --background-dark: #ededea;
-  --white: #ffffff;
+  --white: #fcfcfc;
   --primary: #167542;
   --primary-hover: #115732;
   --yellow: #fc3;
@@ -166,6 +166,13 @@ h4 {
 .headings {
   margin: 2rem 0 1rem 0;
 }
+
+/* .heading-plus-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0 1rem 0;
+} */
 
 ul {
   list-style: none;

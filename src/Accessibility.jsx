@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import BreadCrumbs from "./components/BreadCrumbs";
 import { useRef, useEffect } from "react";
+import Note from "./components/Note";
+import Icon from './components/Icon.jsx';
 function Accessibility() {
 
   const headingRef = useRef(null);
@@ -19,13 +21,33 @@ function Accessibility() {
       <BreadCrumbs />
       <main id="main-content">
         <h1 className="headings" tabIndex="-1" ref={headingRef}>Accessibility</h1>
+
+        <Note>
+
+
+          <h2 className="headings">
+            <Icon icon="LightBulb" fontSize="h2" />
+            Summary of This Page
+            </h2>
+          <ul className="bulleted-list">
+            <li>I built and manage this website with accessibility in mind.</li>
+            <li>This page is compliant with various regulations, like the Web Accessibility Directive or the Web Content Accessibility Guidelines.
+            </li>
+            <li>This website has links to other websites, that might not be accessible.
+            </li>
+            <li>If you find any accessibility problems on this website, please contact me through <a className="plain-link" href="mailto:koseioki1225@gmail.com">koseioki1225@gmail.com</a> or <a className="plain-link" href="tel:+4591964325">+45 9196 4325</a>.
+            </li>
+          </ul>
+
+        </Note>
+
         <h2 className="headings">Accessibility Statement</h2>
         <p className="paragraph">I am committed to making digital products accessible in accordance with <a className="plain-link" href="https://eur-lex.europa.eu/eli/dir/2016/2102/oj/eng">Directive (EU) 2016/2102</a>, since I believe that no one should be excluded depending on their abilities.</p>
         <p className="paragraph">This accessibility statement applies to all pages under the domain <a className="plain-link" href="https://koseioki.github.io/koseioki/">koseioki.github.io/koseioki/.</a></p>
 
         <h2 className="headings">Compliance Status</h2>
-        <p className="paragraph">While this website is compliant with the <a className="plain-link" href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2 Level AA</a>, 
-I built and manage this website with universal design in mind from the beginning, more than just for compliance.</p>
+        <p className="paragraph">While this website is compliant with the <a className="plain-link" href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2 Level AA</a>,
+          I built and manage this website with universal design in mind from the beginning, more than just for compliance.</p>
 
         <h2 className="headings">Non-Accessible Content</h2>
         <p className="paragraph">There may be some non-accessible content on pages linked from this website, including:</p>
