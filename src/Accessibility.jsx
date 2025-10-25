@@ -31,7 +31,7 @@ function Accessibility() {
             </h2>
           <ul className="bulleted-list">
             <li>I built and manage this website with accessibility in mind.</li>
-            <li>This page is compliant with various regulations, like the Web Accessibility Directive or the Web Content Accessibility Guidelines.
+            <li>This website is compliant with various regulations, like the <a className="plain-link" href="https://eur-lex.europa.eu/eli/dir/2016/2102/oj/eng">Web Accessibility Directive</a> or the <a className="plain-link" href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines</a>.
             </li>
             <li>This website has links to other websites, that might not be accessible.
             </li>
