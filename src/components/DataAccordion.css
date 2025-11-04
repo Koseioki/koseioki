@@ -1,0 +1,42 @@
+
+
+.data-accordion-title {
+    cursor: pointer;
+    outline: none;
+    text-decoration: underline;
+}
+.data-accordion-title:hover {
+    text-decoration: none;
+}
+
+.data-accordion-title:focus {
+    box-shadow: var(--focus-indicator-inset);
+}
+
+.data-accordion-content{
+    margin-top: 1rem;
+}
+
+.data-accordion table{
+    border-collapse: collapse;
+}
+.data-accordion th,
+.data-accordion td {
+    border: 0.0625rem solid var(--text);
+    padding: 1rem;
+}
+
+.data-accordion ul{
+    margin-left: 1.5rem;
+    list-style-type: disc;
+
+}
+
+.data-accordion li{
+    margin: 0.5rem 0;
+}
+
+.data-accordion li::marker {
+  color: var(--red);
+
+}

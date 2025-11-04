@@ -1,4 +1,5 @@
 import AccordionSection, { AccordionProvider } from "./AccordionSection";
+import DataAccordion from "./DataAccordion";
 
 import PrehabPlusAidpro from "../assets/prehab-plus/aidpro.webp";
 import PrehabPlusAffinityDiagram from "../assets/prehab-plus/affinity-diagram.webp";
@@ -97,7 +98,7 @@ function CasePrehabPlus() {
                         <p className="paragraph">
                             For example, patients in category A typically require only iron infusions during their two-week period, whereas category D patients follow a more comprehensive plan that includes supervised and unsupervised physical training, protein supplementation, consultations, assessments, and other interventions.
                         </p>
-                        <img src={AidSurgPreoperativePhase} alt="AID-SURG preoperative phase visualisation of classes A to D."  />
+                        <img src={AidSurgPreoperativePhase} alt="AID-SURG preoperative phase visualisation of classes A to D." />
                         <p className="paragraph">
                             Supervised and home training sessions are scheduled regularly, as the prehabilitation facilitator needs to coordinate with physiotherapists in advance. In contrast, other appointments can be arranged more flexibly, depending on the patient’s condition.
                         </p>
@@ -122,7 +123,109 @@ function CasePrehabPlus() {
                         <p className="paragraph">
                             After the research, I organised all the findings using an affinity diagram to identify patterns.
                         </p>
-                        <img src={PrehabPlusAffinityDiagram} alt="An affinity diagram organising sticky notes that describe findings into a table in Figma."/>
+                        <img src={PrehabPlusAffinityDiagram} alt="An affinity diagram organising sticky notes that describe findings into a table in Figma." />
+                        <DataAccordion title="Affinity Diagram">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Categories</th>
+                                        <th scope="col">Findings</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Mentality towards prehab</th>
+                                        <td>
+                                            <ul>
+                                                <li>Contradictory and low quality of scientific evidence for (cost-) effectiveness</li>
+                                                <li>Costs must be financed immediately while yields are not (directly) clear</li>
+                                                <li>PT: “We had a patient who went to another medical specialty, not involved in prehabilitation. That person thought it was quite a tough program and said to the patient: ‘Take it easy’ and the patient followed this advice.”</li>
+                                                <li>Effectiveness difficult to prove due to heterogeneity of patient population</li>
+                                                <li>S: “… It is difficult to determine one outcome measure for the entire group because the main goal is to get the patient back to the level before operation.”</li>
+                                                <li>
+                                                    “There was some resistance and rejection at first because my colleagues couldn’t estimate how much work it [prehabilitation] would mean for them.” (B11).
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Planning challenges - inside hospital</th>
+                                        <td>
+                                            <ul>
+                                                <li>Lack of program organization evaluation–D:“There is no structured meeting to discuss logistic bottlenecks.”</li>
+                                                <li>Multidisciplinary consultation is time consuming (We have Aidpro)</li>
+                                                <li>S: “It would be yet another multidisciplinary consultation… You also need all kinds of (para)medics for that.”</li>
+                                                <li>Operating room planning takes precedence over prehabilitation program</li>
+                                                <li>PT: “Recently, we had a lot of people who were scheduled for prehabilitation, came to our intake and just heard that the surgery is planned next week.”</li>
+                                                <li>“That was a structural problem–at the time, there was not enough staff in orthopaedics and trauma surgery (…) for additional projects…” (B8).</li>
+                                                <li>I&apos;ve changed how we do interval training, but it actually had to be agreed upon again with multiple people. Instead of saying this is easier.</li>
+                                                <li>Maybe it&apos;s one less day to have to go to the patient at the bed, but it or it could be like it doesn&apos;t save money for the the diet, says who already sold them before surgery.</li>
+                                                <li>Combining appointments is difficult due to different work activities</li>
+                                                <li>S: “Logistically it is quite complex. For example: patients have to come back to the physical therapist on Monday. But we cannot see the patient on Monday because we are scheduled to be on the operation room for the whole day.”</li>
+                                                <li>...the predefined therapy plans were too rigid, resulting in patients being under or over challenged and sometimes having to idle time between therapy sessions,</li>
+                                                <li>Postponing surgery appointments</li>
+                                                <li>Short term planning of prehabilitation</li>
+                                                <li>Communication deficits among professionals</li>
+                                                <li>“I believe that the overall process should be simplified, both in terms of preparing people and asking who is a candidate for prehabilitation, as well as the measures that are taken.” (B10).</li>
+                                                <li>“It would probably make more sense if you had a little more time or if you could get away from this rigid regulation of breaks, for example in strength training (…)” (B5).</li>
+                                                <li>D: “Right now, a lot of patients drop out because the surgery is planned within 5 days after the consultation with the specialized nurse, where prehabilitation is discussed for the first time. The prehabilitation period is then too short.”</li>
+                                                <li>How do we solve this instead of having to involve different layers like the second, we have to communicate further down the line. With more people it gets slower and it gets more complicated.</li>
+                                                <li>It is difficult like the the preset agreements are very, very difficult to change. Like and changing a protocol is very very difficult as well.</li>
+                                                <li>Because honestly, we&apos;re very bad at working together with working across different.</li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Planning challenges - between hospital patients</th>
+                                        <td>
+                                            <ul>
+                                                <li>Counseling patients is time consuming</li>
+                                                <li>PT: “You have to plan a lot of appointments, that is satisfying, but also costs a lot of energy.”</li>
+                                                <li>S: “… For example for a 85 years old frail patient with a rollator, frequently cycling is not going to work… However I am convinced that even repetitive sit-to-stand exercises could work.”</li>
+                                                <li>Differences in patients’ resilience and training opportunities</li>
+                                                <li>Communication deficits with patients</li>
+                                                <li>“I think if this is incorporated into standard care, then patients are treated more pragmatically and not so according to a standard, according to a protocol. I believe that if a patient has the motivation to stay longer, to do self-exercises, then no one will forbid this patient to do so.” (B11).</li>
+                                                <li>PT: “I think it must be for a certain group of patients, patients who really need it. Because otherwise you might train patients who are already physically strong enough. They do improve in condition, but they have less tendency to end up in the ‘critical zone’ postoperatively.”</li>
+                                                <li>We are trying to do a lot of the questionnaires about these patients like when like post operative.
+                                                    And the setting is just very difficult to have because they have to like write in these questionnaires physically after the surgery.</li>
+                                                <li>They understand it correctly, and there&apos;s just a lot of frustration going about this because it&apos;s a really important outcome, but it will never be 100% compliance, no matter how how hard I try.</li>
+                                                <li>The same goes with the C patients two times a week in Køge times.</li>
+                                                <li>Our D patients, the agreement is they train three times a week in Roskilde in the morning.</li>
+                                                <li>And sometimes, sometimes it&apos;s just easier to have like a see patient in ad training environment or other way ad patient in A/C training environment.</li>
+                                                <li>Because I don&apos;t know if you should go train if you if you would rather train 5 minutes away from the the hospital you&apos;re closest to, instead of having to drive because we have seen patients living in muscular.</li>
+                                                <li>you go here because the agreement is these patients trained here and these patients trained there.</li>
+                                                <li>And on like if you had gathered together in one place like, you wouldn&apos;t have these potential coordinating issues.
+                                                    That&apos;s it&apos;s just how it is. And if you have a capacity issue, you discuss it directly with your department.</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Barriers in patients</th>
+                                        <td>
+                                            <ul>
+                                                <li>Indirect costs for patients (e.g. travel expenses)</li>
+                                                <li>SN:“Patients have to come to the hospital three times a week and you have to pay quite a lot of parking costs here. Of course, if you can’t afford that, that could be a barrier.”</li>
+                                                <li>D: “Things did not always go well at the beginning. Patients did not understand what they opted into and ultimately they did not want to come over anymore for something like prehabilitation.”</li>
+                                                <li>PT: “… Sometimes patients experience practical barriers to take part in a prehabilitation program because they have walking difficulties and no transportation to the hospital.”</li>
+                                                <li>SN: “In particular, the older patients have been raised with the idea that when you are sick you have to rest in order to get well.”</li>
+                                                <li>Patient transportation</li>
+                                                <li>Excessive demands of patients</li>
+                                                <li>SN: “It would be nice if patients could train close to home as well. Sometimes people start with prehabilitation but are not able to finish because they have to travel three times a week to the hospital.”</li>
+                                                <li>SN: “…Sometimes patients find it difficult as they feel that surgery is being delayed when participating in a prehabilitation program. Patients prefer to have the cancer removed yesterday instead of in three weeks.”</li>
+                                                <li>I think the barrier comes when the patients are losing overview over the the appointments like I end up doing like overviews for them like first I talk through the different assignments they can have and then if they&apos;re still overwhelmed with the appointment.
+                                                    How many appointments they have, like I do like different like print out documents like with day by day.
+                                                    Like you have to do this On this date. This and this date.</li>
+
+
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </DataAccordion>
                         <p className="paragraph">
                             I also created an Experience Map to both organise all the findings chronologically and identify the users’ pains and gains.
                         </p>
@@ -165,7 +268,7 @@ function CasePrehabPlus() {
                         <p className="paragraph">
                             This list served as a foundational guide for the prototyping and design stages, outlining the essential elements of the digital solution.
                         </p>
-                        <img src={ListOfRequirements} alt="A table listing requirements for features alongside their corresponding UI elements."/>
+                        <img src={ListOfRequirements} alt="A table listing requirements for features alongside their corresponding UI elements." />
                         <p className="paragraph">
                             Additionally, I developed a list of core values, which—unlike the list of requirements that outlines concrete features—focuses on the underlying principles and purpose of the solution. This values list also served as a guiding reference during the visual design phase, including the creation of the moodboard and design guidelines.
                         </p>
@@ -219,7 +322,7 @@ function CasePrehabPlus() {
                             In the prototype, a to-do list for daily tasks is included in the interface. Ticking off completed tasks can provide a sense of reward and accomplishment.
 
                         </p>
-                        <img src={PrehabPlusToDoList} alt="A to-do list of training tasks in the prototype."/>
+                        <img src={PrehabPlusToDoList} alt="A to-do list of training tasks in the prototype." />
                         <p className="paragraph">
                             A list of the patient’s appointments is included in both a list view and a calendar view. This dual-format approach provides a clear chronological overview of the entire treatment process, helping to reduce uncertainty and improve the patient’s sense of control.
 
@@ -308,12 +411,12 @@ function CasePrehabPlus() {
                             I added a “Skip” button to the login confirmation screen, as one participant tried to tap the screen to proceed.
 
                         </p>
-                        <img src={PrehabPlusTesting1} alt="Lo-Fi prototype without a skip button and Hi-Fi prototype including it."/>
+                        <img src={PrehabPlusTesting1} alt="Lo-Fi prototype without a skip button and Hi-Fi prototype including it." />
                         <p className="paragraph">
                             I included a checkbox on each exercise page, since some participants expected to find it there rather than needing to return to the list page.
 
                         </p>
-                        <img src={PrehabPlusTesting2} alt="Lo-Fi prototype without a checkbox and Hi-Fi prototype with it."/>
+                        <img src={PrehabPlusTesting2} alt="Lo-Fi prototype without a checkbox and Hi-Fi prototype with it." />
                         <p className="paragraph">
                             On the “Skema” page, I changed the link button text from “Læs mere” to “Det sker til aftalen,” based on feedback that “Læs mere” sounded uncertain—making it unclear whether the information was essential or just additional.
 
@@ -364,7 +467,7 @@ function CasePrehabPlus() {
                             However, this introduced a problem: in this example, since the DOM order is checkbox → heading → time → button, when a screen reader focuses on the heading, it might miss the checkbox, as the checkbox is not programmatically associated with the heading.
 
                         </p>
-                        <img src={PrehabPlusA11y5} alt="Visualisation of the DOM order in the user interface."/>
+                        <img src={PrehabPlusA11y5} alt="Visualisation of the DOM order in the user interface." />
 
                         <p className="paragraph">
                             To resolve this, I inserted an invisible heading before the checkbox and applied aria-hidden=&quot;true&quot; to the visible heading. This ensures that screen readers recognise only the hidden heading, placing the checkbox under it in the accessibility tree, while the visible heading remains available for sighted users.
@@ -405,7 +508,7 @@ function CasePrehabPlus() {
                             To make the &lt;h1&gt; focusable without adding it to the tab order, I used tabIndex={-1}. This enables programmatic focus while preventing users from reaching the element through normal tab navigation.
 
                         </p>
-                        <img src={PrehabPlusA11y9} alt="Code snippet setting focus to the heading using headingRef.current?.focus()."/>
+                        <img src={PrehabPlusA11y9} alt="Code snippet setting focus to the heading using headingRef.current?.focus()." />
                         <p className="paragraph">
                             I ensured that the list/calendar view toggle is fully operable for screen reader users. To support WCAG Success Criterion 1.3.1: Info and Relationships, I included a visually hidden heading labelled “Skift visning”, allowing screen reader users to easily locate the section.
 
