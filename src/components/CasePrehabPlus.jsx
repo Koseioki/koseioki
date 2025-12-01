@@ -1,5 +1,6 @@
-import AccordionSection, { AccordionProvider } from "./AccordionSection";
+// import AccordionSection, { AccordionProvider } from "./AccordionSection";
 
+import AccordionSection from "./AccordionSection";
 import PrehabPlusAidpro from "../assets/prehab-plus/aidpro.webp";
 import PrehabPlusAffinityDiagram from "../assets/prehab-plus/affinity-diagram.webp";
 import PrehabPlusExperienceMapping from "../assets/prehab-plus/experience-mapping.webp";
@@ -66,7 +67,7 @@ function CasePrehabPlus() {
                 On top of that, they are in a state of crisis—so the experience should feel supportive, not like an additional burden.
             </p>
             <h2 className="headings">Design Process</h2>
-            <AccordionProvider>
+            {/* <AccordionProvider> */}
                 <ul className="accordion-container">
                     <AccordionSection title="Research" index={0}>
                         <h4 className="headings">Generative Research</h4>
@@ -453,7 +454,7 @@ function CasePrehabPlus() {
                         </p>
                     </AccordionSection>
                 </ul>
-            </AccordionProvider>
+            {/* </AccordionProvider> */}
         </>
     );
 }

@@ -15,10 +15,9 @@ function Profile() {
 
   return (
     <section id="profile">
-      <img className="profile-picture" src={Kosei} alt="Kosei smiling in an outdoorsy black jacket, with styled black short hair, photo" />
       <div>
         <div className="name-container">
-          <h1 className="headings">Hello! I'm Kosei.</h1>
+          <h1 className="headings">Hello! I&apos;m Kosei.</h1>
           <div className="pronunciation">/ˈkoʊ.seɪ/</div>
         </div>
 
@@ -28,6 +27,8 @@ function Profile() {
         <p className="paragraph">I play percussion and steel pan (Low Tenor and Double Guitar).</p>
 
       </div>
+            <img className="profile-picture" src={Kosei} alt="Kosei smiling in an outdoorsy black jacket, with styled black short hair, photo" />
+
     </section>
   );
 }

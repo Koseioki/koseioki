@@ -5,8 +5,8 @@ import BreadCrumbs from './components/BreadCrumbs.jsx';
 import './DetailPages.css';
 import { Helmet } from 'react-helmet-async';
 import SectionRenderer from './components/SectionRenderer.jsx';
-import WarningSection from './components/WarningSection.jsx';
-import AccordionSection from './components/AccordionSection.jsx';
+// import WarningSection from './components/WarningSection.jsx';
+// import AccordionSection from './components/AccordionSection.jsx';
 import './components/AccordionSection.css';
 
 import CasePrehabPlus from './components/CasePrehabPlus.jsx'; 
@@ -18,7 +18,14 @@ function CaseDetail() {
   const uxCase = uxCases.find(p => p.slug === slug);
 
   const headingRef = useRef(null);
-  const [openSections, setOpenSections] = useState([]);
+
+    useEffect(() => {
+    if (headingRef.current) {
+      headingRef.current.focus();
+    }
+  }, []);
+
+  // const [openSections, setOpenSections] = useState([]);
 
   // load the case data
   const componentMap = {
@@ -28,19 +35,15 @@ function CaseDetail() {
   };
   const CustomComponent = componentMap[uxCase.customSection];
 
-  useEffect(() => {
-    if (headingRef.current) {
-      headingRef.current.focus();
-    }
-  }, []);
 
-  const handleAccordionToggle = (idx) => {
-    setOpenSections(prev =>
-      prev.includes(idx)
-        ? prev.filter(i => i !== idx)
-        : [...prev, idx]
-    );
-  };
+
+  // const handleAccordionToggle = (idx) => {
+  //   setOpenSections(prev =>
+  //     prev.includes(idx)
+  //       ? prev.filter(i => i !== idx)
+  //       : [...prev, idx]
+  //   );
+  // };
 
   return (
     <>
@@ -52,9 +55,6 @@ function CaseDetail() {
       <main id="main-content">
         <h1 ref={headingRef} tabIndex="-1" className="headings">{uxCase.title}</h1>
 
-        {/* <WarningSection>
-          <li>Images without text alternatives</li>
-        </WarningSection> */}
 
         <div className="detail-header">
           <div>

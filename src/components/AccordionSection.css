@@ -6,10 +6,6 @@
     background-color: var(--white);
 }
 
-/* .dark-mode .accordion-container {
-    background-color: var(--text);
-    border: 0.0625rem solid var(--text-light);
-} */
 
 .accordion {
     border-bottom: 0.0625rem solid var(--text-light);
@@ -22,8 +18,8 @@
 
 
 
-.accordion button {
-    width: 100%;
+.accordion summary {
+    /* width: 100%; */
     box-shadow: none;
     background-color: transparent;
     border: none;
@@ -39,49 +35,42 @@
     text-align: left;
 }
 
-/* .dark-mode .accordion button {
-    color: var(--text-light);
-} */
 
-.accordion button:hover {
+
+.accordion summary:hover {
     color: var(--primary);
 }
 
-/* .dark-mode .accordion button:hover {
-    color: var(--yellow);
-} */
 
-.accordion button span::after {
+
+.accordion summary span::after {
     font-weight: normal;
     content: "+";
     position: absolute;
     left: 2rem;
     top: 50%;
-    /* top: 1.5rem; */
-    transform: translateY(-50%);
+    transform: translateY(-55%);
     color: var(--primary);
-    transition: transform 0.2s;
+    /* transition: transform 0.2s; */
     font-size: 1.5rem;
 }
 
-/* .dark-mode .accordion button span::after {
-    color: var(--yellow);
-} */
 
-.accordion button[aria-expanded="true"] span::after {
+
+.accordion details[open] summary span::after {
     content: "−";
 }
 
-.accordion button:focus {
+.accordion summary:focus {
     box-shadow: var(--focus-indicator-inset);
 
 }
 
 .accordion-content {
     margin: 0 2rem;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease;
+    /* overflow: hidden; */
+    /* max-height: 0; */
+    /* transition: max-height 0.3s ease; */
 }
 
 .accordion-content img {
@@ -107,18 +96,18 @@
 
 
 
-.accordion-content.open {
+.accordion-content {
     padding-bottom: 2rem;
 }
 
 @media (max-width: 568px) {
-    .accordion button {
+    .accordion summary {
         /* padding: 2rem 1rem; */
         padding-left: 3rem;
 
     }
 
-    .accordion button span::after {
+    .accordion summary span::after {
         left: 1.5rem;
     }
 

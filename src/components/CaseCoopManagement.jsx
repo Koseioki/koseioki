@@ -1,5 +1,6 @@
-import AccordionSection, { AccordionProvider } from "./AccordionSection";
+// import AccordionSection, { AccordionProvider } from "./AccordionSection";
 
+import AccordionSection from "./AccordionSection";
 import CoopManagementAffinityDiagram from "../assets/coop-management/affinity-diagram.webp";
 import CoopManagementHowMightWe from "../assets/coop-management/how-might-we.webp";
 import CoopManagementLoFi from "../assets/coop-management/lo-fi.webp";
@@ -50,7 +51,7 @@ function CaseCoopManagement() {
             </p>
 
             <h2 className="headings">Design Process</h2>
-            <AccordionProvider>
+            {/* <AccordionProvider> */}
                 <ul className="accordion-container">
 
                     <AccordionSection title="Research" index={0}>
@@ -233,7 +234,7 @@ function CaseCoopManagement() {
                         </p>
                     </AccordionSection>
                 </ul>
-            </AccordionProvider>
+            {/* </AccordionProvider> */}
         </>
     );
 }

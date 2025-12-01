@@ -22,10 +22,10 @@ function Accessibility() {
       <main id="main-content">
         <h1 className="headings" tabIndex="-1" ref={headingRef}>Accessibility</h1>
 
-        <Note>
+        <Note id="accessibilitySummary">
 
 
-          <h2 className="headings">
+          <h2 className="headings" id="accessibilitySummary">
             <Icon icon="LightBulb" fontSize="h2" />
             Summary of This Page
             </h2>

@@ -1,9 +1,9 @@
 import './Note.css';
-function Note({children}) {
+function Note({children, id}) {
     return (
-        <aside className="note-container">
+        <section aria-labelledby={id} className="note-container">
             {children}
-        </aside>
+        </section>
     );
 }
 

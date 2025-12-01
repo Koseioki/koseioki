@@ -6,24 +6,24 @@ function Footer() {
     <>
       <div className="back-to-top-container">
         <a
-          href="#"
+          href="#main-content"
           className="plain-link"
-          onClick={e => {
-            e.preventDefault();
-            const h1 = document.querySelector('h1');
-            if (h1) {
-              h1.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-                inline: 'nearest'
-              });
-              // Set focus after scroll completes
-              setTimeout(() => {
-                h1.setAttribute('tabindex', '-1');
-                h1.focus();
-              }, 300);
-            }
-          }}
+          // onClick={e => {
+          //   e.preventDefault();
+          //   const h1 = document.querySelector('h1');
+          //   if (h1) {
+          //     h1.scrollIntoView({
+          //       behavior: 'smooth',
+          //       block: 'start',
+          //       inline: 'nearest'
+          //     });
+          //     // Set focus after scroll completes
+          //     setTimeout(() => {
+          //       h1.setAttribute('tabindex', '-1');
+          //       h1.focus();
+          //     }, 300);
+          //   }
+          // }}
         >
           <span aria-hidden="true">↑ </span>Back to Top
         </a>
