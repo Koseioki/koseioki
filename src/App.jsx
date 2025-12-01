@@ -7,7 +7,7 @@ import AccessibleWebComponents from './AccessibleWebComponents'
 import ComponentDetail from './ComponentDetail'
 import ConcertBandScores from './ConcertBandScores'
 import ScoreDetail from './ScoreDetail'
-import UXUIDesignCases from './UXUIDesignCases'
+import UXDesignCases from './UXDesignCases'
 import CaseDetail from './CaseDetail'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -26,8 +26,8 @@ const App = () => {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/accessible-web-components" element={<AccessibleWebComponents />} />
         <Route path="/accessible-web-components/:slug" element={<ComponentDetail />} />
-        <Route path="/ux-ui-design-cases" element={<UXUIDesignCases />} />
-        <Route path="/ux-ui-design-cases/:slug" element={<CaseDetail />} />
+        <Route path="/ux-design-cases" element={<UXDesignCases />} />
+        <Route path="/ux-design-cases/:slug" element={<CaseDetail />} />
         <Route path="/concert-band-scores" element={<ConcertBandScores />} />
         <Route path="/concert-band-scores/:slug" element={<ScoreDetail />} />
       </Routes>

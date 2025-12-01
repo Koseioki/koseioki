@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import './CaseCard.css';
 
 function CaseCard({ caseItem }) {
-    const path = `/ux-ui-design-cases/${caseItem.slug}`;
+    const path = `/ux-design-cases/${caseItem.slug}`;
     const navigate = useNavigate();
     const handleClick = () => {
         if (path) {
@@ -23,7 +23,7 @@ function CaseCard({ caseItem }) {
 
                 <div className="card-text">
                     <h2>
-                        <NavLink to={`/ux-ui-design-cases/${caseItem.slug}`} className="headings">
+                        <NavLink to={`/ux-design-cases/${caseItem.slug}`} className="headings">
                             {caseItem.title}
                         </NavLink>
                     </h2>

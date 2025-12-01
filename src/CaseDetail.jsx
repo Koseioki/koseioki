@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { uxuiCases } from './data/uxuiCases.js';
+import { uxCases } from './data/uxCases.js';
 import { useParams } from 'react-router-dom';
 import BreadCrumbs from './components/BreadCrumbs.jsx';
 import './DetailPages.css';
@@ -15,7 +15,7 @@ import CaseCoopManagement from './components/CaseCoopManagement.jsx';
 
 function CaseDetail() {
   const { slug } = useParams();
-  const uxuiCase = uxuiCases.find(p => p.slug === slug);
+  const uxCase = uxCases.find(p => p.slug === slug);
 
   const headingRef = useRef(null);
   const [openSections, setOpenSections] = useState([]);
@@ -26,7 +26,7 @@ function CaseDetail() {
     CaseCoopManagement
 
   };
-  const CustomComponent = componentMap[uxuiCase.customSection];
+  const CustomComponent = componentMap[uxCase.customSection];
 
   useEffect(() => {
     if (headingRef.current) {
@@ -45,12 +45,12 @@ function CaseDetail() {
   return (
     <>
       <Helmet>
-        <title>{uxuiCase.title} - Kosei Oki</title>
+        <title>{uxCase.title} - Kosei Oki</title>
       </Helmet>
       <BreadCrumbs />
 
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex="-1" className="headings">{uxuiCase.title}</h1>
+        <h1 ref={headingRef} tabIndex="-1" className="headings">{uxCase.title}</h1>
 
         {/* <WarningSection>
           <li>Images without text alternatives</li>
@@ -59,18 +59,18 @@ function CaseDetail() {
         <div className="detail-header">
           <div>
             <h2>Project Summary</h2>
-            {uxuiCase.summary.map((block, i) => (
+            {uxCase.summary.map((block, i) => (
               <SectionRenderer key={`summary-${i}`} section={block} />
             ))}
             <img
-              src={uxuiCase.clientLogo}
+              src={uxCase.clientLogo}
               className="client-logo"
-              alt={`Client: ${uxuiCase.client}`}
+              alt={`Client: ${uxCase.client}`}
             />
 
           </div>
           <div>
-            <img src={uxuiCase.image} className="detail-thumbnail" alt="" aria-hidden="true" />
+            <img src={uxCase.image} className="detail-thumbnail" alt="" aria-hidden="true" />
           </div>
         </div>
         <hr aria-hidden="true" />
