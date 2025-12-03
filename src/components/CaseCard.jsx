@@ -23,7 +23,7 @@ function CaseCard({ caseItem }) {
 
                 <div className="card-text">
                     <h2>
-                        <NavLink to={`/ux-design-cases/${caseItem.slug}`} className="headings">
+                        <NavLink to={`/ux-design-cases/${caseItem.slug}`} className="headings card-title">
                             {caseItem.title}
                         </NavLink>
                     </h2>

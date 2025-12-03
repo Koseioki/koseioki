@@ -4,9 +4,6 @@ footer {
 
 }
 
-/* .dark-mode footer {
-    border-bottom: 0.25rem solid var(--primary-hover);
-} */
 
 .footer-content {
     max-width: var(--page-width);
