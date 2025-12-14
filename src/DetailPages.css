@@ -19,6 +19,7 @@
 .detail-thumbnail-container {
     background-color: var(--white);
     padding: 2rem;
+    border-radius: 1rem;
         /* border: 0.0625rem solid var(--text-light); */
 
 }
@@ -32,6 +33,12 @@
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: contain;
+    /* border-radius: 1rem; */
+}
+
+.case-thumbnail {
+    border-radius: 1rem;
+    aspect-ratio: unset;
 }
 
 
@@ -47,6 +54,8 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+        border-radius: 1rem;
+
 }
 
 .detail-score-thumbnail:hover {
@@ -91,8 +100,10 @@
     width: 100%;
     max-width: 40rem;
     border: 0.0625rem solid var(--text-light);
-    /* background-color: (--white); */
-    /* padding: 1rem; */
+    background-color: #fff;
+    padding: 1rem;
     margin: 0.5rem 0;
+
+    border-radius: 1rem;
 
 }

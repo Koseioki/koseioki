@@ -78,7 +78,7 @@
     max-width: 40rem;
     margin: 2rem 0;
     border: 0.0625rem solid var(--text-light);
-    /* z-index: 100; */
+    border-radius: 1rem;
 }
 
 .accordion-content .product-screenshots {

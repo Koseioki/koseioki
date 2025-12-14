@@ -10,6 +10,7 @@ export const uxCases = [
         slug: "prehab-plus",
         title: "Prehab Plus",
         image: PrehabPlus,
+        imageAlt: "Two elderly women wearing black glasses are looking at a tablet device in a room, photo.",
         client: "Region Sjælland",
         clientLogo: RegionSjaelland,
         customSection: "CasePrehabPlus",
@@ -28,7 +29,8 @@ export const uxCases = [
         client: "Coop Danmark",
         clientLogo: Coop,
         image: CoopManagement,
-            customSection: "CaseCoopManagement",
+        imageAlt: "A man with a serious expression is using a desktop computer at a counter in a store. He is wearing a white T-shirt and a black apron, photo.",
+        customSection: "CaseCoopManagement",
 
         summary: [
             {

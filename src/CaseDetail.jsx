@@ -62,15 +62,16 @@ function CaseDetail() {
             {uxCase.summary.map((block, i) => (
               <SectionRenderer key={`summary-${i}`} section={block} />
             ))}
+            <p className="paragraph">Client:</p>
             <img
               src={uxCase.clientLogo}
               className="client-logo"
-              alt={`Client: ${uxCase.client}`}
+              alt={uxCase.client}
             />
 
           </div>
           <div>
-            <img src={uxCase.image} className="detail-thumbnail" alt="" aria-hidden="true" />
+            <img src={uxCase.image} className="detail-thumbnail case-thumbnail" alt={uxCase.imageAlt} />
           </div>
         </div>
         <hr aria-hidden="true" />
