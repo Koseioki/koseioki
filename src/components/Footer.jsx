@@ -40,8 +40,12 @@ function Footer() {
           <div className="footer-links-container">
 
             <ul>
+              <li>
               <NavLink className="plain-link" to="/accessibility">Accessibility</NavLink>
+              </li>
+              <li>
               <NavLink className="plain-link" to="/privacy">Privacy</NavLink>
+              </li>
             </ul>
 
             <ul>
