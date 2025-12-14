@@ -31,7 +31,9 @@ function CaseCard({ caseItem }) {
                     {caseItem.summary.map((block, i) => (
                         <p key={`summary-${i}`} className="paragraph">{block.text}</p>
                     ))}
-                    <img src={caseItem.clientLogo} className="client-logo" alt={`Client: ${caseItem.client}`} />
+                                <p className="paragraph">Client:</p>
+
+                    <img src={caseItem.clientLogo} className="client-logo" alt={caseItem.client} />
 
                 
 
