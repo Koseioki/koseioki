@@ -16,7 +16,7 @@ function Contact() {
               <Icon icon="Email" fontSize="p"/>koseioki1225@gmail.com</a>
         </li>
       </ul>
-       <h3 className="headings">Social Media</h3>
+       <h3 className="headings">Links</h3>
         <ul className="link-list paragraph">
 
           <li>
@@ -28,11 +28,11 @@ function Contact() {
             <a className="plain-link" href="https://github.com/Koseioki">
               <Icon icon="Github" fontSize="p"/>GitHub</a>
           </li>
-          <li>
+          {/* <li>
             <a className="plain-link" href="https://www.instagram.com/koseioki1225/">
               <Icon icon="Instagram" fontSize="p"/>Instagram
             </a>
-          </li>
+          </li> */}
         </ul>
     </section>
   );
