@@ -64,9 +64,9 @@ function Footer() {
               <li>
                 <a className="plain-link" href="https://github.com/Koseioki?tab=repositories">GitHub</a>
               </li>
-              <li>
+              {/* <li>
                 <a className="plain-link" href="https://www.instagram.com/koseioki1225/">Instagram</a>
-              </li>
+              </li> */}
 
             </ul>
           </div>
