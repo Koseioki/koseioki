@@ -18,7 +18,7 @@ function Home() {
         const el = document.querySelector(hash);
         if (el) {
           el.focus();
-          el.scrollIntoView({ behavior: 'smooth' });
+          el.scrollIntoView({ behavior: 'auto' });
         }
       }, 0); // Delay one tick
 

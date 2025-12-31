@@ -59,7 +59,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a className="plain-link" href="https://www.linkedin.com/in/kosei-oki-340129234/">LinkedIn</a>
+                <a className="plain-link" href="https://www.linkedin.com/in/koseioki/">LinkedIn</a>
               </li>
               <li>
                 <a className="plain-link" href="https://github.com/Koseioki?tab=repositories">GitHub</a>

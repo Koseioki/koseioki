@@ -69,7 +69,7 @@ function CasePrehabPlus() {
             <h2 className="headings">Design Process</h2>
             {/* <AccordionProvider> */}
                 <ul className="accordion-container">
-                    <AccordionSection title="Research" index={0}>
+                    <AccordionSection title="Understanding the Full Context" index={0}>
                         <h4 className="headings">Generative Research</h4>
                         <p className="paragraph">
                             First I conducted generative research (“What’s up with…?) online, exploring the broader context of colorectal cancer treatment through online sources, to gather foundational knowledge about the disease and its associated care.
@@ -119,7 +119,7 @@ function CasePrehabPlus() {
 
                     </AccordionSection>
 
-                    <AccordionSection title="Mapping" index={1}>
+                    <AccordionSection title="Identifying the Core Problems" index={1}>
                         <p className="paragraph">
                             After the research, I organised all the findings using an affinity diagram to identify patterns.
                         </p>
@@ -175,7 +175,7 @@ function CasePrehabPlus() {
 
                     </AccordionSection>
 
-                    <AccordionSection title="Define Concept" index={2}>
+                    <AccordionSection title="Defining the Concept of the Solution" index={2}>
                         <p className="paragraph">
                             Based on the research and mapping activities, the solution would include those features:
 
@@ -194,7 +194,7 @@ function CasePrehabPlus() {
                             <li>It had to be accessible, as guidelines from the WAI (Web Accessibility Initiative) emphasise that accessible applications benefit older users as well.</li>
                         </ul>
                     </AccordionSection>
-                    <AccordionSection title="Prototyping" index={3}>
+                    <AccordionSection title="Creating Prototypes that Reflect the Real World" index={3}>
                         <h4 className="headings">Sketch to Prototype</h4>
                         <p className="paragraph">
                             Before starting any visual design work, I created a user flow based on the list of requirements, to structure how users would navigate the solution in order to complete their tasks.
@@ -276,7 +276,7 @@ function CasePrehabPlus() {
 
                     </AccordionSection>
 
-                    <AccordionSection title="Visual Design" index={4}>
+                    <AccordionSection title="Translating Emotional Insights into Visual Design" index={4}>
                         <p className="paragraph">
                             I created a moodboard to better understand the overall visual style. To select imagery that best fits the context of this solution, I referred to the list of values developed during the mapping, along with the “emotional insights” gathered throughout the research process.
 
@@ -289,7 +289,7 @@ function CasePrehabPlus() {
                         <img src={PrehabPlusStyletile} alt="Style Tile on Figma showing fonts, text sizes, colours, and other components matching the moodboard's colour theme." />
                     </AccordionSection>
 
-                    <AccordionSection title="Testing" index={5}>
+                    <AccordionSection title="Testing Prototypes with Real Users" index={5}>
                         <p className="paragraph">
                             I then conducted usability testing sessions on the Lo-Fi prototype to ensure that the functions are working as I intend. During the test, I followed the “Think-Aloud” method to understand where testers are struggling to find information and what is causing confusion. I used this testing method because, according to Norman Nielsen Group, it is cost-effective and easy to learn.
 
@@ -334,7 +334,7 @@ function CasePrehabPlus() {
 
                     </AccordionSection>
 
-                    <AccordionSection title="Accessibility" index={6}>
+                    <AccordionSection title="How Might We Make the Solution Accessible to Everyone?" index={6}>
                         <p className="paragraph">
                             I followed the Web Content Accessibility Guidelines (WCAG) 2.2 level AA as a reference throughout this project, since this is the most widely adopted reference according to World Wide Web Consortium (W3C).
 

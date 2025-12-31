@@ -20,7 +20,7 @@ function Contact() {
         <ul className="link-list paragraph">
 
           <li>
-            <a className="plain-link" href="https://www.linkedin.com/in/kosei-oki-340129234/">
+            <a className="plain-link" href="https://www.linkedin.com/in/koseioki/">
               <Icon icon="LinkedIn" fontSize="p"/>LinkedIn
             </a>
           </li>

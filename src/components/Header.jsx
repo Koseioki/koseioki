@@ -16,7 +16,7 @@ function Header() {
       const el = document.querySelector(hash);
       if (el) {
         el.focus();
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({ behavior: 'auto' });
       }
     } else {
       navigate(`/${hash}`);
@@ -30,14 +30,15 @@ function Header() {
 
     <>
       <div className="skip-to-content">
-        <a 
-          href="#" 
+        <NavLink to="#main-content">Skip to Content</NavLink>
+        {/* <a
+          href="#main-content"
           onClick={e => {
             e.preventDefault();
             const h1 = document.querySelector('h1');
             if (h1) {
-              h1.scrollIntoView({ 
-                behavior: 'smooth',
+              h1.scrollIntoView({
+                behavior: 'auto',
                 block: 'start',
                 inline: 'nearest'
               });
@@ -49,7 +50,7 @@ function Header() {
           }}
         >
           Skip to content
-        </a>
+        </a> */}
       </div>
 
       <header>
@@ -60,10 +61,13 @@ function Header() {
           <nav className="main-nav" aria-label="Main navigation">
             <ul>
               <li className="nav-item">
-                <NavLink to="/#works" onClick={(e) => handleClick(e, '#works')}>Works</NavLink>
+                {/* <NavLink to="/#works" onClick={(e) => handleClick(e, '#works')}>Works</NavLink> */}
+                <NavLink to="/#works">Works</NavLink>
+
               </li>
               <li className="nav-item">
-                <NavLink to="/#contact" onClick={(e) => handleClick(e, '#contact')}>Contact</NavLink>
+                {/* <NavLink to="/#contact" onClick={(e) => handleClick(e, '#contact')}>Contact</NavLink> */}
+                <NavLink to="/#contact">Contact</NavLink>
               </li>
 
             </ul>

@@ -54,7 +54,7 @@ function CaseCoopManagement() {
             {/* <AccordionProvider> */}
                 <ul className="accordion-container">
 
-                    <AccordionSection title="Research" index={0}>
+                    <AccordionSection title="Listening to the Employees" index={0}>
                         <p className="paragraph">
                             Firstly, we started with desk research in order to have a fundamental understanding of this project, including the situation of food waste in Denmark, the background of the stakeholders, and how the current solutions work.
 
@@ -82,7 +82,7 @@ function CaseCoopManagement() {
                         <img src={KvicklyViby} alt="" aria-hidden="true" />
                     </AccordionSection>
 
-                    <AccordionSection title="Mapping" index={1}>
+                    <AccordionSection title="Understanding the Exact Problems" index={1}>
                         <p className="paragraph">
                             After conducting our desk research and interviews, we analysed all the gathered data by creating an Affinity Diagram in order to identify patterns.
 
@@ -119,7 +119,7 @@ function CaseCoopManagement() {
 
 
 
-                    <AccordionSection title="Define Concept" index={2}>
+                    <AccordionSection title="Defining the Concept of the Solution" index={2}>
                         <p className="paragraph">
                             Based on the research and mapping activities, the solution would include those features:
 
@@ -132,7 +132,7 @@ function CaseCoopManagement() {
 
                     </AccordionSection>
 
-                    <AccordionSection title="Prototyping and Testing" index={3}>
+                    <AccordionSection title="How Might We Create Easy-to-Navigate Interfaces?" index={3}>
                         <h4 className="headings">Wireframe to Sketch</h4>
                         <p className="paragraph">
                             To organise the elements on the list that some of the pages would have, we created Object-Oriented User Experience(OOUX) schemes.
