@@ -81,7 +81,7 @@
     border-radius: 1rem;
 }
 
-.accordion-content .product-screenshots {
+/* .accordion-content .product-screenshots {
     margin: 1rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,6 +92,15 @@
 .accordion-content .product-screenshots img {
     margin: 0;
 
+} */
+
+.accordion-content img.product-screenshot{
+    margin-top: 2rem;
+    width: 100%;
+    /* max-width: 20rem; */
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    border: none;
 }
 
 
@@ -115,7 +124,7 @@
         margin: 0 1rem;
     }
 
-    .accordion-content .product-screenshots {
+    /* .accordion-content .product-screenshots {
         grid-template-columns: 1fr;
-    }
+    } */
 }

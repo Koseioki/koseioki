@@ -52,6 +52,8 @@ import LawOfProximity from "../assets/prehab-plus/law-of-proximity.webp";
 import HicksLaw from "../assets/prehab-plus/hicks-law.webp";
 import FittsLaw from "../assets/prehab-plus/fitts-law.webp";
 
+import Product from "../assets/prehab-plus/prehab-plus2.webp"
+
 
 function CasePrehabPlus() {
     return (
@@ -429,13 +431,13 @@ function CasePrehabPlus() {
                     </AccordionSection>
 
                     <AccordionSection title="Outcomes and Finish Product" index={7}>
-                        <div className="product-screenshots">
+                        {/* <div className="product-screenshots">
                             <img src={PrehabPlusScreenshot1} className="product-screenshot" alt="“Min to-do liste” page featuring a message from the contact person and a to-do list of training tasks with buttons linking to each tutorial page." />
                             <img src={PrehabPlusScreenshot2} className="product-screenshot" alt="“Armløft med rotation” page showing a tutorial video and text explanation with supplemental images." />
                             <img src={PrehabPlusScreenshot3} className="product-screenshot" alt="“Mit skema” list view page showing titles, dates, and times of appointments with buttons linking to detail pages." />
                             <img src={PrehabPlusScreenshot4} className="product-screenshot" alt="“Mit skema” calendar view showing May 2025 with several icons and a “Download dit skema” button at the top." />
                             <img src={PrehabPlusScreenshot5} className="product-screenshot" alt="“Min kontakt” page displaying the contact person’s name, role, explanatory text, and buttons for email, calling, and video calling." />
-                        </div>
+                        </div> */}
                         <p className="paragraph">
                             I created an app designed to support colorectal cancer patients at Region
                             Sjælland during the prehabilitation process, helping them through a
@@ -452,6 +454,7 @@ function CasePrehabPlus() {
                             The interface uses real-life elements to feel familiar across generations, and combines images, text, video, and colours to enhance understanding. The app is also designed with accessibility in mind, ensuring it can be used effectively by older users and those with varying levels of digital literacy.
 
                         </p>
+                        <img src={Product} className="product-screenshot" alt="Screenshot of the finished Prehab Plus app interface." />
                     </AccordionSection>
                 </ul>
             {/* </AccordionProvider> */}
