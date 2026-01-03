@@ -222,7 +222,7 @@ function CaseCoopManagement() {
                         We conducted testing sessions for the Hi-Fi prototype in the same way as we did for the Lo-Fi version. Afterwards, we analysed the results and identified the main issues, as we had done with the Lo-Fi prototypes.
                     </p>
                 </AccordionSection>
-                <AccordionSection title="Outcomes and Finish Product" index={4}>
+                <AccordionSection title="Outcomes" index={4}>
 
 
                     {/* <img src={CoopManagementScreenshot1} className="product-screenshot" alt="" aria-hidden="true" />
@@ -235,7 +235,7 @@ function CaseCoopManagement() {
                         We created a solution that allows Coop employees to easily manage and post discounted food bags, directly integrated with the inventory management system. The app also sends automated reminders to customers who have reserved a bag, helping reduce no-shows and food waste.
 
                     </p>
-                    <img src={Product} className="product-screenshot" alt="" aria-hidden="true" />
+                    {/* <img src={Product} className="product-screenshot" alt="" aria-hidden="true" /> */}
 
                 </AccordionSection>
             </ul>

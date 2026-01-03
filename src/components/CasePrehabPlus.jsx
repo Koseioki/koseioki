@@ -430,7 +430,7 @@ function CasePrehabPlus() {
 
                     </AccordionSection>
 
-                    <AccordionSection title="Outcomes and Finish Product" index={7}>
+                    <AccordionSection title="Outcomes" index={7}>
                         {/* <div className="product-screenshots">
                             <img src={PrehabPlusScreenshot1} className="product-screenshot" alt="“Min to-do liste” page featuring a message from the contact person and a to-do list of training tasks with buttons linking to each tutorial page." />
                             <img src={PrehabPlusScreenshot2} className="product-screenshot" alt="“Armløft med rotation” page showing a tutorial video and text explanation with supplemental images." />
@@ -454,7 +454,7 @@ function CasePrehabPlus() {
                             The interface uses real-life elements to feel familiar across generations, and combines images, text, video, and colours to enhance understanding. The app is also designed with accessibility in mind, ensuring it can be used effectively by older users and those with varying levels of digital literacy.
 
                         </p>
-                        <img src={Product} className="product-screenshot" alt="Screenshot of the finished Prehab Plus app interface." />
+                        {/* <img src={Product} className="product-screenshot" alt="Screenshot of the finished Prehab Plus app interface." /> */}
                     </AccordionSection>
                 </ul>
             {/* </AccordionProvider> */}
