@@ -39,8 +39,10 @@
 
 
 .case-card:has(a:focus) {
-    box-shadow: var(--focus-indicator);
+    /* box-shadow: var(--focus-indicator); */
     /* text-decoration: underline; */
+    outline: var(--focus-indicator);
+    outline-offset : var(--focus-indicator-offset);
 }
 
 .case-card-thumbnail {

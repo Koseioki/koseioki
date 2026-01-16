@@ -11,8 +11,10 @@
   --red: #B20000;
   --warning: #f6f9fc;
   --warning-dark: #0062be;
-  --focus-indicator: 0 0 0 0.125rem var(--white), 0 0 0 0.25rem var(--blue);
-  --focus-indicator-inset: inset 0 0 0 0.125rem var(--blue), inset 0 0 0 0.25rem var(--white);
+  --focus-indicator: #0062be solid 0.125rem;
+  --focus-indicator-offset: 0.125rem;
+  /* --focus-indicator: 0 0 0 0.125rem var(--white), 0 0 0 0.25rem var(--blue); */
+  /* --focus-indicator-inset: inset 0 0 0 0.125rem var(--blue), inset 0 0 0 0.25rem var(--white); */
   --drop-shadow: 0 0 0.125rem #1a1a1a80;
   --page-width: 60rem;
 }
@@ -27,6 +29,7 @@
     --primary: #fc3;
     --primary-hover: #e5b72e;
     --yellow: #115732;
+    --focus-indicator:#e7f3ff solid 0.125rem;
 
     --blue: #51A3F0;
     --red: #FF8F8F;
@@ -207,9 +210,11 @@ a.plain-link:hover {
   text-decoration: none;
 }
 
-a:focus {
-  outline: none;
-  box-shadow: var(--focus-indicator);
+a:focus-visible {
+  /* outline: none; */
+  /* box-shadow: var(--focus-indicator); */
+  outline: var(--focus-indicator);
+  outline-offset: var(--focus-indicator-offset);
 }
 
 .primary-button {

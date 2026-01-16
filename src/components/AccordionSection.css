@@ -61,16 +61,15 @@
     content: "−";
 }
 
-.accordion summary:focus {
-    box-shadow: var(--focus-indicator-inset);
+.accordion summary:focus-visible {
+    /* box-shadow: var(--focus-indicator-inset); */
+    outline: var(--focus-indicator);
+    outline-offset : var(--focus-indicator-offset);
 
 }
 
 .accordion-content {
     margin: 0 2rem;
-    /* overflow: hidden; */
-    /* max-height: 0; */
-    /* transition: max-height 0.3s ease; */
 }
 
 .accordion-content img {
