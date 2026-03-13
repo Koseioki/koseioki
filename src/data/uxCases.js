@@ -8,7 +8,7 @@ export const uxCases = [
 
     {
         slug: "prehab-plus",
-        title: "Prehab Plus",
+        title: "How Can We Make Prehabilitation Easier for Vulnerable Populations?",
         image: PrehabPlus,
         imageAlt: "Two elderly women wearing black glasses are looking at a tablet device in a room, photo.",
         client: "Region Sjælland",
@@ -25,7 +25,7 @@ export const uxCases = [
     },
     {
         slug: "coop-management",
-        title: "Coop Management (Concept)",
+        title: "Identifying the Root Causes of Food Waste in Supermarkets",
         client: "Coop Danmark",
         clientLogo: Coop,
         image: CoopManagement,
