@@ -49,7 +49,7 @@ function Accessibility() {
 
         <h2 >Accessibility Statement</h2>
         <p>I am committed to making digital products accessible in accordance with <a  href="https://eur-lex.europa.eu/eli/dir/2016/2102/oj/eng">Directive (EU) 2016/2102</a>, since I believe that no one should be excluded depending on their abilities.</p>
-        <p>This accessibility statement applies to all pages under the domain <a  href="https://koseioki.github.io/koseioki/">koseioki.github.io/koseioki/.</a></p>
+        <p>This accessibility statement applies to all pages under the domain <a  href="https://koseioki.github.io/">koseioki.github.io/.</a></p>
 
         <h2 >Compliance Status</h2>
         <p>While this website is compliant with the <a  href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2 Level AA</a>,
