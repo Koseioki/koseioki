@@ -21,7 +21,7 @@ function CaseCard({ caseItem }) {
 
                 <div className="card-text">
                     <h2 className="card-title">
-                        <NavLink to={`/ux-design-cases/${caseItem.slug}`}>
+                        <NavLink to={`/ux-design-cases/${caseItem.slug}`} className="card-title">
                             {caseItem.title}
                         </NavLink>
                     </h2>
