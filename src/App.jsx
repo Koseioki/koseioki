@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/privacy" element={<Privacy />} />
            <Route path="/ux-design-cases" element={<UXDesignCases />} />
         <Route path="/ux-design-cases/:slug" element={<CaseDetail />} />
+        <Route path="*" element={<Home />} />
        </Routes>
       <Footer />
 
