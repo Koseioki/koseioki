@@ -1,137 +1,72 @@
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    align-items: stretch;
+}
+
 .card-wrapper{
-    /* border: var(--text) 0.0625rem solid; */
-    border-radius: 1rem;
-    /* padding: 2rem; */
-    background-color: var(--white);
-    box-shadow: var(--drop-shadow);
-    /* transition: all 0.1s ease-in-out; */
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+@media (max-width: 600px) {
+    .card-wrapper {
+        flex-direction: column;
+    }
 }
 
 
+.card-wrapper img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    aspect-ratio: 3/2;
+}
 
-.card-wrapper h3{
-    margin-bottom: 0.5rem;
+.card-title{
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 .card-wrapper:hover{
-    /* background-color: var(--background); */
     background-color: var(--background-dark);
-    cursor: 
-    pointer;
-}
-
-/* .dark-mode .card-wrapper:hover{
-    background-color: var(--text);
-
-} */
-
-.card-text{
-    margin: 1.5rem;
-}
-
-a.card-title{
-    text-decoration: none;
-    color: var(--text);
-}
-
-
-
-.card-title{
-    font-size: 1.25rem;
-    font-weight: bold;
-    line-height: 1.5;
-    margin: 0;
-    /* margin-bottom: 1rem; */
-    padding: 0;
-    /* margin: 1rem; */
-}
-.card-wrapper p{
-    /* margin: 1rem; */
-
+    cursor: pointer;
 }
 
 a.card-title:focus{
     text-decoration: underline;
-    /* box-shadow: none; */
-    color: var(--primary);
     outline: none;
 }
 
 .card-wrapper:focus-within{
-    /* box-shadow: var(--focus-indicator); */
     outline: var(--focus-indicator);
     outline-offset : var(--focus-indicator-offset);
 }
 
 .card-wrapper:hover a.card-title{
-    text-decoration: underline;
-    color: var(--primary);
+    text-decoration: none;
 }
 
 
+/* UX cases */
 
-.card-wrapper img {
+img.case-card-thumbnail {
     width: 100%;
-    height: auto;
-    border-radius: 1rem 1rem 0 0;
-}
-
-/* ----- component card (list) ----- */
-.component-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* gap: 1rem; */
-}
-.component-card img{
-    max-width: 10rem;
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 1rem 0 0 1rem;
-
+    max-width: 16rem;
+    aspect-ratio: 1 / 1;
     object-fit:cover;
-    object-position: left;
 }
 
-
-/* ----- score card (grid) ----- */
-.score-card img {
-    aspect-ratio: 4/5;
-    object-fit: cover;
-    object-position: top;
+img.client-logo {
+    width: 100%;
+    max-width: 8rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
 }
-
-.score-card .card-text{
-    margin-top: 0.5rem;
-}
-.score-card h2,
-.score-card a{
-    font-size:1.25rem;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-}
-@media (max-width: 568px) {
-    .card-text{
-        margin: 1rem;
-    }
-    .card-wrapper img{
-        aspect-ratio: 2/1;
-        object-fit: cover;
-        object-position: top;
-    }
-    .component-card{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .component-card img{
-        max-width: 100%;
-        width: 100%;
-        /* aspect-ratio: 2/1; */
-        border-radius: 1rem 1rem 0 0;
-    }
-    .score-card img{
-        /* aspect-ratio: 2/1; */
-    }
-}
-
-/* ----- UX cases cards ----- */

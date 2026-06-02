@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { uxCases } from './data/uxCases.js';
 import { useParams } from 'react-router-dom';
 import BreadCrumbs from './components/BreadCrumbs.jsx';
@@ -37,26 +37,18 @@ function CaseDetail() {
 
 
 
-  // const handleAccordionToggle = (idx) => {
-  //   setOpenSections(prev =>
-  //     prev.includes(idx)
-  //       ? prev.filter(i => i !== idx)
-  //       : [...prev, idx]
-  //   );
-  // };
-
   return (
     <>
       <Helmet>
-        <title>{uxCase.title} - Kosei Oki</title>
+        <title>{uxCase.title} - Kosei&#39;s digital work</title>
       </Helmet>
       <BreadCrumbs />
 
       <main id="main-content">
-        <h1 ref={headingRef} tabIndex="-1" className="headings">{uxCase.title}</h1>
+        <h1 ref={headingRef} tabIndex="-1">{uxCase.title}</h1>
 
 
-        <div className="detail-header">
+        <section className="detail-header">
           <div>
             <h2>Project Summary</h2>
             {uxCase.summary.map((block, i) => (
@@ -73,30 +65,10 @@ function CaseDetail() {
           <div>
             <img src={uxCase.image} className="detail-thumbnail case-thumbnail" alt={uxCase.imageAlt} />
           </div>
-        </div>
+        </section>
         <hr aria-hidden="true" />
 
         {CustomComponent && <CustomComponent />}
-
-{/* 
-        <h2 className="headings">Challenges</h2>
-        {uxCase.problem.map((block, i) => (
-          <SectionRenderer key={`problem-${i}`} section={block} />
-        ))}
-
-        <h2 className="headings">Design Process</h2>
-
-        <ul className="accordion-container">
-          {uxCase.sections.map((sec, i) => (
-            <AccordionSection
-              key={`section-${i}`}
-              section={sec}
-              index={i}
-              open={openSections.includes(i)}
-              onToggle={handleAccordionToggle}
-            />
-          ))}
-        </ul> */}
 
 
       </main>

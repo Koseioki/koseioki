@@ -1,7 +1,7 @@
 .note-container {
-    background-color: var(--white);
+    background-color: var(--background-dark);
     padding: 0.5rem 2rem;
-    border-left: 0.25rem solid var(--primary);
+    border-left: 0.25rem solid var(--blue);
     max-width: 40rem;
 }
 

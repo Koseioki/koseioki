@@ -1,9 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import './index.css'
-import './Home.css'
-import Profile from './components/Profile'
 import Works from './components/Works'
-import Contact from './components/Contact'
+import Kosei from './assets/kosei.webp'
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -29,12 +27,60 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Kosei Oki</title>
+        <title>Kosei&#39;s digital work</title>
       </Helmet>
       <main id="main-content">
-        <Profile />
+        <h1 className="sr-only">Kosei&#39;s digital work</h1>
         <Works />
-        <Contact />
+
+        <section>
+          <h2>Involved Organisations</h2>
+          <ul>
+            <li>
+              <a href="https://www.teachaccess.org/">Teach Access</a> — member of
+              Teach Access Europe working groups
+            </li>
+            <li>
+              <a href="https://www.w3.org/community/nordic-accessibility/">
+                W3C Nordic Accessibility Community Group
+              </a>{" "}
+              — member
+            </li>
+          </ul>
+        </section>
+
+
+        <section id="about">
+          <h2>Who I am</h2>
+          <p>
+            I've been nerding out about computers and universal design since
+            around 2008.
+          </p>
+          <p>
+            I've had education in Applied Informatics and Multimedia Design and have
+            worked as an engineer at a Danish bank data centre and other places.
+          </p>
+          <p>
+            I've been involved with several NGOs, focusing on multicultural
+            communication, social justice, disability rights, and Queer
+            communities.
+          </p>
+          <p>
+            I'm also certified as an IAAP Certified Professional in Accessibility
+            Core Competencies (CPACC).
+          </p>
+          <img src={Kosei} alt="a selfie of a man, styled short hair and wearing a black windbreaker, smiling, photo" />
+
+          <h3>You can find me on</h3>
+          <ul>
+            <li>
+              <a href="https://linkedin.com/in/koseioki">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://github.com/koseioki">GitHub</a>
+            </li>
+          </ul>
+        </section>
       </main>
 
 

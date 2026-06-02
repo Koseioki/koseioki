@@ -14,7 +14,7 @@ function Privacy() {
     <>
 
       <Helmet>
-        <title>Privacy - Kosei Oki</title>
+        <title>Privacy - Kosei&#39;s digital work</title>
       </Helmet>
       <BreadCrumbs />
       <main id="main-content">

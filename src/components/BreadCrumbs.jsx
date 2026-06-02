@@ -8,7 +8,7 @@ function BreadCrumbs() {
       <ol>
         <li>
           <Link to="/" className="plain-link">
-            Home
+            home
           </Link>
         </li>
         {pathnames.map((value, index) => {
@@ -16,7 +16,7 @@ function BreadCrumbs() {
           const isLast = index === pathnames.length - 1;
           return (
             <li key={to} >
-              <span aria-hidden="true" className="breadcrumbs-separator">/</span>
+              <span aria-hidden="true" className="breadcrumbs-separator">&gt;</span>
               {isLast ? (
                 <span aria-current="page" className="breadcrumbs-last">{decodeURIComponent(value)}</span>
               ) : (

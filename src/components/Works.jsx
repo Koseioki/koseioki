@@ -1,7 +1,8 @@
 import WorkCard from './WorkCard';
 import AccessibleComponents from '../assets/accessible-components.webp'
-import ConcertBandScores from '../assets/concert-band-scores.webp'
+// import ConcertBandScores from '../assets/concert-band-scores.webp'
 import UXCases from '../assets/ux-cases.webp'
+import IDL from '../assets/idl.webp'
 
 
 function Works() {
@@ -10,29 +11,33 @@ function Works() {
   return (
     <>
       <section>
-        <hr aria-hidden="true" />
-        <h2 id="works" tabIndex={-1} className="headings" >Works</h2>
-        {/* <h3 className="headings">Digital Products</h3> */}
-        <ul className="work-card-list">
+
+
+        <ul className="card-list">
           <WorkCard
-            link="/accessible-web-components"
+            link="https://intersectionaldesignlab.org"
+            linkType="external"
+            title="Intersectional Design Lab"
+            image={IDL}
+            description="I run a non-profit initiative focused on researching and advocating for intersectionality in the digital society."
+          />
+          <WorkCard
+            link="https://koseioki.github.io/accessible-web-components/"
+            linkType="external"
             title="Accessible Web Components"
             image={AccessibleComponents}
-            description="At Bankdata, I developed accessible web components for local banks to use on their websites."
+            description="I developed guides for accessible components during my time at Bankdata."
           />
           <WorkCard
             link="/ux-design-cases"
-            title="UX Design Cases"
+            linkType="internal"
+            title="User Experience (UX) Design Cases"
             image={UXCases}
-            description="I have worked on UX cases, focusing on contextual understanding and inclusive design."
+            description="I work across the full UX design process, including research, prototyping, testing, and implementation."
           />
 
 
-          <WorkCard
-            link="/concert-band-scores"
-            title="Concert Band Scores"
-            image={ConcertBandScores}
-            description="I arranged music for concert band." />
+   
 
         </ul>
       </section>

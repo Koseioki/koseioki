@@ -1,19 +1,8 @@
 .breadcrumbs {
     max-width: var(--page-width);
     margin: 2rem auto;
-    color: var(--red);;
     padding: 0 1rem;
-    font-size: 1.1rem;
 }
-
-
-.breadcrumbs a {
-    color: var(--red);
-}
-
-/* .dark-mode .breadcrumbs a {
-    color: var(--yellow);
-} */
 
 
 .breadcrumbs ol{
@@ -27,6 +16,3 @@
     margin: 0 0.5rem;
 }
 
-.breadcrumbs-last{
-    /* font-weight: bold; */
-}

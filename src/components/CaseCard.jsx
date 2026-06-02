@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import './CaseCard.css';
+import './Cards.css';
 
 function CaseCard({ caseItem }) {
     const path = `/ux-design-cases/${caseItem.slug}`;
@@ -15,30 +15,27 @@ function CaseCard({ caseItem }) {
 
     return (
         <li>
-            {/* <hr aria-hidden="true" /> */}
-            <div className="case-card" onClick={handleClick}>
-    
-                    <img src={caseItem.image} className="case-card-thumbnail" alt="" aria-hidden="true" />
-          
+            <article className="card-wrapper" onClick={handleClick}>
+
+                <img src={caseItem.image} className="case-card-thumbnail" alt="" aria-hidden="true" />
 
                 <div className="card-text">
-                    <h2>
-                        <NavLink to={`/ux-design-cases/${caseItem.slug}`} className="headings card-title">
+                    <h2 className="card-title">
+                        <NavLink to={`/ux-design-cases/${caseItem.slug}`}>
                             {caseItem.title}
                         </NavLink>
                     </h2>
 
                     {caseItem.summary.map((block, i) => (
-                        <p key={`summary-${i}`} className="paragraph">{block.text}</p>
+                        <p key={`summary-${i}`}>{block.text}</p>
                     ))}
-                                {/* <p className="paragraph">Client:</p> */}
 
                     <img src={caseItem.clientLogo} className="client-logo" alt={caseItem.client} />
 
-                
+
 
                 </div>
-            </div>
+            </article>
         </li>
     );
 }
