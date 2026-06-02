@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 import Home from './Home'
 import Accessibility from './Accessibility'
@@ -21,7 +21,8 @@ const App = () => {
         <Route path="/privacy" element={<Privacy />} />
            <Route path="/ux-design-cases" element={<UXDesignCases />} />
         <Route path="/ux-design-cases/:slug" element={<CaseDetail />} />
-        <Route path="*" element={<Home />} />
+                  <Route path="*" element={<Navigate to="/" replace />} />
+
        </Routes>
       <Footer />
 
