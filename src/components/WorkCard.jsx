@@ -23,7 +23,6 @@ function WorkCard({ image, title, link, linkType, description }) {
   return (
     <li>
       <article className="card-wrapper" onClick={handleClick}>
-        <img src={image} alt="" aria-hidden="true" />
         <div className="card-text">
           <h2 className="card-title">
             {linkType === "external" ? (
@@ -38,8 +37,12 @@ function WorkCard({ image, title, link, linkType, description }) {
 
           </h2>
           <p>{description}</p>
+
         </div>
+                      <img src={image} alt="" aria-hidden="true" />
+
       </article>
+
     </li>
   );
 }

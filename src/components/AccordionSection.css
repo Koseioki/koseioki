@@ -1,5 +1,5 @@
 .accordion-container {
-    max-width: var(--content-width);
+    max-width: var(--page-width);
     background-color: var(--white);
         margin: 0;
     padding: 0;
@@ -67,6 +67,7 @@
 
 .accordion-content {
     margin: 2rem 0;
+    max-width: var(--content-width);
 }
 
 .accordion-content img {
