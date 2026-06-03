@@ -31,7 +31,9 @@
   * {
     --text: #d7d7d5;
     --background: #363636;
-    --blue: #e7f3ff;
+    --background-dark: #262626;
+    --blue: #b5dafd;
+    --light-blue: #103354;
     /* --text: #d7d7d5;
     --text-light: #363636;
     --background: #262626;
