@@ -34,13 +34,19 @@
 }
 
 .card-wrapper:hover{
-    background-color: var(--background-dark);
+    /* background-color: var(--background-dark); */
     cursor: pointer;
 }
 
-a.card-title:focus{
+a.card-title:focus-visible{
     text-decoration: underline;
-    outline: none;
+    outline-color: transparent;
+}
+
+h2.card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .card-wrapper:focus-within{
@@ -50,6 +56,7 @@ a.card-title:focus{
 
 .card-wrapper:hover a.card-title{
     text-decoration: none;
+    background-color: var(--yellow);
 }
 
 
@@ -67,6 +74,11 @@ img.client-logo {
     max-width: 8rem;
     height: auto;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     object-fit: contain;
+}
+
+
+.external-link-icon {
+    font-size: 0.9rem;
 }

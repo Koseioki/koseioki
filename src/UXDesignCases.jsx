@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import BreadCrumbs from './components/BreadCrumbs';
 import { uxCases } from './data/uxCases'
 import CaseCard from './components/CaseCard';
-import './UXDesignCases.css';
 
 
 

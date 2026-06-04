@@ -4,6 +4,7 @@
   --background-dark: #ededea;
   --blue: #0062be;
     --light-blue: #deecf9;
+    --yellow: #fff0c1;
 
   --focus-indicator: var(--blue) solid 0.25rem;
   --focus-indicator-offset: 0.25rem;
@@ -34,7 +35,8 @@
     --background-dark: #262626;
     --blue: #b5dafd;
     --light-blue: #103354;
-    /* --text: #d7d7d5;
+    --yellow: #32280c;
+    /* --text: #d 7d7d5;
     --text-light: #363636;
     --background: #262626;
     --background-dark: #363636;
@@ -116,7 +118,7 @@ h3,
 h4,
 h5,
 h6 {
-  outline: none;
+  outline: transparent;
   font-weight: bold;
   margin: 0;
   margin-bottom: 1.5rem;
@@ -185,6 +187,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  background-color: var(--yellow);
 }
 
 a:focus-visible {
@@ -205,11 +208,13 @@ a:focus-visible {
   background-color: var(--light-blue);
   padding: 1.5rem 2rem;
   max-width: var(--content-width);
+  margin: 3rem 0;
 }
 
 #about img {
   width: 100%;
   max-width: 12rem;
   border-radius: 100%;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
 }

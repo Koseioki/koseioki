@@ -57,11 +57,10 @@ function Home() {
             around 2008.
           </p>
           <p>
-            I've had education in Applied Informatics and Multimedia Design and have
-            worked as an engineer at a Danish bank data centre and other places.
+            I had background both in software development and intersectional studies.
           </p>
           <p>
-            I've been involved with several NGOs, focusing on multicultural
+            Apart from my engineering work, I've been involved with several NGOs, focusing on multicultural
             communication, social justice, disability rights, and Queer
             communities.
           </p>
