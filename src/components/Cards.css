@@ -12,13 +12,10 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.0625rem solid var(--light-text);
 }
 
-@media (max-width: 600px) {
-    .card-wrapper {
-        flex-direction: column;
-    }
-}
 
 
 .card-wrapper img {
@@ -32,6 +29,8 @@
     font-size: 1.5rem;
     line-height: 1.5;
 }
+
+
 
 .card-wrapper:hover{
     /* background-color: var(--background-dark); */
@@ -65,7 +64,7 @@ h2.card-title {
 img.case-card-thumbnail {
     width: 100%;
     max-width: 16rem;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 2 / 1;
     object-fit:cover;
 }
 
@@ -80,5 +79,20 @@ img.client-logo {
 
 
 .external-link-icon {
-    font-size: 0.9rem;
+    font-size: 2.2rem;
+}
+
+@media (max-width: 600px) {
+    .card-wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-wrapper img:not(.client-logo) {
+        max-width: 100%;
+    }
+
+    .card-wrapper img.client-logo {
+        margin-bottom: 1rem;
+    }
 }

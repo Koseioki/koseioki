@@ -53,14 +53,14 @@ function Home() {
         <section id="about">
           <h2>Who I am</h2>
           <p>
-            I've been nerding out about computers and universal design since
-            around 2008.
+            I've been nerding out about front-end development and universal design since around 2008.
+
           </p>
           <p>
-            I had background both in software development and intersectional studies.
+            I have a background in both software development and intersectional studies.
           </p>
           <p>
-            Apart from my engineering work, I've been involved with several NGOs, focusing on multicultural
+            Apart from my engineering work, I've been involved with several NGOs, focusing on cross-cultural
             communication, social justice, disability rights, and Queer
             communities.
           </p>

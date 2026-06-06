@@ -1,5 +1,6 @@
 * {
   --text: #262626;
+  --light-text: #9f9f9f;
   --background: #fcfcfc;
   --background-dark: #ededea;
   --blue: #0062be;
@@ -31,11 +32,13 @@
 @media (prefers-color-scheme: dark) {
   * {
     --text: #d7d7d5;
-    --background: #363636;
-    --background-dark: #262626;
+    --light-text: #9f9f9f;
+    --background: #292828;
+    --background-dark: #191919;
     --blue: #b5dafd;
     --light-blue: #103354;
-    --yellow: #32280c;
+    --yellow: #4a3c17;
+
     /* --text: #d 7d7d5;
     --text-light: #363636;
     --background: #262626;
@@ -53,7 +56,7 @@
   }
 
   img {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
   }
 
   .client-logo {
@@ -100,6 +103,11 @@ main {
   border: 0;
 }
 
+hr{
+    border: none;
+    border-top: 0.0625rem solid var(--light-text);
+    margin: 2rem 0;
+}
 
 
 code {

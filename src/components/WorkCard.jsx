@@ -32,7 +32,7 @@ function WorkCard({ image, title, link, linkType, description }) {
 
                 </a>
 
-                <span className="external-link-icon" aria-hidden="true">↗</span>
+                <span className="external-link-icon" aria-hidden="true">⎘</span>
                 <span className="sr-only"> (external link)</span>
 
               </>

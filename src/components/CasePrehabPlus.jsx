@@ -8,11 +8,6 @@ import PrehabPlusHowMightWe from "../assets/prehab-plus/how-might-we.webp";
 import PrehabPlusLoFi from "../assets/prehab-plus/lo-fi.webp";
 import PrehabPlusLoFiTesting from "../assets/prehab-plus/lo-fi-test.webp";
 import PrehabPlusPrioritisationMatrix from "../assets/prehab-plus/prioritisation-matrix.webp";
-import PrehabPlusScreenshot1 from "../assets/prehab-plus/screenshot1.webp";
-import PrehabPlusScreenshot2 from "../assets/prehab-plus/screenshot2.webp";
-import PrehabPlusScreenshot3 from "../assets/prehab-plus/screenshot3.webp";
-import PrehabPlusScreenshot4 from "../assets/prehab-plus/screenshot4.webp";
-import PrehabPlusScreenshot5 from "../assets/prehab-plus/screenshot5.webp";
 import PrehabPlusUserflow from "../assets/prehab-plus/user-flow.webp";
 
 
@@ -52,7 +47,6 @@ import LawOfProximity from "../assets/prehab-plus/law-of-proximity.webp";
 import HicksLaw from "../assets/prehab-plus/hicks-law.webp";
 import FittsLaw from "../assets/prehab-plus/fitts-law.webp";
 
-import Product from "../assets/prehab-plus/prehab-plus2.webp"
 
 
 function CasePrehabPlus() {

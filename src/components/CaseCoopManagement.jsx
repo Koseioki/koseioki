@@ -5,11 +5,6 @@ import CoopManagementAffinityDiagram from "../assets/coop-management/affinity-di
 import CoopManagementHowMightWe from "../assets/coop-management/how-might-we.webp";
 import CoopManagementLoFi from "../assets/coop-management/lo-fi.webp";
 import CoopManagementLoFiTesting from "../assets/coop-management/lo-fi-test.webp";
-import CoopManagementScreenshot1 from "../assets/coop-management/screenshot1.webp";
-import CoopManagementScreenshot2 from "../assets/coop-management/screenshot2.webp";
-import CoopManagementScreenshot3 from "../assets/coop-management/screenshot3.webp";
-import CoopManagementScreenshot4 from "../assets/coop-management/screenshot4.webp";
-import CoopManagementScreenshot5 from "../assets/coop-management/screenshot5.webp";
 import CoopManagementUserflow from "../assets/coop-management/user-flow.webp";
 import CoopManagementUserPersona from "../assets/coop-management/user-persona.webp";
 
@@ -31,7 +26,6 @@ import Sketches from "../assets/coop-management/sketches.webp";
 
 import KvicklyViby from "../assets/coop-management/kvickly-viby.webp";
 
-import Product from "../assets/coop-management2.webp"
 
 function CaseCoopManagement() {
     return (
