@@ -41,7 +41,7 @@ function Accessibility() {
 </li>
             <li>This website has links to other websites, that might not be accessible.
             </li>
-            <li>If you find any accessibility problems on this website, please contact me through <a href="mailto:koseioki1225@gmail.com">koseioki1225@gmail.com</a> or <a  href="tel:+4591964325">+45 9196 4325</a>.
+            <li>If you find any accessibility problems on this website, please contact me through <a href="mailto:kosei.oki@outlook.com">kosei.oki@outlook.com</a> or <a  href="tel:+4591964325">+45 91 96 43 25</a>.
             </li>
           </ul>
 
@@ -88,8 +88,8 @@ function Accessibility() {
         <h2 >Feedback and Contact Information</h2>
         <p>Please contact me directly if you encounter any accessibility barriers:</p>
         <ul>
-          <li>Email: <a  href="mailto:koseioki1225@gmail.com">koseioki1225@gmail.com</a></li>
-          <li>Phone: <a  href="tel:+4591964325">+45 9196 4325</a></li>
+          <li>Email: <a  href="mailto:kosei.oki@outlook.com">kosei.oki@outlook.com</a></li>
+          <li>Phone: <a  href="tel:+4591964325">+45 91 96 43 25</a></li>
         </ul>
         <p>I try to respond to feedback as quickly as possible.</p>
       </main>

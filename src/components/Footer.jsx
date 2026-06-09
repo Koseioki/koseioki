@@ -27,8 +27,8 @@ function Footer() {
                 <a href="tel:+45 91 96 43 25">+45 91 96 43 25</a>
               </li>
               <li>
-                <a href="mailto:koseioki1225@gmail.com">
-                  koseioki1225@gmail.com
+                <a href="mailto:kosei.oki@outlook.com">
+                  kosei.oki@outlook.com
                 </a>
               </li>
               <li>
