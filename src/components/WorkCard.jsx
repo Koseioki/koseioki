@@ -26,16 +26,16 @@ function WorkCard({ image, title, link, linkType, description }) {
         <div className="card-text">
           <h2 className="card-title">
             {linkType === "external" ? (
-              <>
-                <a href={link} target="_self" className="card-title">
-                  {title}
 
-                </a>
-
-                <span className="external-link-icon" aria-hidden="true">⎘</span>
+              <a href={link} target="_self" className="card-title">
+                {title}
+                <span className="external-link-icon" aria-hidden="true"> ⎘</span>
                 <span className="sr-only"> (external link)</span>
+              </a>
 
-              </>
+
+
+
             ) : (
               <NavLink to={link} className="card-title">
                 {title}

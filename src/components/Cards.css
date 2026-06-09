@@ -79,7 +79,8 @@ img.client-logo {
 
 
 .external-link-icon {
-    font-size: 2.2rem;
+    font-size: 1.5em;
+    line-height: 0;
 }
 
 @media (max-width: 600px) {

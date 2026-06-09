@@ -41,10 +41,7 @@ function Home() {
               Teach Access Europe working groups
             </li>
             <li>
-              <a href="https://www.w3.org/community/nordic-accessibility/">
-                W3C Nordic Accessibility Community Group
-              </a>{" "}
-              — member
+              <a href="https://www.w3.org">W3C</a> — member of Nordic Accessibility Community Group
             </li>
           </ul>
         </section>
